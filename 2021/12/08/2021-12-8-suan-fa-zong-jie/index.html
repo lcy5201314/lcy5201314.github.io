@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="friends, 秋月日常">
+    <meta name="keywords" content="CUMT算法考试总结, 秋月日常">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>friends | 秋月日常</title>
+    <title>CUMT算法考试总结 | 秋月日常</title>
     <link rel="icon" type="image/png" href="/meizi.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,373 +309,474 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                秋月学姐的emo日常
-                
-            </div>
+    
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['欢迎来到秋月的emo日常','所谓的光辉岁月,并不是后来闪耀的日子,而是无人问津时,你对梦想的偏执。'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">CUMT算法考试总结</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + (new Date().getHours()) % 6 + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
 
 
-    </div>
-</div>
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
-    .friends-container {
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
         margin-top: -100px;
-        margin-bottom: 30px;
+        visibility: hidden;
     }
 
-    .friends-container .tag-title {
-        margin-bottom: 10px;
-        color: #3C4858;
-        font-size: 1.75rem;
-        font-weight: 400;
+    #articleContent :focus {
+        outline: none;
     }
 
-    .frind-ship img {
-        border-radius: 50%;
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
     }
 
-    /* 一下是按钮样式 */
-
-    .frind-ship {
-        padding: 10px 20px;
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
     }
 
-    .frind-ship .title {
-        display: flex;
-        align-items: center;
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
     }
 
-    .frind-ship .title div {
-        color: #fff;
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
         padding-left: 10px;
     }
 
-    .frind-ship .title img {
-        width: 100px;
-        height: 100px;
-        flex-shrink: 0;
+    #toc-content ol li {
+        padding-left: 10px;
     }
 
-    .frind-ship .title h1 {
-        padding-bottom: 5px;
-        border-bottom: 2px solid #fff;
-        position: relative;
-        top:-15px;
-        left: 3px;
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
     }
 
-    .friend-button {
-        display: flex;
-        justify-content: center;
-        margin-bottom: -27px;
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
     }
 
-    .friend-button a {
-        border-radius: 40px;
+    #toc-content .is-active-link {
+        color: #42b983;
     }
 
-    .friend-all .tag-post {
-        margin-bottom: 30px;
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
     }
 
-    .button-caution {
-        background-color: #FF4351;
-        border-color: #FF4351;
-        color: #FFF;
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
     }
 
-    .button {
-        font-weight: 300;
-        font-size: 16px;
-        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        text-decoration: none;
-        text-align: center;
-        line-height: 40px;
-        height: 40px;
-        padding: 0 40px;
-        margin: 0;
-        display: inline-block;
-        appearance: none;
-        cursor: pointer;
-        border: none;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-transition-property: all;
-        transition-property: all;
-        -webkit-transition-duration: .3s;
-        transition-duration: .3s;
-    }
-
-    .title {
-        margin-bottom: 0rem !important;
-    }
-
-    .card {
-        margin: 3rem 0 1rem 0 !important;
-    }
-
-    .button-glow.button-caution {
-        -webkit-animation-name: glowing-caution;
-        animation-name: glowing-caution;
-    }
-
-    @-webkit-keyframes glowing-caution {
-        from {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-
-        50% {
-            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-        }
-
-        to {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-    }
-
-    @keyframes glowing-caution {
-        from {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-
-        50% {
-            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-        }
-
-        to {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-    }
-
-    .button-caution:hover {
-        background-color: #ff7680;
-        border-color: #ff7680;
-        color: #FFF;
-        text-decoration: none;
-    }
-
-    .frind-card1 {
-        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    }
-
-    .frind-card2 {
-        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-
-    .frind-card3 {
-        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
-    }
-
-    .frind-card4 {
-        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    }
-
-    .frind-card5 {
-        background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
-    }
-
-    .frind-card6 {
-        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
-    }
-
-    .frind-card7 {
-        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-    }
-
-    .frind-card8 {
-        background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
-    }
-
-    .frind-card9 {
-        background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
-    }
-
-    .frind-card10 {
-        background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    }
-
-    article .card {
-        overflow: visible !important;
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
     }
 </style>
-
-<main class="content">
-    <div class="container friends-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="tag-title center-align">
-                    <i class="fas fa-address-book"></i>&nbsp;&nbsp;友情链接
-                </div>
-                <article id="friends-link">
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
                     
-                    
-                    <div class="row tags-posts friend-all">
+                    <div class="article-tag">
                         
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
+                            </a>
                         
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card1">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="https://junyaohu.github.io/img/avatar.png" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">胡椒</h1>
-                                            <p style="position: relative;top: -35px;">理想不大，路还很远</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://junyaohu.github.io/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            膜拜胡神
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card2">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="https://wanpengxu.github.io/img/avatar.png" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">许老师</h1>
-                                            <p style="position: relative;top: -35px;">许老师，学习导师</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://wanpengxu.github.io/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            膜拜许兄
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card3">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="https://raw.githubusercontent.com/n0w-y/pic/750d67484ac026c0b4c6e1cc506818b4a9a2a2ec/img202111301045535.jpg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">姚佬</h1>
-                                            <p style="position: relative;top: -35px;">姚佬，每日膜拜巨佬</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://n0w-y.github.io/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            膜拜姚佬
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card4">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="http://yrsblog.com/images/avatar.jpg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">雷佬</h1>
-                                            <p style="position: relative;top: -35px;">ACM和数学的大佬</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="http://yrsblog.com/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            膜拜雷佬
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card5">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="http://image.luokangyuan.com/4027734.jpeg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">闪烁之狐</h1>
-                                            <p style="position: relative;top: -35px;">博客模板搭建者</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://blinkfox.github.io/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            前去学习
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <a href="/tags/%E8%80%83%E8%AF%95/">
+                                <span class="chip bg-color">考试</span>
+                            </a>
                         
                     </div>
                     
-                </article>
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-12-08
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-12-09
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    775
+                </div>
+                
+
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
-        <div class="card">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="算法考试总结"><a href="#算法考试总结" class="headerlink" title="算法考试总结"></a>算法考试总结</h1><blockquote>
+<p>作者：lowlyli</p>
+<p>时间：2021-12-8</p>
+<p>内容：含泪写下这个算法的总结，太离谱了，我真的写不完，不会写。</p>
+</blockquote>
+<h2 id="问题回忆"><a href="#问题回忆" class="headerlink" title="问题回忆"></a>问题回忆</h2><h3 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h3><blockquote>
+<p>这题其实很简单，但比以往的上课题一点点复杂</p>
+</blockquote>
+<p>大意：</p>
+<script type="math/tex; mode=display">
+T(n) = \left\{ \begin{array}{c}
+{1} & n = 1 \\ 
+ 2T(\frac{n}{2}) + n^2 + 1 & n>1
+\end{array}\right.</script><p>主定理盒递推都可以</p>
+<h3 id="流水作业调度（变形）"><a href="#流水作业调度（变形）" class="headerlink" title="流水作业调度（变形）"></a>流水作业调度（变形）</h3><p>基本步骤一样，就是这个卷子给的数字和计算规模大，写不完。</p>
+<ol>
+<li><p><strong>问题描述</strong> n个作业要在两台机器M1和M2上进行加工。每个作业加工的顺序都是先在M1上加工，然后在M2加工。M1和M2加工作业$i$所需的时间分别为$a_i$ 和$b_i$。确定n个作业的最优加工顺序，使得加工完成所需的时间最少。</p>
+<p><strong>算法</strong></p>
+<ol>
+<li>分为$N_1,N_2$集合存放 <script type="math/tex">N_1 = \{a_i\leq b_i\} ,N_2 = \{a_i > b_i\}</script></li>
+<li>$N_1$中作业按照$a_i$升序排序，$N_2$中作业按照$b_i$降序排序</li>
+<li>$N_1$连接$N_2$，计算时间</li>
+</ol>
+</li>
+</ol>
+<h3 id="哈夫曼编码"><a href="#哈夫曼编码" class="headerlink" title="哈夫曼编码"></a>哈夫曼编码</h3><p>简单送分题（送命题）</p>
+<p>这题和平时步骤一样，唯一区别就说这个题是10个字母的，上课也只有6，7个的，10个的规模有点大，写了满满一面的步骤和树，画吐了。</p>
+<h3 id="暖气管道最优安排"><a href="#暖气管道最优安排" class="headerlink" title="暖气管道最优安排"></a>暖气管道最优安排</h3><p>这题很迷惑，给了22个点,每个点包括$(x<em>i,y_i)$,问有没有最佳的一个点$(0,y</em>{best})$,这题没见过，考试跳过了，其实就说二分法求中位数</p>
+<p>类似：</p>
+<p>某石油公司计划建造一条由东向西的主输油管道。该管道要穿过一个有n口油井的油田。从每口油井都要有一条输油管道沿最短路经（或南或北）与主管道相连。</p>
+<p>如果给定n口油井的位置，即它们的x坐标（东西向）和y坐标（南北向），应如何确定主管道的最优位置，即使各油井到主管道之间的输油管道长度总和最小的位置？</p>
+<p>给定n口油井的位置，编程计算各油井到主管道之间的输油管道最小长度总和。</p>
+<p><img src="https://s2.loli.net/2021/12/09/G2nFJwBPsKmhgiE.png" alt="这里写图片描述"></p>
+<p>（这15分基本上空了，没时间写，后面想到了，二分中位数，但22个数，每日吐槽题量大）</p>
+<h3 id="活动安排"><a href="#活动安排" class="headerlink" title="活动安排"></a>活动安排</h3><p>这里是等待，有n个顾客，每个人需要$t_i$的服务时间，有m个窗口，求最短的等待时间的安排</p>
+<p>就是贪心，从小到大排序，依次插入窗口。</p>
+<p>（再次吐槽，给了10个数，2窗口，没时间写）</p>
+<h3 id="最长递增子序列"><a href="#最长递增子序列" class="headerlink" title="最长递增子序列"></a>最长递增子序列</h3><p>离谱，如果考实践的时候我还会（其实现在也会写代码）但这里理论分析，属实蚌埠住了，最离谱的是2种方法，放过我吧，我只写了后面的问题求解，理论属实不会。</p>
+<p>这是考场上想到的：居然蒙对了一个，不过第二种属实不会了。</p>
+<script type="math/tex; mode=display">
+dp[i]=max(dp[j])+1,其中0≤j<i且num[j]<num[i]</script><p>这里自己参考：</p>
+<p>力扣<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-increasing-subsequence/solution/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/">最长递增子序列</a></p>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-increasing-subsequence/solution/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/">https://leetcode-cn.com/problems/longest-increasing-subsequence/solution/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/</a></p>
+<h3 id="回溯法和分支限界"><a href="#回溯法和分支限界" class="headerlink" title="回溯法和分支限界"></a>回溯法和分支限界</h3><p>这里是0-1背包变形</p>
+<p>但这里要求2次，还是5层的树。</p>
+<p>最后就一点点时间了，稀里糊涂画的，现在想起来，答案估计都有问题。唉~题量也太大了。根本写不完。</p>
+<h2 id="反思总结（也给一点准备建议）"><a href="#反思总结（也给一点准备建议）" class="headerlink" title="反思总结（也给一点准备建议）"></a>反思总结（也给一点准备建议）</h2><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>这次考试，题量大的离谱，我这种写的慢的，当年数据库都没写完的人，这根本写不完，除非，我不用思考，但这题还是有点难度，需要思考的，不清楚为啥19如此难。本来2周前就考了，因为突如其来的疫情，推迟了，导致理论和实践间隔久，反正就是只复习了书上，然后老师画的重点，然后就崩了。呜呜呜。</p>
+<h3 id="备考建议"><a href="#备考建议" class="headerlink" title="备考建议:"></a>备考建议:</h3><p>课上内容不太行，建议在平时学习看一遍书就可以开始刷力扣了，培养题感，这里推荐：</p>
+<p> <a target="_blank" rel="noopener" href="https://www.programmercarl.com/">代码随想录</a> : <a target="_blank" rel="noopener" href="https://www.programmercarl.com/">https://www.programmercarl.com/</a></p>
+<p>可以参考上面的最基础的地方刷，本人在2周多一点刷了100来道，虽然考试帮助不太大，但感觉还是学到了算法的一些精髓。</p>
+<p><img src="https://s2.loli.net/2021/12/09/NiIkxXUwQpVsDWc.png" alt="image-20211209090200310"></p>
+<p>理论的一些可以参考：<a target="_blank" rel="noopener" href="https://junyaohu.github.io/2021/10/26/%E3%80%8A%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0/">胡神的博客</a></p>
+<p>还是可以的，我的一般吧。</p>
+<p>没有什么了，算法好好学吧。</p>
+
+                
+            </div>
+            <hr/>
 
             
 
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">LowlyLi</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://lcy5201314.top/2021/12/08/2021-12-8-suan-fa-zong-jie/">http://lcy5201314.top/2021/12/08/2021-12-8-suan-fa-zong-jie/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">LowlyLi</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%80%83%E8%AF%95/">
+                                    <span class="chip bg-color">考试</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
             
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
 
             
+        </div>
+    </div>
 
-            
+    
 
-            
-            <style>
+    
+
+    
+
+    
+
+    
+        <style>
     .valine-card {
         margin: 1.5rem auto;
     }
@@ -937,19 +1038,287 @@
     });
 </script>
 
-            
+    
 
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/12/08/2021-12-8-suan-fa-zong-jie/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="CUMT算法考试总结">
+                        
+                        <span class="card-title">CUMT算法考试总结</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            CUMT算法考试（信安专业），崩了，题量太大了，写不完，呜呜呜
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            LowlyLi
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%80%83%E8%AF%95/">
+                        <span class="chip bg-color">考试</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
         </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/12/05/2021-12-5-sm4-suan-fa/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="SM4算法">
+                        
+                        <span class="card-title">SM4算法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            SM4是国密里面针对无线标准进行的分组密码，和DES加密很像。它采用的方法是能够很好抵抗差值攻击的仿射函数逆映射复合法。有时间分析一下如何破解吧。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/" class="post-category">
+                                    密码学
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
+                        <span class="chip bg-color">密码学</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
     </div>
-</main>
+</article>
+
+</div>
+
 
 <script>
-    $(function () {
-        $('#friends-link').masonry({
-            itemSelector: '.friend-div'
-        });
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 秋月日常<br />'
+            + '文章作者: LowlyLi<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
     });
 </script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
 
 
     <footer class="page-footer bg-color">
