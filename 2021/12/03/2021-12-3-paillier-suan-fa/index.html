@@ -575,8 +575,8 @@ n=p_{1}^{r_{1}} p_{2}^{r_{2}} \cdots p_{k}^{r_{k}}</script><p>其中，$ p <em> 
  \\
   \lambda(\operatorname{lcm}(a, b))=\operatorname{lcm}(\lambda(a), \lambda(b))</script></blockquote>
 <h3 id="算法过程"><a href="#算法过程" class="headerlink" title="算法过程"></a>算法过程</h3><p><strong>(1) 密钥产生</strong></p>
-<p>选取两个随机的大素数$p, q$ ，计算 $n=p <em> q$ 和 $\lambda=lcm(p-1, q-1)$ .选取随机数 $g$ ，$g \in \mathbb{Z}_{n^{2}}^{ </em> }$  且满足 $\mu=\left(L\left(g^{\lambda} \bmod n^{2}\right)\right)^{-1}$  存在， 其中函数  $L(x)$  的定义如下 $ L(x)=\frac{x-1}{n}$ 。</p>
-<p>此时，公钥为 $(n, g)$ ，私钥为 $(\lambda, \mu)$。</p>
+<p>选取两个随机的大素数<script type="math/tex">p, q</script> ，计算 <script type="math/tex">n=p * q</script> 和 <script type="math/tex">\lambda=lcm(p-1, q-1)</script> .选取随机数 $g$ ，<script type="math/tex">g \in \mathbb{Z}_{n^{2}}^{ * }</script>  且满足 <script type="math/tex">\mu=\left(L\left(g^{\lambda} \bmod n^{2}\right)\right)^{-1}</script>  存在， 其中函数  $L(x)$  的定义如下 <script type="math/tex">L(x)=\frac{x-1}{n}</script> 。</p>
+<p>此时，公钥为 <script type="math/tex">(n, g)</script> ，私钥为 <script type="math/tex">(\lambda, \mu)</script>。</p>
 <p><strong>(2) 加密过程</strong></p>
 <p>对于明文$m$ ，$ m \in \mathbb{Z}_{n}$  ，选择随机数 $r&lt;n$  ，加密过程为</p>
 <script type="math/tex; mode=display">
