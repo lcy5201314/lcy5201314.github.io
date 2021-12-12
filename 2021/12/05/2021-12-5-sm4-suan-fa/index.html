@@ -470,7 +470,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-07
+                    2021-12-12
                 </div>
                 
 
@@ -521,36 +521,41 @@
 <li>$⊕$ 32比特异或</li>
 <li>$&lt;&lt;&lt;i$ 32比特循环左移$i$位</li>
 </ul>
-<h4 id="密钥及密钥参量"><a href="#密钥及密钥参量" class="headerlink" title="密钥及密钥参量"></a>密钥及密钥参量</h4><p>加密密钥长度为 128 比特, 表示为$  \mathrm{MK}=\left(\mathrm{MK}<em>{0}, \mathrm{MK}</em>{1}, \mathrm{MK}<em>{2}, \mathrm{MK}</em>{3}\right) $, 其中  $\mathrm{MK}_{i}(\mathrm{i}=0,1,2,3)  $为 字。</p>
-<p>轮密钥表示为 $ \left(\mathrm{rk}<em>{0}, \mathrm{rk}</em>{1}, \ldots, \mathrm{rk}<em>{31}\right)$ , 其中  $\mathrm{rk}</em>{\mathrm{i}}(\mathrm{i}=0, \ldots, 31) $ 为字。轮密钥由加密密钥生成。</p>
-<p>$\mathrm{FK}=\left(\mathrm{FK}<em>{0}, \mathrm{FK}</em>{1}, \mathrm{FK}<em>{2}, \mathrm{FK}</em>{3}\right)  $为系统参数,  </p>
-<p>$\mathrm{CK}=\left(\mathrm{CK}<em>{0}, \mathrm{CK}</em>{1}, \ldots, \mathrm{CK}_{31}\right)  $为固定参数, 用于密钥扩展算法, </p>
-<p>其中 $ \mathrm{FK}<em>{\mathrm{i}}(i=0, \ldots, 3) 、 \mathrm{CK}</em>{\mathrm{i}}(i=0, \ldots, 31) $ 为字。</p>
-<h3 id="轮函数F"><a href="#轮函数F" class="headerlink" title="轮函数F"></a>轮函数F</h3><p>本算法采用非线性迭代结构, 以字为单位进行加密运算, 称一次迭代运算为一轮变换。</p>
-<p>设输入为$( X<em> {0} , X</em> {1} , X<em> {2} , X</em> {3} ) \in (Z<em> {2}^ {32})^ {4} $,轮密钥为$rk \in Z</em> {2}^ {32} $,则轮函数F为:</p>
+<h4 id="密钥及密钥参量"><a href="#密钥及密钥参量" class="headerlink" title="密钥及密钥参量"></a>密钥及密钥参量</h4><p>加密密钥长度为 128 比特, 表示为<script type="math/tex">\mathrm{MK}=\left(\mathrm{MK}_{0}, \mathrm{MK}_{1}, \mathrm{MK}_{2}, \mathrm{MK}_{3}\right)</script>, 其中  <script type="math/tex">\mathrm{MK}_{i}(\mathrm{i}=0,1,2,3)</script>为 字。</p>
+<p>轮密钥表示为 <script type="math/tex">\left(\mathrm{rk}_{0}, \mathrm{rk}_{1}, \ldots, \mathrm{rk}_{31}\right)</script>, 其中  <script type="math/tex">\mathrm{rk}_{\mathrm{i}}(\mathrm{i}=0, \ldots, 31)</script>为字。轮密钥由加密密钥生成。</p>
+<script type="math/tex; mode=display">\mathrm{FK}=\left(\mathrm{FK}_{0}, \mathrm{FK}_{1}, \mathrm{FK}_{2}, \mathrm{FK}_{3}\right)  $$为系统参数,  
+
+$$\mathrm{CK}=\left(\mathrm{CK}_{0}, \mathrm{CK}_{1}, \ldots, \mathrm{CK}_{31}\right)$$为固定参数, 用于密钥扩展算法, 
+
+其中 $$\mathrm{FK}_{\mathrm{i}}(i=0, \ldots, 3) 、 \mathrm{CK}_{\mathrm{i}}(i=0, \ldots, 31)$$为字。
+
+### 轮函数F
+
+本算法采用非线性迭代结构, 以字为单位进行加密运算, 称一次迭代运算为一轮变换。
+
+设输入为$$( X_ {0} , X_ {1} , X_ {2} , X_ {3} ) \in (Z_ {2}^ {32})^ {4}$$,轮密钥为$$rk \in Z_ {2}^ {32} $$,则轮函数F为:</script><p>F( X<em> {0} , X</em> {1} , X<em> {2} , X</em> {3} ,rk)= X<em> {0} \oplus T( X</em> {1} \oplus X<em> {2} \oplus X</em> {3} \oplus rk)</p>
 <script type="math/tex; mode=display">
-F( X_ {0} , X_ {1} , X_ {2} , X_ {3} ,rk)= X_ {0} \oplus T( X_ {1} \oplus X_ {2} \oplus X_ {3} \oplus rk)</script><h4 id="合成置换T"><a href="#合成置换T" class="headerlink" title="合成置换T"></a>合成置换T</h4><p>$T:Z_2^{32} \rightarrow Z_2^{32}$，是一个可逆变换，由非线性变换$τ$和线性变换$L$复合而成,即$T(x)=L(τ(x))$</p>
-<h5 id="非线性变换τ"><a href="#非线性变换τ" class="headerlink" title="非线性变换τ"></a>非线性变换τ</h5><p> $\tau$  由 4 个并行的S盒构成。<br>设输入为 $ A=\left(a<em>{0}, a</em>{1}, a<em>{2}, a</em>{3}\right) \in\left(Z<em>{2}^{8}\right)^{4} $, 输出为 $ B=\left(b</em>{0}, b<em>{1}, b</em>{2}, b<em>{3}\right) \in\left(Z</em>{2}^{8}\right)^{4} $, 则</p>
+#### 合成置换T
+
+$$T:Z_2^{32} \rightarrow Z_2^{32}$$，是一个可逆变换，由非线性变换$τ$和线性变换$L$复合而成,即$$T(x)=L(τ(x))</script><h5 id="非线性变换τ"><a href="#非线性变换τ" class="headerlink" title="非线性变换τ"></a>非线性变换τ</h5><p> $\tau$  由 4 个并行的S盒构成。<br>设输入为 <script type="math/tex">A=\left(a_{0}, a_{1}, a_{2}, a_{3}\right) \in\left(Z_{2}^{8}\right)^{4}</script>, 输出为 <script type="math/tex">B=\left(b_{0}, b_{1}, b_{2}, b_{3}\right) \in\left(Z_{2}^{8}\right)^{4}</script>, 则</p>
 <script type="math/tex; mode=display">
-\left(b_{0}, b_{1}, b_{2}, b_{3}\right)=\tau(A)=\left(\operatorname{Sbox}\left(a_{0}\right), \operatorname{Sbox}\left(a_{1}\right), \operatorname{Sbox}\left(a_{2}\right), \operatorname{Sbox}\left(a_{3}\right)\right)</script><h5 id="线性变换L"><a href="#线性变换L" class="headerlink" title="线性变换L"></a>线性变换L</h5><p>非线性变换 $ \tau $ 的输出是线性变换 $ \mathrm{L}  $的输入。设输入为  $B \in Z<em>{2}^{32}$ , 输出为 $ C \in Z</em>{2}^{32} $, 则 </p>
+\left(b_{0}, b_{1}, b_{2}, b_{3}\right)=\tau(A)=\left(\operatorname{Sbox}\left(a_{0}\right), \operatorname{Sbox}\left(a_{1}\right), \operatorname{Sbox}\left(a_{2}\right), \operatorname{Sbox}\left(a_{3}\right)\right)</script><h5 id="线性变换L"><a href="#线性变换L" class="headerlink" title="线性变换L"></a>线性变换L</h5><p>非线性变换 <script type="math/tex">\tau</script> 的输出是线性变换 <script type="math/tex">\mathrm{L}</script>的输入。设输入为 <script type="math/tex">B \in Z_{2}^{32}</script> , 输出为 <script type="math/tex">C \in Z_{2}^{32}</script>, 则 </p>
 <script type="math/tex; mode=display">
-\small
 C=L(B)=B \oplus(B<<<2) \oplus(B<<<10) \oplus(B<<<18) \oplus(B<<<24)</script><h4 id="S盒-1"><a href="#S盒-1" class="headerlink" title="S盒"></a>S盒</h4><p><img src="https://s2.loli.net/2021/12/05/WOoB8NY34dm6xKM.png" alt="image-20211205153046989"></p>
 <p>输入‘ef’，则经S盒后的值为表中第e行和第f列的值，Sbox(‘ef’)= ‘84’。</p>
-<h3 id="加-解密算法"><a href="#加-解密算法" class="headerlink" title="加/解密算法"></a>加/解密算法</h3><p>定义反序变换 $ \mathrm{R} $为: </p>
+<h3 id="加-解密算法"><a href="#加-解密算法" class="headerlink" title="加/解密算法"></a>加/解密算法</h3><p>定义反序变换 <script type="math/tex">\mathrm{R}</script>为: </p>
 <script type="math/tex; mode=display">
-R\left(A_{0}, A_{1}, A_{2}, A_{3}\right)=\left(A_{3}, A_{2}, A_{1}, A_{0}\right), A_{i} \in Z_{2}^{32}, i=0,1,2,3</script><p>设明文输入为 $\left(X<em>{0}, X</em>{1}, X<em>{2}, X</em>{3}\right) \in\left(Z<em>{2}^{32}\right)^{4}$, 密文输出为$\left(Y</em>{0}, Y<em>{1}, Y</em>{2}, Y<em>{3}\right) \in\left(Z</em>{2}^{32}\right)^{4}$, 轮密钥为 $r k<em>{i} \in Z</em>{2}^{32}, i=0,1,2, \ldots, 31$ 。则本算法的加密变换为: </p>
+R\left(A_{0}, A_{1}, A_{2}, A_{3}\right)=\left(A_{3}, A_{2}, A_{1}, A_{0}\right), A_{i} \in Z_{2}^{32}, i=0,1,2,3</script><p>设明文输入为 <script type="math/tex">\left(X_{0}, X_{1}, X_{2}, X_{3}\right) \in\left(Z_{2}^{32}\right)^{4}</script>, 密文输出为<script type="math/tex">\left(Y_{0}, Y_{1}, Y_{2}, Y_{3}\right) \in\left(Z_{2}^{32}\right)^{4}</script>, 轮密钥为<script type="math/tex">r k_{i} \in Z_{2}^{32}, i=0,1,2, \ldots, 31</script> 。则本算法的加密变换为: </p>
 <script type="math/tex; mode=display">
 X_{i+4}=F\left(X_{i}, X_{i+1}, X_{i+2}, X_{i+3}, r k_{i}\right)
 \\
 =X_{i} \oplus T\left(X_{i+1} \oplus X_{i+2} \oplus X_{i+3} \oplus r k_{i}\right), i=0,1, \ldots, 31 . \\
 \left(Y_{0}, Y_{1}, Y_{2}, Y_{3}\right)=R\left(X_{32}, X_{33}, X_{34}, X_{35}\right)=\left(X_{35}, X_{34}, X_{33}, X_{32}\right)</script><p>本算法的解密变换与加密变换结构相同, 不同的仅是轮密钥的使用顺序。 </p>
-<p>密时轮密钥的使用顺序为: $\left(r k<em>{0}, r k</em>{1}, \ldots, r k_{31}\right)$</p>
-<p>解密时轮密钥的使用顺序为:$\left(r k<em>{31}, r k</em>{30}, \ldots, r k_{0}\right)$</p>
+<p>密时轮密钥的使用顺序为:<script type="math/tex">\left(r k_{0}, r k_{1}, \ldots, r k_{31}\right)</script></p>
+<p>解密时轮密钥的使用顺序为:<script type="math/tex">\left(r k_{31}, r k_{30}, \ldots, r k_{0}\right)</script></p>
 <h3 id="密钥扩展算法"><a href="#密钥扩展算法" class="headerlink" title="密钥扩展算法"></a>密钥扩展算法</h3><p>本算法中加密算法的轮密钥由加密密钥通过密钥扩展算法生成。</p>
 <p>加密密钥 </p>
-<p>$ M K=\left(M K<em>{0}, M K</em>{1}, M K<em>{2}, M K</em>{3}\right), M K<em>{i} \in Z</em>{2}^{32}, i=0,1,2,3 ;$</p>
-<p>令 $ K<em>{i} \in Z</em>{2}^{32}, i=0,1, \ldots, 35$ , 轮密钥为 $ r k<em>{i} \in Z</em>{2}^{32}, i=0,1, \ldots, 31 $, 则轮密钥生成方法为:</p>
+<script type="math/tex; mode=display">M K=\left(M K_{0}, M K_{1}, M K_{2}, M K_{3}\right), M K_{i} \in Z_{2}^{32}, i=0,1,2,3 ;</script><p>令 <script type="math/tex">K_{i} \in Z_{2}^{32}, i=0,1, \ldots, 35</script> , 轮密钥为 <script type="math/tex">r k_{i} \in Z_{2}^{32}, i=0,1, \ldots, 31</script>, 则轮密钥生成方法为:</p>
 <p>首先, </p>
 <script type="math/tex; mode=display">
 \small
@@ -563,8 +568,8 @@ r k_{i}=K_{i+4}=K_{i} \oplus T^{\prime}\left(K_{i+1} \oplus K_{i+2} \oplus K_{i+
 <script type="math/tex; mode=display">
 \mathrm{FK}_{0}=(\mathrm{A} 3 \mathrm{~B} 1 \mathrm{BAC}), \mathrm{FK}_{1}=(56 \mathrm{AA} 3350), 
 \\
-\mathrm{FK}_{2}=(677 \mathrm{D} 9197), \mathrm{FK}_{3}=(\mathrm{B} 27022 \mathrm{DC})</script><p> (3) 古定参数$  \mathrm{CK}  $的取值方法为:</p>
-<p>设  $c k<em>{i, j}  $为  $C K</em>{i}$ 的第 $ j $ 字节  $(i=0,1, \ldots, 31 ; j=0,1,2,3)$ , 即 $ C K<em>{i}=\left(c k</em>{i, 0}, c k<em>{i, 1}, c k</em>{i, 2}, c k<em>{i, 3}\right) \in\left(Z</em>{2}^{8}\right)^{4}$ ,则$  c k<em>{i, j}=(4 i+j) \times 7(\bmod 256) $ 。 32 个固定参数 $ C K</em>{i}$ , 其 16 进制表示为:</p>
+\mathrm{FK}_{2}=(677 \mathrm{D} 9197), \mathrm{FK}_{3}=(\mathrm{B} 27022 \mathrm{DC})</script><p> (3) 固定参数<script type="math/tex">\mathrm{CK}</script>的取值方法为:</p>
+<p>设  <script type="math/tex">c k_{i, j}</script>为  <script type="math/tex">C K_{i}</script> 的第 <script type="math/tex">j</script>字节<script type="math/tex">(i=0,1, \ldots, 31 ; j=0,1,2,3)</script> , 即 <script type="math/tex">C K_{i}=\left(c k_{i, 0}, c k_{i, 1}, c k_{i, 2}, c k_{i, 3}\right) \in\left(Z_{2}^{8}\right)^{4}</script> ,则<script type="math/tex">c k_{i, j}=(4 i+j) \times 7(\bmod 256)</script>。 32 个固定参数 <script type="math/tex">C K_{i}</script> , 其 16 进制表示为:</p>
 <div class="table-container">
 <table>
 <thead>
@@ -628,18 +633,17 @@ r k_{i}=K_{i+4}=K_{i} \oplus T^{\prime}\left(K_{i+1} \oplus K_{i+2} \oplus K_{i+
 </table>
 </div>
 <h3 id="加密解密可逆分析"><a href="#加密解密可逆分析" class="headerlink" title="加密解密可逆分析"></a>加密解密可逆分析</h3><p>这里设加密密钥 </p>
-<p>$ M K=\left(M K<em>{0}, M K</em>{1}, M K<em>{2}, M K</em>{3}\right), M K<em>{i} \in Z</em>{2}^{32}, i=0,1,2,3 ;$</p>
-<p>令 $ K<em>{i} \in Z</em>{2}^{32}, i=0,1, \ldots, 35$ , 则可以生成轮密钥为 $ r k<em>{i} \in Z</em>{2}^{32}, i=0,1, \ldots, 31 $, </p>
-<p>在加密中密钥$i : 0 \rightarrow 31$, 在解密中$i : 31 \rightarrow 0$, 即：每一轮的密钥一致。</p>
-<p>设明文输入为 $\left(X<em>{0}, X</em>{1}, X<em>{2}, X</em>{3}\right) \in\left(Z_{2}^{32}\right)^{4}$</p>
-<p>设 密文输出为$\left(Y<em>{0}, Y</em>{1}, Y<em>{2}, Y</em>{3}\right) \in\left(Z_{2}^{32}\right)^{4}$, </p>
+<script type="math/tex; mode=display">M K=\left(M K_{0}, M K_{1}, M K_{2}, M K_{3}\right), M K_{i} \in Z_{2}^{32}, i=0,1,2,3 ;</script><p>令 <script type="math/tex">K_{i} \in Z_{2}^{32}, i=0,1, \ldots, 35</script> , 则可以生成轮密钥为 <script type="math/tex">r k_{i} \in Z_{2}^{32}, i=0,1, \ldots, 31</script>, </p>
+<p>在加密中密钥<script type="math/tex">i : 0 \rightarrow 31</script>, 在解密中<script type="math/tex">i : 31 \rightarrow 0</script>， 即：每一轮的密钥一致。</p>
+<p>设明文输入为 <script type="math/tex">\left(X_{0}, X_{1}, X_{2}, X_{3}\right) \in\left(Z_{2}^{32}\right)^{4}</script></p>
+<p>设 密文输出为<script type="math/tex">\left(Y_{0}, Y_{1}, Y_{2}, Y_{3}\right) \in\left(Z_{2}^{32}\right)^{4}</script>, </p>
 <p>根据加密原则：</p>
 <script type="math/tex; mode=display">
 \left(Y_{0}, Y_{1}, Y_{2}, Y_{3}\right)=R\left(X_{32}, X_{33}, X_{34}, X_{35}\right)=\left(X_{35}, X_{34}, X_{33}, X_{32}\right)</script><p>而加密流程</p>
 <script type="math/tex; mode=display">
 X_{i+4}=
-X_{i} \oplus T\left(X_{i+1} \oplus X_{i+2} \oplus X_{i+3} \oplus r k_{i}\right), i=0,1, \ldots, 31 . \\</script><p>设$C = T\left(X<em>{i+1} \oplus X</em>{i+2} \oplus X<em>{i+3} \oplus r k</em>{i}\right),$ 则$X<em>i :=X</em>{i+4}\oplus  X_{i}  $</p>
-<p>故可解出$X<em>i$,以此类推得到：$\left(X</em>{0}, X<em>{1}, X</em>{2}, X_{3}\right) $</p>
+X_{i} \oplus T\left(X_{i+1} \oplus X_{i+2} \oplus X_{i+3} \oplus r k_{i}\right), i=0,1, \ldots, 31 . \\</script><p>设<script type="math/tex">C = T\left(X_{i+1} \oplus X_{i+2} \oplus X_{i+3} \oplus r k_{i}\right),</script> 则<script type="math/tex">X_i :=X_{i+4}\oplus  X_{i}</script></p>
+<p>故可解出<script type="math/tex">X_i</script>,以此类推得到：<script type="math/tex">\left(X_{0}, X_{1}, X_{2}, X_{3}\right)</script></p>
 <h2 id="SM4算法流程"><a href="#SM4算法流程" class="headerlink" title="SM4算法流程"></a>SM4算法流程</h2><h3 id="完整流程如下："><a href="#完整流程如下：" class="headerlink" title="完整流程如下："></a>完整流程如下：</h3><p> <img src="https://s2.loli.net/2021/12/05/bHkwWJIfONs9mRp.png" alt="202112051250479.png"></p>
 <h3 id="密钥扩展算法-1"><a href="#密钥扩展算法-1" class="headerlink" title="密钥扩展算法"></a>密钥扩展算法</h3><p>第一步：密钥与系统参数的异或:</p>
 <script type="math/tex; mode=display">
@@ -651,7 +655,7 @@ r k_{i}=K_{i+4}=K_{i} \oplus T^{\prime}\left(K_{i+1} \oplus K_{i+2} \oplus K_{i+
 <p>函数T：</p>
 <p><img src="https://s2.loli.net/2021/12/05/KIo1mSLWzwVhMl2.png" alt="在这里插入图片描述"></p>
 <h3 id="明文加密"><a href="#明文加密" class="headerlink" title="明文加密"></a>明文加密</h3><p>明文处理大致分解为3步：</p>
-<p>1）、将128bit的明文分成4个32bit的字$(X_1,X_2,X_3,X_4)$。</p>
+<p>1）、将128bit的明文分成4个32bit的字<script type="math/tex">(X_1,X_2,X_3,X_4)</script>。</p>
 <p>2）、将上述得到的字进行32轮的轮操作。</p>
 <p>3）、最后将进行过32轮操作的4个字进行反序变换后组成128bit的密文。</p>
 <script type="math/tex; mode=display">
