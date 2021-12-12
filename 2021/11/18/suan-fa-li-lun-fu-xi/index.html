@@ -658,7 +658,7 @@ m[i][j]=\left\{\begin{array}{cc}
 <p><strong>例题</strong></p>
 <p>计算矩阵连乘积A[1:6]的最少数乘次数，其中各矩阵的维数分别为p=[30,35,15,5,10,20,25]</p>
 </blockquote>
-<h3 id="3-3-最长公共子序列"><a href="#3-3-最长公共子序列" class="headerlink" title="3.3 最长公共子序列"></a>3.3 最长公共子序列</h3><p><strong>问题描述：</strong>给定两个序列$X={x_1,x_2,\cdots,x_m}$和$Y={y_1,y_2,\cdots,y_n}$，要求找出$X$和$Y$的一个最长公共子序列。</p>
+<h3 id="3-3-最长公共子序列"><a href="#3-3-最长公共子序列" class="headerlink" title="3.3 最长公共子序列"></a>3.3 最长公共子序列</h3><p><strong>问题描述：</strong>给定两个序列$X=\{x_1,x_2,\cdots,x_m\}$和$Y=\{y_1,y_2,\cdots,y_n\}$，要求找出$X$和$Y$的一个最长公共子序列。</p>
 <script type="math/tex; mode=display">
 c[i][j]=\left\{\begin{array}{cc}
 0 & i=0, j=0 \\
@@ -686,7 +686,7 @@ b[i][j]=\left\{\begin{array}{cc}
 s[i]=\min\limits_{1 \leq k \leq \min \{i,256\}}\{s[i-k]+k*bmax(i-k+1,i)  \}+11
 \\bmax(i,j)=\max\limits_{i\leq k \leq j}\{a[k]\}
 \end{matrix}</script><p><strong>解释</strong></p>
-<p>假设<code>s[i]</code>是序列${p_1,p_2,…,p_i}$的最优解，<code>a[i]</code>是第$i$个像素点的位数。</p>
+<p>假设<code>s[i]</code>是序列$\{p_1,p_2,…,p_i\}$的最优解，<code>a[i]</code>是第$i$个像素点的位数。</p>
 <ol>
 <li>假设$p_i$自成一段，则<code>s[i]=s[i-1]+保存pi的代价</code></li>
 <li>取<code>s[i]</code>为min时对应的元素个数为k，<code>s[i]=s[i-k]+保存最后k个像素的代价</code></li>
@@ -870,7 +870,7 @@ m(0,j) = \left\{\begin{matrix}
 <p><strong>证明贪心选择性质</strong></p>
 <p>设x和y是字符集C中具有最小频率的两个字符，证明存在C的最优前缀码，使x和y具有最长、相同的码长且仅最后一位编码不同。设二叉树T表示C的任意一个最优前缀码方案。只要证明可以对T做适当修改后，得到一棵新的二叉树T’， 新树中，x和y是最深叶子且为兄弟。同时，新树也是C的最优前缀码方案。</p>
 <p><strong>证明最优子结构性质</strong></p>
-<p>设T表示C的一个最优前缀码方案。x和y是树T中的叶子节点且为兄弟。z是它们的父亲。若将z看做是具有频率$f(z)=f(x)+f(y)$的字符，则证明树$T’=T-{x,y}$表示字符集$C’=C-{x,y} \bigcup {z}$的一个最优前缀码即可。</p>
+<p>设T表示C的一个最优前缀码方案。x和y是树T中的叶子节点且为兄弟。z是它们的父亲。若将z看做是具有频率$f(z)=f(x)+f(y)$的字符，则证明树$T’=T-\{x,y\}$表示字符集$C’=C-\{x,y\} \bigcup \{z\}$的一个最优前缀码即可。</p>
 <blockquote>
 <p>问题：</p>
 <p>设在1000个字母的文章中各字母出现的频率为a:83, b:14, c:28, d:38, e:131, f:29, g:20, h:53，求最优编码。</p>
@@ -885,7 +885,7 @@ m(0,j) = \left\{\begin{matrix}
 <li>优先选取物品单价高的，直到背包装满。</li>
 </ol>
 <blockquote>
-<p>$n=3,c=20,W={18,15,10},V={25,24,15}$</p>
+<p>$n=3,c=20,W=\{18,15,10\},V=\{25,24,15\}$</p>
 </blockquote>
 <p><strong>补充几种贪心策略</strong>（但是都不能保证得到最优解）</p>
 <ol>
