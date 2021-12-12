@@ -482,14 +482,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-11
+                    2021-12-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.1k
+                    4.2k
                 </div>
                 
 
@@ -544,30 +544,31 @@
 <h2 id="Paillier算法介绍"><a href="#Paillier算法介绍" class="headerlink" title="Paillier算法介绍"></a>Paillier算法介绍</h2><p>Paillier同态加密是由Pascal Paillier于1999年提出并命名的密码学理论。它是⼀种基于公私钥密码学的概率非对称算法。</p>
 <p>这套理论是⼀个加法同态加密算法，意味着，只要给定公钥和需要加密的信息和，就可以计算加密后的和之和，再可以⽤私钥解密结果，这整个过程精度没有损失。</p>
 <h3 id="算法理论"><a href="#算法理论" class="headerlink" title="算法理论"></a>算法理论</h3><p>Paillier 加密算法作为一种适用性非常广泛的同态公钥加密算法，因基于合数阶剩余类的难解性问题，使得该算法能够应用于许多实际的场景中，下面就 paillier算法的难解问题进行说明。 </p>
-<p>设$n= pq$，其中$p,q$为 2 个大素数，$\varphi(n)$为欧拉函数，</p>
+<p>设<script type="math/tex">n= pq</script>，其中<script type="math/tex">p,q</script>为 2 个大素数，<script type="math/tex">\varphi(n)</script>为欧拉函数，</p>
 <script type="math/tex; mode=display">
 \varphi(n)=(p-1)(q-1)</script><p>Caemichael 函数 $λ(n) = lcm( p-1, q-1)$，</p>
 <script type="math/tex; mode=display">
 |Z_{n^2}^*|= \varphi(n^2)= n\varphi(n),
 \\
 \forall \omega \in Z_{n^2}^* \ \ \ 
-{\omega}^{\lambda} = 1 \bmod\ n,\ \ {\omega}^{n\lambda}=1 \bmod \ n^2</script><p>为直观起见，以下所有的 $λ(n)$用$λ$表示。根据 Caemichael 理论有整数值的函数$ε <em> g$定义如下：$Z </em> {n} \times Z <em> {n}^{ * } \rightarrow Z </em> {n^{2}}^{ <em> },(x, y) \rightarrow g^{x} \cdot y^{n} \bmod n^{2}$，如果$g$在$Z _ {n^{2}}^{ </em> }$中阶为$n$的倍数，则$ε _ g$是一一映射。既对于给定的</p>
+{\omega}^{\lambda} = 1 \bmod\ n,\ \ {\omega}^{n\lambda}=1 \bmod \ n^2</script><p>为直观起见，以下所有的 $λ(n)$用$λ$表示。根据 Caemichael 理论有整数值的函数<script type="math/tex">ε_g</script>定义如下：<script type="math/tex">Z _ {n} \times Z _ {n}^{ * } \rightarrow Z _ {n^{2}}^{ * },(x, y) \rightarrow g^{x} \cdot y^{n} \bmod n^{2}</script>，如果<script type="math/tex">g</script>在<script type="math/tex">Z _ {n^{2}}^{ * }</script>中阶为<script type="math/tex">n</script>的倍数，则<script type="math/tex">ε _ g</script>是一一映射。既对于给定的</p>
 <script type="math/tex; mode=display">
-\omega \in Z_{n^2}^*,x\in Z_n,\exists y \in Z_{n}^* \ 使得 \varepsilon_{g}(x, y)=\omega</script><p>这样的 $\varepsilon<em>{g}(x, y)$称为 $\omega$  的 n-residousity class, 用 $[[\omega]] </em> {g}$表示。</p>
-<p>目前认为, 对于给定的  $n, g, \omega$ , 计算  $[[\omega ]] _ {g}$  的问题是困难的, 这也就是 Composite Residousity Assumption(CRA)。</p>
-<p>但是依据  $p, q $ 的知识, 也就是  $\lambda$ , 可以计算出任意的$[[\omega ]] <em> {g}$ 事实上, 设$  S </em> {n}=\left{u&lt;n^{2} \mid u=1 \bmod n\right}, \forall u \in S _ {n}, L(u)=\frac{u-1}{n}$ , 则有如下的结果: </p>
+\omega \in Z_{n^2}^*,x\in Z_n,\exists y \in Z_{n}^* \ 使得 \varepsilon_{g}(x, y)=\omega</script><p>这样的 <script type="math/tex">\varepsilon_{g}(x, y)</script>称为 <script type="math/tex">\omega</script>  的 n-residousity class, 用 <script type="math/tex">[[\omega]] _ {g}</script>表示。</p>
+<p>目前认为, 对于给定的  <script type="math/tex">n, g, \omega</script> , 计算  <script type="math/tex">[[\omega ]] _ {g}</script>  的问题是困难的, 这也就是 Composite Residousity Assumption(CRA)。</p>
+<p>但是依据  <script type="math/tex">p, q</script> 的知识, 也就是  $\lambda$ , 可以计算出任意的<script type="math/tex">[[\omega ]] _ {g}</script> 事实上, 设<script type="math/tex">S _ {n}=\left\{u<n^{2} \mid u=1 \bmod n\right\}, \forall u \in S _ {n}, L(u)=\frac{u-1}{n}</script> , 则有如下的结果: </p>
 <script type="math/tex; mode=display">
 [[\omega]]_{g}=\frac{L\left(\omega^{\lambda} \bmod n^{2}\right)}{L\left(g^{\lambda} \bmod n^{2}\right)} \bmod n</script><blockquote>
 <p>补充：Carmichael function[卡迈克尔函数相关性质]</p>
 <p><strong>定义</strong></p>
 <p>在数论中，Carmichael函数的定义为使得$a^m ≡ 1   \bmod   n \ $成立的最小正整数$m$ 其中$( a , n ) = 1$ 将$m$记作$ \lambda(n)$。在抽象代数术语中，$ \lambda(n)$是模$n$的乘法群的指数。</p>
 <p>Carmichael函数也被称为规约函数(reduced totient function)以及最小泛指数函数(least universal exponent function)。</p>
-<p><strong>用Carmichael定理计算</strong>$ \lambda(n)$<br>根据唯一因式分解定理，任何$n&gt;1$的整数都可以用唯一的方式写成</p>
+<p><strong>用Carmichael定理计算</strong><script type="math/tex">\lambda(n)</script><br>根据唯一因式分解定理，任何$n&gt;1$的整数都可以用唯一的方式写成</p>
 <script type="math/tex; mode=display">
-n=p_{1}^{r_{1}} p_{2}^{r_{2}} \cdots p_{k}^{r_{k}}</script><p>其中，$ p <em> {1}&lt;p </em> {2}&lt;\ldots&lt;p <em> {k}  $  是有小到大排列的素数,$ r </em> {1}, r <em> {2}, \ldots, r </em> {k}  $是正整数。那么，$\lambda(n)$就是其中每一项的$λ$的最小公倍数，有：</p>
+n=p_{1}^{r_{1}} p_{2}^{r_{2}} \cdots p_{k}^{r_{k}}</script><p>其中，<script type="math/tex">p _ {1}<p _ {2}<\ldots<p _ {k}</script>  是有小到大排列的素数,<script type="math/tex">r _ {1}, r _ {2}, \ldots, r _ {k}</script>是正整数。那么，<script type="math/tex">\lambda(n)</script>就是其中每一项的<script type="math/tex">λ</script>的最小公倍数，有：</p>
 <script type="math/tex; mode=display">
 \lambda(n)=\operatorname{lcm}\left(\lambda\left(p_{1}^{r_{1}}\right), \lambda\left(p_{2}^{r_{2}}\right), \ldots, \lambda\left(p_{k}^{r_{k}}\right)\right)</script><p>上述的公式可由中国剩余定理来证明。</p>
-<p><strong>Carmichael函数的性质</strong><br>设 $ a$ 和 $ n $ 互素， $ m $ 是最小指数，  $a^{m} \equiv 1 \bmod n$  ，那么有:<br> $m \mid \lambda(n) $<br>也就是说，模$n$整数环中任意元素 $ a $ 的阶$  m:=\operatorname{ord}_{n}(a) $ 整除$  \lambda(n)  $。同时还有:</p>
+<p><strong>Carmichael函数的性质</strong><br>设 $ a$ 和 $ n $ 互素， $ m $ 是最小指数，  <script type="math/tex">a^{m} \equiv 1 \bmod n</script>  ，那么有:</p>
+<script type="math/tex; mode=display">m \mid \lambda(n)</script><p>也就是说，模$n$整数环中任意元素 $ a $ 的阶$  m:=\operatorname{ord}_{n}(a) $ 整除$  \lambda(n)  $。同时还有:</p>
 <script type="math/tex; mode=display">
 \lambda(n)=\max \left\{\operatorname{ord}_{n}(a): \operatorname{gcd}(a, n)=1\right\}
 \\
@@ -575,7 +576,7 @@ n=p_{1}^{r_{1}} p_{2}^{r_{2}} \cdots p_{k}^{r_{k}}</script><p>其中，$ p <em> 
  \\
   \lambda(\operatorname{lcm}(a, b))=\operatorname{lcm}(\lambda(a), \lambda(b))</script></blockquote>
 <h3 id="算法过程"><a href="#算法过程" class="headerlink" title="算法过程"></a>算法过程</h3><p><strong>(1) 密钥产生</strong></p>
-<p>选取两个随机的大素数<script type="math/tex">p, q</script> ，计算 <script type="math/tex">n=p * q</script> 和 <script type="math/tex">\lambda=lcm(p-1, q-1)</script> .选取随机数 $g$ ，<script type="math/tex">g \in \mathbb{Z}_{n^{2}}^{ * }</script>  且满足 <script type="math/tex">\mu=\left(L\left(g^{\lambda} \bmod n^{2}\right)\right)^{-1}</script>  存在， 其中函数  $L(x)$  的定义如下 <script type="math/tex">L(x)=\frac{x-1}{n}</script> 。</p>
+<p>选取两个随机的大素数<script type="math/tex">p, q</script> ，计算 <script type="math/tex">n=p * q</script> 和 <script type="math/tex">\lambda=lcm(p-1, q-1)</script> .选取随机数 $g$ ，<script type="math/tex">g \in \mathbb{Z}_{n^{2}}^{ * }</script>  且满足 <script type="math/tex">\mu=\left(L\left(g^{\lambda} \bmod n^{2}\right)\right)^{-1}</script>  存在， 其中函数<script type="math/tex">L(x)</script>  的定义如下 <script type="math/tex">L(x)=\frac{x-1}{n}</script> 。</p>
 <p>此时，公钥为 <script type="math/tex">(n, g)</script> ，私钥为 <script type="math/tex">(\lambda, \mu)</script>。</p>
 <p><strong>(2) 加密过程</strong></p>
 <p>对于明文$m$ ，$ m \in \mathbb{Z}_{n}$  ，选择随机数 $r&lt;n$  ，加密过程为</p>
