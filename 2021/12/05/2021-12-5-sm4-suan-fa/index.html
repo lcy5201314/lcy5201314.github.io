@@ -523,21 +523,14 @@
 </ul>
 <h4 id="密钥及密钥参量"><a href="#密钥及密钥参量" class="headerlink" title="密钥及密钥参量"></a>密钥及密钥参量</h4><p>加密密钥长度为 128 比特, 表示为<script type="math/tex">\mathrm{MK}=\left(\mathrm{MK}_{0}, \mathrm{MK}_{1}, \mathrm{MK}_{2}, \mathrm{MK}_{3}\right)</script>, 其中  <script type="math/tex">\mathrm{MK}_{i}(\mathrm{i}=0,1,2,3)</script>为 字。</p>
 <p>轮密钥表示为 <script type="math/tex">\left(\mathrm{rk}_{0}, \mathrm{rk}_{1}, \ldots, \mathrm{rk}_{31}\right)</script>, 其中  <script type="math/tex">\mathrm{rk}_{\mathrm{i}}(\mathrm{i}=0, \ldots, 31)</script>为字。轮密钥由加密密钥生成。</p>
-<script type="math/tex; mode=display">\mathrm{FK}=\left(\mathrm{FK}_{0}, \mathrm{FK}_{1}, \mathrm{FK}_{2}, \mathrm{FK}_{3}\right)  $$为系统参数,  
-
-$$\mathrm{CK}=\left(\mathrm{CK}_{0}, \mathrm{CK}_{1}, \ldots, \mathrm{CK}_{31}\right)$$为固定参数, 用于密钥扩展算法, 
-
-其中 $$\mathrm{FK}_{\mathrm{i}}(i=0, \ldots, 3) 、 \mathrm{CK}_{\mathrm{i}}(i=0, \ldots, 31)$$为字。
-
-### 轮函数F
-
-本算法采用非线性迭代结构, 以字为单位进行加密运算, 称一次迭代运算为一轮变换。
-
-设输入为$$( X_ {0} , X_ {1} , X_ {2} , X_ {3} ) \in (Z_ {2}^ {32})^ {4}$$,轮密钥为$$rk \in Z_ {2}^ {32} $$,则轮函数F为:</script><p>F( X<em> {0} , X</em> {1} , X<em> {2} , X</em> {3} ,rk)= X<em> {0} \oplus T( X</em> {1} \oplus X<em> {2} \oplus X</em> {3} \oplus rk)</p>
+<p>系统参数为<script type="math/tex">\mathrm{FK}=\left(\mathrm{FK}_{0}, \mathrm{FK}_{1}, \mathrm{FK}_{2}, \mathrm{FK}_{3}\right)</script></p>
+<p>固定参数<script type="math/tex">\mathrm{CK}=\left(\mathrm{CK}_{0}, \mathrm{CK}_{1}, \ldots, \mathrm{CK}_{31}\right)</script>, 用于密钥扩展算法, </p>
+<p>其中 <script type="math/tex">\mathrm{FK}_{\mathrm{i}}(i=0, \ldots, 3) 、 \mathrm{CK}_{\mathrm{i}}(i=0, \ldots, 31)</script>为字。</p>
+<h3 id="轮函数F"><a href="#轮函数F" class="headerlink" title="轮函数F"></a>轮函数F</h3><p>本算法采用非线性迭代结构, 以字为单位进行加密运算, 称一次迭代运算为一轮变换。</p>
+<p>设输入为<script type="math/tex">( X_ {0} , X_ {1} , X_ {2} , X_ {3} ) \in (Z_ {2}^ {32})^ {4}</script>,轮密钥为<script type="math/tex">rk \in Z_ {2}^ {32}</script>,则轮函数F为:</p>
 <script type="math/tex; mode=display">
-#### 合成置换T
-
-$$T:Z_2^{32} \rightarrow Z_2^{32}$$，是一个可逆变换，由非线性变换$τ$和线性变换$L$复合而成,即$$T(x)=L(τ(x))</script><h5 id="非线性变换τ"><a href="#非线性变换τ" class="headerlink" title="非线性变换τ"></a>非线性变换τ</h5><p> $\tau$  由 4 个并行的S盒构成。<br>设输入为 <script type="math/tex">A=\left(a_{0}, a_{1}, a_{2}, a_{3}\right) \in\left(Z_{2}^{8}\right)^{4}</script>, 输出为 <script type="math/tex">B=\left(b_{0}, b_{1}, b_{2}, b_{3}\right) \in\left(Z_{2}^{8}\right)^{4}</script>, 则</p>
+F( X_ {0} , X_ {1} , X_ {2} , X_ {3} ,rk)= X_ {0} \oplus T( X_ {1} \oplus X_ {2} \oplus X_ {3} \oplus rk)</script><h4 id="合成置换T"><a href="#合成置换T" class="headerlink" title="合成置换T"></a>合成置换T</h4><p>$T:Z_2^{32} \rightarrow Z_2^{32}$，是一个可逆变换，由非线性变换$τ$和线性变换$L$复合而成,即$T(x)=L(τ(x))$</p>
+<h5 id="非线性变换τ"><a href="#非线性变换τ" class="headerlink" title="非线性变换τ"></a>非线性变换τ</h5><p> $\tau$  由 4 个并行的S盒构成。<br>设输入为 <script type="math/tex">A=\left(a_{0}, a_{1}, a_{2}, a_{3}\right) \in\left(Z_{2}^{8}\right)^{4}</script>, 输出为 <script type="math/tex">B=\left(b_{0}, b_{1}, b_{2}, b_{3}\right) \in\left(Z_{2}^{8}\right)^{4}</script>, 则</p>
 <script type="math/tex; mode=display">
 \left(b_{0}, b_{1}, b_{2}, b_{3}\right)=\tau(A)=\left(\operatorname{Sbox}\left(a_{0}\right), \operatorname{Sbox}\left(a_{1}\right), \operatorname{Sbox}\left(a_{2}\right), \operatorname{Sbox}\left(a_{3}\right)\right)</script><h5 id="线性变换L"><a href="#线性变换L" class="headerlink" title="线性变换L"></a>线性变换L</h5><p>非线性变换 <script type="math/tex">\tau</script> 的输出是线性变换 <script type="math/tex">\mathrm{L}</script>的输入。设输入为 <script type="math/tex">B \in Z_{2}^{32}</script> , 输出为 <script type="math/tex">C \in Z_{2}^{32}</script>, 则 </p>
 <script type="math/tex; mode=display">
