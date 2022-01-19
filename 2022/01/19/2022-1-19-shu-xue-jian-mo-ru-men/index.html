@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="算法理论复习, 秋月日常">
+    <meta name="keywords" content="数学建模总结, 秋月日常">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>算法理论复习 | 秋月日常</title>
+    <title>数学建模总结 | 秋月日常</title>
     <link rel="icon" type="image/png" href="/meizi.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -318,7 +318,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">算法理论复习</h1>
+                    <h1 class="description center-align post-title">数学建模总结</h1>
                 </div>
             </div>
         </div>
@@ -434,23 +434,18 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                <span class="chip bg-color">算法</span>
+                            <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">
+                                <span class="chip bg-color">数学建模</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">
+                                <span class="chip bg-color">数据分析</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                算法
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -459,21 +454,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-18
+                    2022-01-19
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-09
+                    2022-01-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.1k
+                    8k
                 </div>
                 
 
@@ -498,451 +493,164 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="算法理论复习"><a href="#算法理论复习" class="headerlink" title="算法理论复习"></a>算法理论复习</h1><blockquote>
-<p>本文参考：胡神笔记：<a target="_blank" rel="noopener" href="https://junyaohu.github.io/2021/10/26/%E3%80%8A%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0/">https://junyaohu.github.io/2021/10/26/%E3%80%8A%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0/</a></p>
-</blockquote>
-<h2 id="1-算法概叙"><a href="#1-算法概叙" class="headerlink" title="1.算法概叙"></a>1.算法概叙</h2><blockquote>
-<p>算法复杂性和算法复杂性的计算O记，以及倍率计算</p>
-</blockquote>
-<h3 id="1-1-算法概念"><a href="#1-1-算法概念" class="headerlink" title="1.1 算法概念"></a>1.1 算法概念</h3><h4 id="1-1-1-概念"><a href="#1-1-1-概念" class="headerlink" title="1.1.1 概念"></a>1.1.1 概念</h4><p>一系列将问题的输入转换为输出的计算或操作步骤。</p>
-<h4 id="1-1-2-性质"><a href="#1-1-2-性质" class="headerlink" title="1.1.2 性质"></a>1.1.2 性质</h4><ul>
-<li>输入          有外部提供的量作为算法的输入。</li>
-<li>输出          算法产生至少一个量作为输出。</li>
-<li>确定性        组成算法的每条指令是清晰、无歧义的。</li>
-<li>有限性        算法中每条指令的执行次数是有限的，执行每条指令的时间也是有限的。</li>
+                <h2 id="数学建模介绍"><a href="#数学建模介绍" class="headerlink" title="数学建模介绍"></a>数学建模介绍</h2><h3 id="数学建模是什么"><a href="#数学建模是什么" class="headerlink" title="数学建模是什么"></a>数学建模是什么</h3><p>数学模型是利用系统化的符号和数学表达式对间题的一种抽象描述。数学建模可看作是把问题定义转换为数学模型的过程。 和问题定义相对应，数学模型包括几个主要组成部分：决策变量、环境变量、目标函数和约束条件。决策变量表示决策者可以控制的因素，即可控输入，是需要通过模型求解来确定的模型中的未知变量。环境变量表示决策者不可控的外界因素，即非可控输入，需要在收集数据阶段确定其具体数值，并在模型中以常量表示。目标函数是指描述问题目标的数学方程，而约束条件则是指描述问题中制约和限制因素的数学表达式（等式或不等式）。（这个主要是规划的一种定义） </p>
+<p>简单来说，就是利用数学知识和专业知识解决生活中的问题。这里最常见的有优化模型，预测模型。比如工业流程的优化，最佳策略的选取，数据预测等等，解决这些本质还是利用数学相关的知识。</p>
+<p>个人感觉：数字建模就像一个小的科研经历，可以培养你和科研相关的一些知识，有些数学建模本身其实也是现在科研的一部分。当然这里区分一些数学建模和数学建模比赛，这俩个其实有一点点差距，数学建模应该是严谨的专业的，而数学建模比赛嘛，从个人利益角度出发，比赛就是为了学到东西和获奖，所以，这里也有了一些出入，现实和理想嘛，毕竟不少每一个人的模型都是严谨的准确的，误差可控的，这里一些题目本身其实也是不严谨的，所以一些美化，包装，甚至结果的一些篡改，借鉴等也成了一种获奖的方法。但还是希望大家可以独立思考，争取模型和结果的准确性，完成真正的“数字建模”。</p>
+<h3 id="数学建模比赛"><a href="#数学建模比赛" class="headerlink" title="数学建模比赛"></a>数学建模比赛</h3><ul>
+<li><p>全国大学生数模竞赛CUMCM</p>
+</li>
+<li><p>全国研究生数模竞赛NPGMCM</p>
+</li>
+<li>美国大学生数模竞赛MCM/ICM；</li>
+<li>五一数学建模</li>
+<li>亚太数学建模等等</li>
 </ul>
-<h3 id="1-2-算法复杂性"><a href="#1-2-算法复杂性" class="headerlink" title="1.2 算法复杂性"></a>1.2 算法复杂性</h3><p><strong>算法的复杂性(C):</strong></p>
-<p>算法执行所需的时间和空间的数量。</p>
-<script type="math/tex; mode=display">
-T=T(N, I)=\sum_{i=1}^{k} t_{i} e_{i}(N, I)</script><p><strong>平均情况</strong></p>
-<script type="math/tex; mode=display">
-T_{\text {avg }}(N)=\sum_{I \in D_{N}} P(I) T(N, I)=\sum_{I \in D_{N}} P(I) \sum_{i=1}^{k} t_{i} e_{i}(N, I)</script><p><strong>渐进性态</strong></p>
-<script type="math/tex; mode=display">
-\frac{T(N)-\overset{\thicksim}{T}(N)}{T(N)} \rightarrow 0</script><p><strong>大O表示法(算法运行时间的上限 )</strong></p>
-<p>就是逼近的一个上界，可以那泰勒的上界来理解。</p>
-<p><img src="https://gitee.com/lowlyLi/picgo/raw/master/img/202111182050100.png" alt="image-20211115191500303"></p>
-<p><strong>大W表示法(算法运行时间的下限）</strong></p>
-<p>下界</p>
-<p><img src="https://gitee.com/lowlyLi/picgo/raw/master/img/202111182050194.png" alt="image-20211115191635671"></p>
-<p>算法复杂度排序：</p>
-<p><img src="https://gitee.com/lowlyLi/picgo/raw/master/img/202111182050247.png" alt="时间复杂度，不同数据规模的差异"></p>
-<h3 id="1-3-NP问题判断"><a href="#1-3-NP问题判断" class="headerlink" title="1.3 NP问题判断"></a>1.3 NP问题判断</h3><p>这部分不考，但既然学算法，应该了解一下这些NP难题</p>
-<p>NP(Nondeterministic Polynomially，非确定性多项式)类问题是指一个复杂问题不能确定是否在多项式时间内找到答案，但是可以在多项式时间内验证答案是否正确。</p>
-<p>P问题是一个判定问题类，这些问题可以用一个确定性算法在多项式时间内判定或解出。</p>
-<p>NP问题是指可以在多项式时间内被非确定机解决的问题。通常它们的时间复杂度都是指数变量。</p>
-<h2 id="2-递归与分治"><a href="#2-递归与分治" class="headerlink" title="2.递归与分治"></a>2.递归与分治</h2><h3 id="2-1-递归"><a href="#2-1-递归" class="headerlink" title="2.1 递归"></a>2.1 递归</h3><p><strong>递归定义</strong> 用函数自身定义的函数</p>
-<p><strong>递归函数两个要素</strong> 边界条件与递归方程</p>
-<p><strong>递归算法转化为非递归算法</strong></p>
+<p>这里最主要的是国赛和美赛，美赛和国赛，我感觉是不一样的，国赛分赛区，获奖也取决赛区的强弱，当然国赛获奖更难，国赛不仅对数学建模的思路和方法进行评估，还对模型结果的准确性有一个评估。美赛其实更推荐小白常见，因为美赛更看重思路，一些异想天开，不一样的想法模型很可能就获奖。其他的一些大部分是用来练手吧，多参加多实践才能在比赛中取得好成绩。</p>
+<h3 id="组队分工"><a href="#组队分工" class="headerlink" title="组队分工"></a>组队分工</h3><p>找到建模小伙伴，认真负责，靠谱的人。建模比赛一般都是三天，三天要做出一篇建模论文时间是很紧迫的，三个人一起做会轻松很多，互相鼓励也更不容易放弃。个人觉得靠谱是挑选队友最重要的点，我看过很多队伍比赛会出现突然消失，平常答应很好，比赛突然不见了；还看到过队伍发生内部矛盾而发生撂挑子不干的事故。不用自卑不用盲目寻求大佬队友，成绩好不代表竞赛好，只要队友可以一起学习就可。最好是模拟一两次比赛看队友适不适合。</p>
+<p>然后就得多参加多配合，这里我很感谢有磨合了2年的队友。</p>
+<p>下面介绍一下分工：</p>
 <ol>
-<li>直接转化法：直接用循环结构的算法替代递归算法，不需要使用栈</li>
-<li>用栈模拟系统的运行过程，通过分析只保存必须保存的信息，从而用非递归算法替代递归算法，需要使用栈</li>
+<li>建模</li>
+<li>编程</li>
+<li>写作</li>
 </ol>
-<h4 id="整数划分"><a href="#整数划分" class="headerlink" title="整数划分"></a>整数划分</h4><p>对于数据n，最大加数不大于m的划分个数记作$q(n,m)$</p>
-<script type="math/tex; mode=display">
-q(n,m) = \left\{\begin{matrix}
-1  & n = 1,m = 1\\
- q(n,n) &n<m \\
- 1+q(n,n-1) &n = m \\
- q(n,m-1)+q(n-m,m) &n>m>1
-\end{matrix}\right.</script><h3 id="2-2-分治"><a href="#2-2-分治" class="headerlink" title="2.2 分治"></a>2.2 分治</h3><p>  <strong>分治法的设计思想是</strong>：将一个难以直接解决的大问题，分割成一些规模较小的相同问题，以便各个击破，分而治之。</p>
-<p>  <strong>分治策略是</strong>：对于一个规模为n的问题，若该问题可以容易地解决（比如说规模n较小）则直接解决，否则将其分解为k个规模较小的子问题，这些子问题互相独立且与原问题形式相同，递归地解这些子问题，然后将各子问题的解合并得到原问题的解。这种算法设计策略叫做分治法。</p>
-<p><strong>分治法所能解决的问题一般具有以下几个特征：</strong></p>
-<p>1) 该问题的规模缩小到一定的程度就可以容易地解决</p>
-<p>2) 该问题可以分解为若干个规模较小的相同问题，即该问题具有最优子结构性质。</p>
-<p>3) 利用该问题分解出的子问题的解可以合并为该问题的解；</p>
-<p>4) 该问题所分解出的各个子问题是相互独立的，即子问题之间不包含公共的子子问题。</p>
-<p>算法模板</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">Divide<span class="token operator">-</span>and<span class="token operator">-</span><span class="token function">Conquer</span><span class="token punctuation">(</span>P<span class="token punctuation">)</span>
-  	<span class="token keyword">if</span> <span class="token operator">|</span>P<span class="token operator">|</span>≤n0
-		then <span class="token keyword">return</span><span class="token punctuation">(</span><span class="token function">ADHOC</span><span class="token punctuation">(</span>P<span class="token punctuation">)</span><span class="token punctuation">)</span>
-	将P分解为较小的子问题 P1 <span class="token punctuation">,</span>P2 <span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">,</span>Pk
-	<span class="token keyword">for</span> i←<span class="token number">1</span> to k
-		<span class="token keyword">do</span> yi ← Divide<span class="token operator">-</span>and<span class="token operator">-</span><span class="token function">Conquer</span><span class="token punctuation">(</span>Pi<span class="token punctuation">)</span> <span class="token comment">//递归解决Pi</span>
-	T ← <span class="token function">MERGE</span><span class="token punctuation">(</span>y1<span class="token punctuation">,</span>y2<span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">,</span>yk<span class="token punctuation">)</span> <span class="token comment">//合并子问题</span>
-	<span class="token keyword">return</span><span class="token punctuation">(</span>T<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-3-二分搜索"><a href="#2-3-二分搜索" class="headerlink" title="2.3 二分搜索"></a>2.3 二分搜索</h3><p><strong>问题描述</strong> 给定已按升序排好序的n个元素a[1:n]，现要在这n个元素中找出一特定元素x</p>
-<p>参考：<a target="_blank" rel="noopener" href="https://www.programmercarl.com/0704.%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.html#%E6%80%9D%E8%B7%AF">https://www.programmercarl.com/0704.%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.html#%E6%80%9D%E8%B7%AF</a></p>
-<p>俩种思路。</p>
-<h3 id="2-4-合并排序和快速排序"><a href="#2-4-合并排序和快速排序" class="headerlink" title="2.4 合并排序和快速排序"></a>2.4 合并排序和快速排序</h3><p><strong>问题描述</strong> 数组排序</p>
-<h4 id="合并排序"><a href="#合并排序" class="headerlink" title="合并排序"></a>合并排序</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c">Merge<span class="token operator">-</span><span class="token function">sort</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> r<span class="token punctuation">)</span>
-	<span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">&lt;</span> r<span class="token punctuation">)</span>
-		q <span class="token operator">=</span> <span class="token punctuation">(</span>p <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span>
-	Merge<span class="token operator">-</span><span class="token function">sort</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q<span class="token punctuation">)</span>
-	Merge<span class="token operator">-</span><span class="token function">sort</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> q<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> r<span class="token punctuation">)</span>
-	<span class="token function">Merge</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>复杂度</p>
-<script type="math/tex; mode=display">
-\begin{array}
-  {X}
-  T(n) = O(nlogn) =\left\{\begin{matrix}
-O(1)  & n=1\\
-2T(\frac{n}{2} ) + O(n) & n>1 \\
-\end{matrix}\right.
-\end{array}</script><h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token function">Partition</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span>p<span class="token punctuation">,</span>r<span class="token punctuation">)</span> <span class="token comment">//p、r为数组下标</span>
-	x <span class="token operator">=</span> A<span class="token punctuation">[</span>r<span class="token punctuation">]</span>   <span class="token comment">//将最后一个元素作为主元素</span>
-	i <span class="token operator">=</span> p<span class="token operator">-</span><span class="token number">1</span> <span class="token comment">// i指向的是比主元素小的位置，</span>
-	<span class="token keyword">for</span>  j <span class="token operator">=</span> p  to  r<span class="token operator">-</span><span class="token number">1</span>     
-	<span class="token comment">//从第一个元素开始到倒数第二个元素结束，比较确定主元素的位置</span>
-		<span class="token keyword">do</span>  <span class="token keyword">if</span>  A<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> x
-			then  i <span class="token operator">=</span> i<span class="token operator">+</span><span class="token number">1</span> 
-      <span class="token comment">//如果比主元素小，则把i=i+1的位置上的元素和j位置发现小元素互换</span>
-			exchange A<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span><span class="token operator">-&gt;</span> A<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
-	exchange A<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">&lt;</span><span class="token operator">-&gt;</span>A<span class="token punctuation">[</span>r<span class="token punctuation">]</span>   <span class="token comment">//最终确定主元的位置</span>
-	<span class="token keyword">return</span> i<span class="token operator">+</span><span class="token number">1</span>   <span class="token comment">//返回主元的位置</span>
-End
-
-<span class="token function">QuickSort</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span>p<span class="token punctuation">,</span>r<span class="token punctuation">)</span>
-	<span class="token keyword">if</span> p<span class="token operator">&lt;</span>r
-	q <span class="token operator">=</span> <span class="token function">Partition</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span>p<span class="token punctuation">,</span>r<span class="token punctuation">)</span>    <span class="token comment">//确定划分位置</span>
-	<span class="token function">QuickSort</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span>p<span class="token punctuation">,</span>q<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>     <span class="token comment">//子数组A[p...q-1]</span>
-	<span class="token function">QuickSort</span><span class="token punctuation">(</span>Q<span class="token punctuation">,</span>q<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>r<span class="token punctuation">)</span>     <span class="token comment">//子数组A[q+1...r]</span>
-End<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>步骤</strong></p>
-<ol>
-<li><p>分解：以a[p]为基准元素将a[p:r]划分成3段a[p:q-1],a[q]和a[q+1:r]，使a[p:q-1]中任意一个元素小于等于a[q]，而a[q+1:r]中任何一个元素大于等于a[q]，下标q在划分过程中确定</p>
-</li>
-<li><p>递归求解：通过递归调用快速排序算法分别对a[p:q-1]和a[q+1:r]进行排序</p>
-</li>
-<li><p>合并</p>
-</li>
-</ol>
-<p>最坏情况，已经排好，$O(n^2)$<br>        最好情况，每次划分大小都是$\frac{n}{2}$，$O(nlogn)$</p>
-<h3 id="2-5-大整数乘法"><a href="#2-5-大整数乘法" class="headerlink" title="2.5 大整数乘法"></a>2.5 大整数乘法</h3><p><strong>问题描述</strong> XY是n位二进制整数，计算他们的乘积XY</p>
-<script type="math/tex; mode=display">
-\begin{array}
-  {X}X=A2^{\frac{n}{2}}+B, Y=C2^{\frac{n}{2}}+D \\ 
-  XY = AC2^n+(AD+BC)2^{\frac{n}{2} }+BD  \\
-  =AC2^n+((A-B)(D-C)+AC+BD)2^{\frac{n}{2}}+BD \\
-\end{array}</script><p>复杂度</p>
-<script type="math/tex; mode=display">
-T(n) = O(n^{log3}) =\left\{\begin{matrix}
-O(1)  & n=1\\
-3T(\frac{n}{2} ) + O(n) & n>1 \\
-\end{matrix}\right.</script><h3 id="2-6-线性时间选择"><a href="#2-6-线性时间选择" class="headerlink" title="2.6 线性时间选择"></a>2.6 线性时间选择</h3><p>无序排列中求n个元素中第k小的元素（主要求中位数）。(类似快排)</p>
-<p><strong>解释</strong></p>
-<p>根据随机产生的基准点，将元素分为2组，基准点包含在第1组中；如果k&lt;=j，则第k小元素落在a段，为a段的第k小元素；如果k&gt;j，则a段的所有元素都比第k小元素还要小，第k小元素落在b段，为b段中的第k-j小元素（-j的含义是去掉a段的元素总个数）</p>
-<p>最坏情况，分成两个1和n-1的子问题，$O(n^2)$</p>
-<p>最好情况，每次都产生$\frac{n}{2}$大小的子问题，$O(n)$</p>
-<p>例题看书比较好。</p>
-<h2 id="3-动态规划"><a href="#3-动态规划" class="headerlink" title="3.动态规划"></a>3.动态规划</h2><h3 id="3-1-动态规划原理"><a href="#3-1-动态规划原理" class="headerlink" title="3.1 动态规划原理"></a>3.1 动态规划原理</h3><p>动态规划，英文：Dynamic Programming，简称DP，如果某一问题有很多重叠子问题，使用动态规划是最有效的。</p>
-<p>这里俩性质：<strong>最优子结构性质</strong>和<strong>子问题重叠性质</strong></p>
-<ol>
-<li>最优子结构性质（分析问题是否满足最优性原理（用反证法）：①先假设由问题的最优解导出的子问题的解不是最优的；②再证明在这个假设下可构造出比原问题最优解更好的解，从而导致矛盾）</li>
-<li>子问题重叠性质（子问题不相互独立，重复出现，只在第一次遇到时加以求解，并把答案保存起来，以后再遇到时不必重新求解）</li>
-</ol>
-<p>所以动态规划中每一个状态一定是由上一个状态推导出来的，<strong>这一点就区分于贪心</strong>，贪心没有状态推导，而是从局部直接选最优的。</p>
-<pre class="line-numbers language-latex" data-language="latex"><code class="language-latex">编程方法：
-动态规划的解题步骤
-对于动态规划问题，我将拆解为如下五步曲，这五步都搞清楚了，才能说把动态规划真的掌握了！
-
-1、确定dp数组（dp table）以及下标的含义
-2、确定递推公式
-3、dp数组如何初始化
-4、确定遍历顺序
-5、举例推导dp数组<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>动态规划算法设计步骤</strong></p>
-<ul>
-<li><strong>分析最优解的性质，并刻划其结构特征；</strong> </li>
-<li><strong>递归地定义最优值</strong></li>
-<li><strong>以自底向上的方式计算出最优值；</strong></li>
-<li><strong>根据计算最优值时得到的信息，构造最优解。</strong></li>
-</ul>
-<h3 id="3-2-矩阵连乘"><a href="#3-2-矩阵连乘" class="headerlink" title="3.2 矩阵连乘"></a>3.2 矩阵连乘</h3><p><strong>问题描述</strong> 每计算出一个元素，需要q次乘法，最终得到的矩阵是p×r矩阵，有p×r个元素，因此，计算C需要的乘法次数为q×p×r。每次要选择较小的q×p×r。给定n个矩阵｛A1,A2,…,An｝，其中Ai与Ai+1是可乘的，且i=1,2⋯,n-1,如何确定计算矩阵连乘积的计算次序，使得计算矩阵连乘的数乘次数最少。</p>
-<script type="math/tex; mode=display">
-m[i][j]=\left\{\begin{array}{cc}
-0 & i=j \\
-\min_{i\leq{k}<j} \{m[i][k]+m[k+1][j]+p_{i-1}p_kp_j\} & i<j
-\end{array}\right.</script><p><strong>解释</strong> 矩阵连乘积从$A_i$到$A_j$定义为<code>A[i:j]</code>，<code>A[i:j]</code>最少的乘法次数定义为<code>m[i,j]</code>，最优断开位置k记为<code>𝑠[i,j]=k</code>，</p>
-<p>$T(n)=O(n^3)$</p>
+<p>其实这三个不是对立的，最好的状态是队友什么都会，尤其擅长1-2个方向，如果编程和写作不懂建模，拿建模出来的东西很难后续实现，对于数据处理题，有时也需要编程手预处理等给出合理的建议，写作过程中也可能发现模型的不足，进行更改。总之，数学建模是团队合作的比赛。这里推荐大家一些基本的应该都会，比如查论文，能看懂模型，会排版（公式）等。</p>
+<p>对于写作，其实这部分很关键，因为最后提交的是一篇论文，论文的好坏直接就是对应不同的成绩。</p>
+<h2 id="建模手"><a href="#建模手" class="headerlink" title="建模手"></a>建模手</h2><h3 id="查找文献"><a href="#查找文献" class="headerlink" title="查找文献"></a>查找文献</h3><h4 id="知网"><a href="#知网" class="headerlink" title="知网"></a>知网</h4><p>知网得会吧，一些模型可以利用句子搜索来确定。</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnki.net/">知网</a> : <a target="_blank" rel="noopener" href="https://www.cnki.net/">https://www.cnki.net/</a></p>
+<h4 id="谷歌学术"><a href="#谷歌学术" class="headerlink" title="谷歌学术"></a>谷歌学术</h4><p><a target="_blank" rel="noopener" href="https://scholar.google.com.hk/?hl=zh-CN">谷歌学术</a> : <a target="_blank" rel="noopener" href="https://scholar.google.com.hk/?hl=zh-CN">https://scholar.google.com.hk/?hl=zh-CN</a></p>
+<p>美赛会涉及一些外网的东西，至于怎么查自己了解一下吧</p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>像web science，EI自己了解一下吧</p>
+<p><img src="https://s2.loli.net/2022/01/17/fbK2zqJu4V7sFNi.png" alt="image-20220117110930249"></p>
+<p>这里还推举一些其他我可能用到的东西。</p>
+<p><a target="_blank" rel="noopener" href="https://www.aminer.cn/">Aminer</a> : <a target="_blank" rel="noopener" href="https://www.aminer.cn/">https://www.aminer.cn/</a></p>
+<p><img src="https://s2.loli.net/2022/01/17/U96wpAG3KOezvcD.png" alt="image-20220117111119650"></p>
+<p><a target="_blank" rel="noopener" href="http://www.4243.net/">大木虫导航</a> : <a target="_blank" rel="noopener" href="http://www.4243.net/">http://www.4243.net/</a></p>
+<p><img src="https://s2.loli.net/2022/01/17/VIOWh1i8LR6TZFt.png" alt="image-20220117111717645"></p>
+<p><img src="https://s2.loli.net/2022/01/17/UkAtYRQTdiP17CW.png" alt="image-20220117111728409"></p>
+<h3 id="常见模型"><a href="#常见模型" class="headerlink" title="常见模型"></a>常见模型</h3><p>这里我copy网上一些内容：</p>
 <blockquote>
-<p><strong>例题</strong></p>
-<p>计算矩阵连乘积A[1:6]的最少数乘次数，其中各矩阵的维数分别为p=[30,35,15,5,10,20,25]</p>
+<p>常规优化模型：<br>线性规划，非线性规划，整数规划，多目标规划，动态规划</p>
+<p>评价模型：<br>层次分析法，模糊综合评价，熵值法，TOPSIS法，数据包络分析，秩和比法，灰色关联分析</p>
+<p>预测模型：<br>回归拟合，灰色预测，马尔可夫预测，时间序列分析</p>
+<p>动态模型：<br>微分方程模型，差分方程模型，元胞自动机，排队论，蒙特卡罗随机模拟</p>
+<p>图论模型：<br>最短路径，最小生成树，最小费用最大流，指派问题，旅行商问题</p>
+<p>统计分析模型：<br>分布检验，均值T检验，方差分析，协方差分析，相关分析，卡方检验，秩和检验，回归分析，Logistic回归，聚类分析，判别分析，关联分析</p>
+<p>现代智能算法：<br>模拟退火，神经网络，遗传算法，蚁群算法，粒子群算法，支持向量机，决策树，随机森林</p>
 </blockquote>
-<h3 id="3-3-最长公共子序列"><a href="#3-3-最长公共子序列" class="headerlink" title="3.3 最长公共子序列"></a>3.3 最长公共子序列</h3><p><strong>问题描述：</strong>给定两个序列$X=\{x_1,x_2,\cdots,x_m\}$和$Y=\{y_1,y_2,\cdots,y_n\}$，要求找出$X$和$Y$的一个最长公共子序列。</p>
-<script type="math/tex; mode=display">
-c[i][j]=\left\{\begin{array}{cc}
-0 & i=0, j=0 \\
-c[i-1][j-1]+1 & i, j>0 ; x_{i}=y_{j} \\
-\max \{c[i-1][j], c[i][j-1]\} & i, j>0 ; x_{i} \neq y_{j}
-\end{array}\right.</script><script type="math/tex; mode=display">
-b[i][j]=\left\{\begin{array}{cc} 
-1 & c[i][j] = c[i-1][j-1] \\
-2 & c[i][j] = c[i-1][j] \\
-3 & c[i][j] = c[i][j-1]
-\end{array}\right.</script><p><strong>解释</strong> <code>c[i,j]</code>记录序列$X_i$和$Y_j$的最长公共子序列长度，<code>b[i,j]</code>可以记录是哪种类型。在c表中从最右下角的那个元素开始，看b表中对应位置的值，如果为1，则在c表中从当前位置往左上角走；如果为2，则在c表中从当前位置往正上方走；如果为3，则在c表中从当前位置沿水平方向往后退一位；依次类推，直到c表中箭头退到<code>c[0，0]</code>为止。</p>
-<p><strong>补充</strong> 两个序列的最长公共子序列不唯一，不影响最长公共子序列的长度；但是可能会产生不一样的公共子序列.</p>
-<blockquote>
-<p><strong>例题</strong></p>
-<p>给定两个序列为X=ABCBDAB和Y=BDCABA，求最长公共子序列。</p>
+<p>其实也不用都掌握，大概了解不同情况下用那些就行了，到时候在具体看，一些常见的简单的会就行了，难一点只需要了解即可。</p>
+<p>下面简单瞎说一点（主要好多人想了解建模的思路，但我是编程手，建模死马当活马医了，哈哈哈）</p>
+<h4 id="1-、优化模型"><a href="#1-、优化模型" class="headerlink" title="1 、优化模型"></a>1 、优化模型</h4><p>1.1 数学规划模型<br>线性规划、整数线性规划、非线性规划、多目标规划、动态规划。</p>
+<p>1.2 微分方程组模型<br>阻滞增长模型、SARS传播模型。</p>
+<p>1.3 图论与网络优化问题<br>最短路径问题、网络最大流问题、最小费用最大流问题、最小生成树问题(MST)、旅行商问题(TSP)、图的着色问题。</p>
+<p>1.4 概率模型<br>决策模型、随机存储模型、随机人口模型、报童问题、Markov链模型。</p>
+<p>1.5 组合优化经典问题</p>
+<p><strong>现代优化算法：禁忌搜索；模拟退火；遗传算法；人工神经网络</strong></p>
+<h4 id="2、分类模型"><a href="#2、分类模型" class="headerlink" title="2、分类模型"></a>2、分类模型</h4><p> 判别分析是在已知研究对象分成若干类型并已经取得各种类型的一批已知样本的观测数据，在此基础上根据某些准则建立判别式，然后对未知类型的样品进行判别分析。<br>聚类分析则是给定的一批样品，要划分的类型实现并不知道，正需要通过局内分析来给以确定类型的。</p>
+<p>2.1 判别分析</p>
+<p>2.2 聚类分析</p>
+<p>2.2.1 系统聚类法（分层聚类法）<br>基本思想：开始将每个样本自成一类；然后求两两之间的距离，将距离最近的两类合成一类；如此重复，直到所有样本都合为一类为止。<br>适用范围：既适用于样本聚类，也适用于变量聚类。并且距离分类准则和距离计算方法都有多种，可以依据具体情形选择。</p>
+<p>2.2.2 快速聚类法（K-均值聚类法）<br>基本思想：按照指定分类数目，选择个初始聚类中心；计算每个观测量（样本）到各个聚类中心的距离，按照就近原则将其分别分到放入各类中；重新计算聚类中心，继续以上步骤；满足停止条件时（如最大迭代次数等）则停止。<br>使用范围：要求用户给定分类数目，只适用于样本聚类（Q型），不适用于变量聚类（R型）。</p>
+<p>2.2.3 两步聚类法（智能聚类方法）<br>基本思想：先进行预聚类，然后再进行正式聚类。<br>适用范围：属于智能聚类方法，用于解决海量数据或者具有复杂类别结构的聚类分析问题。可以同时处理离散和连续变量，自动选择聚类数，可以处理超大样本量的数据。</p>
+<p>2.2.4 模糊聚类分析</p>
+<p>2.2.5 与遗传算法、神经网络或灰色理论联合的聚类方法</p>
+<p>2.3 神经网络分类方法</p>
+<h4 id="3、评价模型"><a href="#3、评价模型" class="headerlink" title="3、评价模型"></a>3、评价模型</h4><p>3.1 层次分析法(AHP)<br>基本思想：是定性与定量相结合的多准则决策、评价方法。将决策的有关元素分解成目标层、准则层和方案层，并通过人们的判断对决策方案的优劣进行排序，在此基础上进行定性和定量分析。它把人的思维过程层次化、数量化，并用数学为分析、决策、评价、预报和控制提供定量的依据。<br>基本步骤：构建层次结构模型；构建成对比较矩阵；层次单排序及一致性检验（即判断主观构建的成对比较矩阵在整体上是否有较好的一致性）；层次总排序及一致性检验（检验层次之间的一致性）。<br>优点：它完全依靠主观评价做出方案的优劣排序，所需数据量少，决策花费的时间很短。从整体上看，AHP在复杂决策过程中引入定量分析，并充分利用决策者在两两比较中给出的偏好信息进行分析与决策支持，既有效地吸收了定性分析的结果，又发挥了定量分析的优势，从而使决策过程具有很强的条理性和科学性，特别适合在社会经济系统的决策分析中使用。<br>缺点：用AHP进行决策主观成分很大。当决策者的判断过多地受其主观偏好影响，而产生某种对客观规律的歪曲时，AHP的结果显然就靠不住了。<br>适用范围：尤其适合于人的定性判断起重要作用的、对决策结果难于直接准确计量的场合。要使AHP的决策结论尽可能符合客观规律，决策者必须对所面临的问题有比较深入和全面的认识。另外，当遇到因素众多，规模较大的评价问题时，该模型容易出现问题，它要求评价者对问题的本质、包含的要素及其相互之间的逻辑关系能掌握得十分透彻，否则评价结果就不可靠和准确。<br>改进方法：<br>(1) 成对比较矩阵可以采用德尔菲法获得。<br>(2) 如果评价指标个数过多（一般超过9个），利用层次分析法所得到的权重就有一定的偏差，继而组合评价模型的结果就不再可靠。可以根据评价对象的实际情况和特点，利用一定的方法，将各原始指标分层和归类，使得每层各类中的指标数少于9个。</p>
+<p>3.2 灰色综合评价法（灰色关联度分析）<br>基本思想：灰色关联分析的实质就是，可利用各方案与最优方案之间关联度大小对评价对象进行比较、排序。关联度越大，说明比较序列与参考序列变化的态势越一致，反之，变化态势则相悖。由此可得出评价结果。<br>基本步骤：建立原始指标矩阵；确定最优指标序列；进行指标标准化或无量纲化处理；求差序列、最大差和最小差；计算关联系数；计算关联度。<br>优点：是一种评价具有大量未知信息的系统的有效模型，是定性分析和定量分析相结合的综合评价模型，该模型可以较好地解决评价指标难以准确量化和统计的问题，可以排除人为因素带来的影响，使评价结果更加客观准确。整个计算过程简单，通俗易懂，易于为人们所掌握;数据不必进行归一化处理，可用原始数据进行直接计算，可靠性强；评价指标体系可以根据具体情况增减；无需大量样本，只要有代表性的少量样本即可。<br>缺点：要求样本数据且具有时间序列特性；只是对评判对象的优劣做出鉴别，并不反映绝对水平，故基于灰色关联分析综合评价具有“相对评价”的全部缺点。<br>适用范围：对样本量没有严格要求，不要求服从任何分布，适合只有少量观测数据的问题；应用该种方法进行评价时，指标体系及权重分配是一个关键的问题，选择的恰当与否直接影响最终评价结果。<br>改进方法：<br>(1) 采用组合赋权法：根据客观赋权法和主观赋权法综合而得权系数。<br>(2) 结合TOPSIS法：不仅关注序列与正理想序列的关联度，而且关注序列与负理想序列的关联度，依据公式计算最后的关联度。</p>
+<p>3.3 模糊综合评价法<br>基本思想：是以模糊数学为基础，应用模糊关系合成的原理，将一些边界不清、不易定量的因素定量化，从多个因素对被评价事物隶属等级（或称为评语集）状况进行综合性评价的一种方法。综合评判对评判对象的全体，根据所给的条件，给每个对象赋予一个非负实数评判指标，再据此排序择优。<br>基本步骤：确定因素集、评语集；构造模糊关系矩阵；确定指标权重；进行模糊合成和做出评价。<br>优点：数学模型简单，容易掌握，对多因素、多层次的复杂问题评判效果较好。模糊评判模型不仅可对评价对象按综合分值的大小进行评价和排序，而且还可根据模糊评价集上的值按最大隶属度原则去评定对象所属的等级，结果包含的信息量丰富。评判逐对进行，对被评对象有唯一的评价值，不受被评价对象所处对象集合的影响。接近于东方人的思维习惯和描述方法，因此它更适用于对社会经济系统问题进行评价。<br>缺点：并不能解决评价指标间相关造成的评价信息重复问题，隶属函数的确定还没有系统的方法，而且合成的算法也有待进一步探讨。其评价过程大量运用了人的主观判断，由于各因素权重的确定带有一定的主观性，因此，总的来说，模糊综合评判是一种基于主观信息的综合评价方法。<br>应用范围：广泛地应用于经济管理等领域。综合评价结果的可靠性和准确性依赖于合理选取因素、因素的权重分配和综合评价的合成算子等。<br>改进方法：采用组合赋权法：根据客观赋权法和主观赋权法综合而得权系数。</p>
+<p>3.4 BP神经网络综合评价法<br>基本思想：是一种交互式的评价方法，它可以根据用户期望的输出不断修改指标的权值，直到用户满意为止。因此，一般来说，人工神经网络评价方法得到的结果会更符合实际情况。<br>优点：神经网络具有自适应能力，能对多指标综合评价问题给出一个客观评价，这对于弱化权重确定中的人为因素是十分有益的。在以前的评价方法中，传统的权重设计带有很大的模糊性，同时权重确定中人为因素影响也很大。随着时间、空间的推移，各指标对其对应问题的影响程度也可能发生变化，确定的初始权重不一定符合实际情况。再者，考虑到整个分析评价是一个复杂的非线性大系统，必须建立权重的学习机制，这些方面正是人工神经网络的优势所在。针对综合评价建模过程中变量选取方法的局限性，采用神经网络原理可对变量进行贡献分析，进而剔除影响不显著和不重要的因素，以建立简化模型，可以避免主观因素对变量选取的干扰。<br>缺点： ANN在应用中遇到的最大问题是不能提供解析表达式，权值不能解释为一种回归系数，也不能用来分析因果关系，目前还不能从理论上或从实际出发来解释ANN的权值的意义。需要大量的训练样本，精度不高，应用范围是有限的。最大的应用障碍是评价算法的复杂性，人们只能借助计算机进行处理，而这方面的商品化软件还不够成熟。<br>适用范围：神经网络评价模型具有自适应能力、可容错性，能够处理非线性、非局域性的大型复杂系统。在对学习样本训练中，无需考虑输入因子之间的权系数，ANN通过输入值与期望值之间的误差比较，沿原连接权自动地进行调节和适应，因此该方法体现了因子之间的相互作用。<br>改进方法：<br>采用组合评价法：对用其它评价方法得出的结果，选取一部分作为训练样本，一部分作为待测样本进行检验，如此对神经网络进行训练，知道满足要求为止，可得到更好的效果。</p>
+<p>3.5 数据包络法(DEA)</p>
+<p>3.6 组合评价法</p>
+<h4 id="4、预测模型"><a href="#4、预测模型" class="headerlink" title="4、预测模型"></a>4、预测模型</h4><p>定性研究与定量研究的结合，是科学的预测的发展趋势。在实际预测工作中，应该将定性预测和定量预测结合起来使用，即在对系统做出正确分析的基础上，根据定量预测得出的量化指标，对系统未来走势做出判断。</p>
+<p>4.1 回归分析法<br>基本思想：根据历史数据的变化规律，寻找自变量与因变量之间的回归方程式，确定模型参数，据此预测。回归问题分为一元和多元回归、线性和非线性回归。<br>特点：技术比较成熟，预测过程简单；将预测对象的影响因素分解，考察各因素的变化情况，从而估计预测对象未来的数量状态；回归模型误差较大，外推特性差。<br>适用范围：回归分析法一般适用于中期预测。回归分析法要求样本量大且要求样本有较好的分布规律，当预测的长度大于占有的原始数据长度时，采用该方法进行预测在理论上不能保证预测结果的精度。另外，可能出现量化结果与定性分析结果不符的现象，有时难以找到合适的回归方程类型。</p>
+<p>4.2 时间序列分析法<br>基本思想：把预测对象的历史数据按一定的时间间隔进行排列，构成一个随时间变化的统计序列，建立相应的数据随时间变化的变化模型，并将该模型外推到未来进行预测。<br>适用范围：此方法有效的前提是过去的发展模式会延续到未来，因而这种方法对短期预测效果比较好，而不适合作中长期预测。一般来说，若影响预测对象变化各因素不发生突变，利用时间序列分析方法能得到较好的预测结果；若这些因素发生突变，时间序列法的预测结果将受到一定的影响。</p>
+<p>4.3 灰色预测法<br>基本思想：将一切随机变量看作是在一定范围内变化的灰色变量，不是从统计规律角度出发进行大样本分析研究，而是利用数据处理方法(数据生成与还原)，将杂乱无章的原始数据整理成规律性较强的生成数据来加以研究，即灰色系统理论建立的不是原始数据模型，而是生成数据模型。<br>适用范围：预测模型是一个指数函数，如果待测量是以某一指数规律发展的，则可望得到较高精度的预测结果。影响模型预测精度及其适应性的关键因素，是模型中背景值的构造及预测公式中初值的选取。</p>
+<p>4.4 BP神经网络法<br>人工神经网络的理论有表示任意非线性关系和学习等的能力，给解决很多具有复杂的不确定性和时变性的实际问题提供了新思想和新方法。<br>利用人工神经网络的学习功能，用大量样本对神经元网络进行训练，调整其连接权值和闭值，然后可以利用已确定的模型进行预测。神经网络能从数据样本中自动地学习以前的经验而无需繁复的查询和表述过程，并自动地逼近那些最佳刻画了样本数据规律的函数，而不论这些函数具有怎样的形式，且所考虑的系统表现的函数形式越复杂，神经网络这种特性的作用就越明显。<br>误差反向传播算法(BP算法)的基本思想是通过网络误差的反向传播，调整和修改网络的连接权值和闭值，使误差达到最小，其学习过程包括前向计算和误差反向传播。它利用一个简单的三层人工神经网络模型，就能实现从输入到输出之间任何复杂的非线性映射关系。目前，神经网络模型已成功地应用于许多领域，诸如经济预测、财政分析、贷款抵押评估和破产预测等许多经济领域。<br>优点：可以在不同程度和层次上模仿人脑神经系统的结构及信息处理和检索等功能，对大量非结构性、非精确性规律具有极强的自适应功能，具有信息记忆、自主学习、知识推理和优化计算等特点，其自学习和自适应功能是常规算法和专家系统技术所不具备的，同时在一定程度上克服了由于随机性和非定量因素而难以用数学公式严密表达的困难。<br>缺点：网络结构确定困难，同时要求有足够多的历史数据，样本选择困难，算法复杂，容易陷入局部极小点。</p>
+<p>4.5 支持向量机法<br>支持向量机是基于统计学习的机器学习方法，通过寻求结构风险化最小，实现经验风险和置信范围的最小，从而达到在统计样本较少的情况下，亦能获得良好统计规律的目的。 其中支持向量机是统计学习理论的核心和重点。支持向量机是结构风险最小化原理的近似，它能够提高学习机的泛化能力，既能够由有限的训练样本得到小的误差，又能够保证对独立的测试集仍保持小的误差，而且支持向量机算法是一个凸优化问题，因此局部最优解一定是全局最优解，支持向量机就克服了神经网络收敛速度慢和局部极小点等缺陷。 核函数的选取在SVM方法中是一个较为困难的问题，至今没有一定的理论方面的指导。</p>
+<p>4.6 组合预测法<br>在实际预测工作中，从信息利用的角度来说，就是任何一种单一预测方法都只利用了部分有用信息，同时也抛弃了其它有用的信息。为了充分发挥各预测模型的优势，对于同一预测问题，往往可以采用多种预测方法进行预测。不同的预测方法往往能提供不同的有用信息，组合预测将不同预测模型按一定方式进行综合。根据组合定理，各种预测方法通过组合可以尽可能利用全部的信息，尽可能地提高预测精度，达到改善预测性能的目的。<br>优化组合预测有两类概念，一是指将几种预测方法所得的预测结果，选取适当的权重进行加权平均的一种预测方法，其关键是确定各个单项预测方法的加权系数；二是指在几种预测方法中进行比较，选择拟合度最佳或标准离差最小的预测模型作为最优模型进行最优模型进行预测。组合预测是在单个预测模型不能完全正确地描述预测量的变化规律时发挥其作用的。</p>
+<h3 id="论文资料"><a href="#论文资料" class="headerlink" title="论文资料"></a>论文资料</h3><p>我这里只有有小部分可以参考，不过我相信每一个参加的，都会有一堆这些资料，如果感兴趣可以私聊我发你。</p>
+<p>这里推荐一个Github</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/personqianduixue/Math_Model"> Math_Model</a> : <a target="_blank" rel="noopener" href="https://github.com/personqianduixue/Math_Model/">https://github.com/personqianduixue/Math_Model/</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/zhanwen/MathModel"> MathModel</a> : <a target="_blank" rel="noopener" href="https://github.com/zhanwen/MathModel">https://github.com/zhanwen/MathModel</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/HuangCongQing/Algorithms_MathModels"> Algorithms_MathModels</a>: <a target="_blank" rel="noopener" href="https://github.com/HuangCongQing/Algorithms_MathModels">https://github.com/HuangCongQing/Algorithms_MathModels</a></p>
+<p>其他可以自己github查找：</p>
+<p><img src="https://s2.loli.net/2022/01/17/tZJNnQCrfA5jo9i.png" alt="image-20220117113128392"></p>
+<h2 id="编程手"><a href="#编程手" class="headerlink" title="编程手"></a>编程手</h2><p>因为我主要是编程手，干的杂，其实大部分还是依赖有一个好队友，哈哈哈。</p>
+<h3 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h3><h4 id="MATLAB"><a href="#MATLAB" class="headerlink" title="MATLAB"></a>MATLAB</h4><p>matlab应该是最熟悉的软件，内置很多包和操作，很多数学建模的代码也是matlab的。</p>
+<p><img src="https://s2.loli.net/2022/01/19/E5PGKLwcQB9f7nX.png" alt="image-20220119092506185"></p>
+<h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><p><img src="https://s2.loli.net/2022/01/19/UmVvM3FfyX9Dt2g.png" alt="image-20220119092547686"></p>
+<p><img src="https://s2.loli.net/2022/01/19/4iQBPCJjpItmSkR.png" alt="image-20220119092711049"></p>
+<h3 id="工具软件"><a href="#工具软件" class="headerlink" title="工具软件"></a>工具软件</h3><h4 id="SPSS"><a href="#SPSS" class="headerlink" title="SPSS"></a>SPSS</h4><p><img src="https://s2.loli.net/2022/01/18/QVWIGJzCnZEyUbw.png" alt="image-20220118104812319"></p>
+<h4 id="mpai"><a href="#mpai" class="headerlink" title="mpai"></a>mpai</h4><p><img src="https://s2.loli.net/2022/01/18/34k7YzCLRBVrf6n.png" alt="image-20220118121544529"></p>
+<h3 id="Lingo"><a href="#Lingo" class="headerlink" title="Lingo"></a>Lingo</h3><p>Lingo是运筹优化问题比较好的软件之一，它可以用于求解非线性规划，也可用于一些线性和非线性方程组的求解等，功能十分强大，是求解优化模型的最佳选择，其特色在于内置建模语言，提供十几个内部函数，可以允许决策变量是整数（既整数规划，包括0-1整数规划），方便灵活，而且执行速度很快。能与Excel，数据库等软件交换数据。</p>
+<h4 id="mathematica"><a href="#mathematica" class="headerlink" title="mathematica"></a>mathematica</h4><p>科学计算多一点，多用在和物理相关的题目进行一些计算。</p>
+<p>  <a target="_blank" rel="noopener" href="https://www.wolfram.com/mathematica/">mathematica</a> : <a target="_blank" rel="noopener" href="https://www.wolfram.com/mathematica/">https://www.wolfram.com/mathematica/</a></p>
+<h3 id="可视化"><a href="#可视化" class="headerlink" title="可视化"></a>可视化</h3><h4 id="draw-io"><a href="#draw-io" class="headerlink" title="draw.io"></a>draw.io</h4><p><img src="https://s2.loli.net/2022/01/19/k7oKajAuZySN6eW.png" alt="image-20220119080703472"></p>
+<h4 id="echart"><a href="#echart" class="headerlink" title="echart"></a>echart</h4><p><a target="_blank" rel="noopener" href="https://echarts.apache.org/zh/index.html">echart</a> : <a target="_blank" rel="noopener" href="https://echarts.apache.org/zh/index.html">https://echarts.apache.org/zh/index.html</a></p>
+<p><img src="https://s2.loli.net/2022/01/19/J537PpTtFjDEUgZ.png" alt="image-20220119080821381"></p>
+<p><img src="https://s2.loli.net/2022/01/19/kihc5sptO1UlNHv.png" alt="热带雨林"></p>
+<h4 id="ppt"><a href="#ppt" class="headerlink" title="ppt"></a>ppt</h4><p>一些流程图配合</p>
+<p><a target="_blank" rel="noopener" href="https://www.iconfont.cn/">图库</a> : <a target="_blank" rel="noopener" href="https://www.iconfont.cn/">https://www.iconfont.cn/</a></p>
+<p><img src="https://s2.loli.net/2022/01/19/e6fw9VgDY4Td85J.png" alt="C4DB3D22-1AE8-456a-AD5F-8FF91D2369FE"></p>
+<h4 id="excel"><a href="#excel" class="headerlink" title="excel"></a>excel</h4><p><img src="https://s2.loli.net/2022/01/19/KXbn5TqaoCu4tQ2.png" alt="图片1"></p>
+<h4 id="matlab"><a href="#matlab" class="headerlink" title="matlab"></a>matlab</h4><p>这里推荐一个插件：</p>
+<p>关注b站MATLAB大佬<a target="_blank" rel="noopener" href="https://space.bilibili.com/223755925?from=search&amp;seid=7825192864172994189&amp;spm_id_from=333.337.0.0">图通道</a> : <a target="_blank" rel="noopener" href="https://space.bilibili.com/223755925?from=search&amp;seid=7825192864172994189&amp;spm_id_from=333.337.0.0">https://space.bilibili.com/223755925?from=search&amp;seid=7825192864172994189&amp;spm_id_from=333.337.0.0</a></p>
+<p><img src="https://s2.loli.net/2022/01/19/oEk9ijFvfaexP1X.png" alt="image-20220119081228057"></p>
+<p><img src="https://s2.loli.net/2022/01/19/QsIvOoj1ywPDhfu.png" alt="图20210206T220235"></p>
+<h4 id="python绘图"><a href="#python绘图" class="headerlink" title="python绘图"></a>python绘图</h4><p>首先类似matlab的Matplotlib</p>
+<p><a target="_blank" rel="noopener" href="https://matplotlib.org/">Matplotlib</a> : <a target="_blank" rel="noopener" href="https://matplotlib.org/">https://matplotlib.org/</a></p>
+<p><img src="https://s2.loli.net/2022/01/19/9MH1Ss2PbZOw46X.png" alt="image-20220119092913103"></p>
+<p>Pyecharts</p>
+<p><a target="_blank" rel="noopener" href="https://pyecharts.org/#/zh-cn/intro">Pyecharts</a> : <a target="_blank" rel="noopener" href="https://pyecharts.org/#/zh-cn/intro">https://pyecharts.org/#/zh-cn/intro</a></p>
+<p>和前面echart一样的，代码及其相似，可视化交互吧</p>
+<p><img src="https://s2.loli.net/2022/01/19/S7NDEj2AspBd3oy.png" alt="image-20220119093125771"></p>
+<h4 id="seaborn（sns）"><a href="#seaborn（sns）" class="headerlink" title="seaborn（sns）"></a>seaborn（sns）</h4><p>也就是seaborn</p>
+<p><a target="_blank" rel="noopener" href="https://seaborn.pydata.org/">seaborn</a> : <a target="_blank" rel="noopener" href="https://seaborn.pydata.org/">https://seaborn.pydata.org/</a></p>
+<p>这个更快。用于特征选取的对比，一些封装好的图，输入数据就能出图，最喜欢seaborn.heatmap的相关性</p>
+<p><img src="https://s2.loli.net/2022/01/19/VMHzscZCnExlU9L.png" alt="image-20220119093437327"></p>
+<p>还有seaborn.pairplot，变量之间的关系</p>
+<p><img src="https://s2.loli.net/2022/01/19/jmwGUc8tICKEXWh.png" alt="image-20220119093541385"></p>
+<h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><p><a target="_blank" rel="noopener" href="https://scikit-learn.org.cn/">scikit-learn</a> : <a target="_blank" rel="noopener" href="https://scikit-learn.org.cn/">https://scikit-learn.org.cn/</a></p>
+<p>主流的机器学习，适合一些预测题</p>
+<p><a target="_blank" rel="noopener" href="https://scikit-opt.github.io/scikit-opt/#/zh/">scikit-opt</a> : <a target="_blank" rel="noopener" href="https://scikit-opt.github.io/scikit-opt/#/zh/">https://scikit-opt.github.io/scikit-opt/#/zh/</a></p>
+<p>一些智能优化，封装好的，之间导包就能用。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/statsmodels/statsmodels/tree/main/examples">statsmodels</a> ： <a target="_blank" rel="noopener" href="https://www.statsmodels.org/stable/examples/index.html">https://www.statsmodels.org/stable/examples/index.html</a></p>
+<p>一个统计相关的库，很全面，偶尔使用吧</p>
+<p><a target="_blank" rel="noopener" href="https://pycaret.org/">pycarets</a>  : <a target="_blank" rel="noopener" href="https://pycaret.org/">https://pycaret.org/</a></p>
+<p>和时间序列有关的slam吧</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/fxsjy/jieba">jieba</a> :  <a target="_blank" rel="noopener" href="https://github.com/fxsjy/jieba">https://github.com/fxsjy/jieba</a></p>
+<p>中文的分词的，用于nlp处理吧</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/keredson/wordninja">wordninja</a> : <a target="_blank" rel="noopener" href="https://github.com/keredson/wordninja">https://github.com/keredson/wordninja</a></p>
+<p>英文的分词的，用于nlp处理吧</p>
+<p><a target="_blank" rel="noopener" href="https://amueller.github.io/word_cloud/#">wordcloud</a> : <a target="_blank" rel="noopener" href="https://amueller.github.io/word_cloud/">https://amueller.github.io/word_cloud/</a></p>
+<p>词云生成器，也不难</p>
+<p>nlp最难的是分析，噪声太多了，自己不太擅长。</p>
+<h2 id="写作手"><a href="#写作手" class="headerlink" title="写作手"></a>写作手</h2><h3 id="写作模板"><a href="#写作模板" class="headerlink" title="写作模板"></a>写作模板</h3><blockquote>
+<p>摘要</p>
+<p>1.问题重述（背景介绍、文献综述、问题重述等）</p>
+<p>2.问题分析（主要对问题进行一定的分析，可以做一个分析流图）</p>
+<p>3.问题假设（其实也就是对问题的边界进行划定，我们需要让问题更具体一些）</p>
+<p>4.符号说明（对于文章中主要出现的符号进行一定的解释，方便评委老师理解）</p>
+<p>5.模型建立与求解（这一步最为核心，即数学建模和模型的求解部分）</p>
+<p>6.灵敏度分析（即分析模型的输出，对参数或环境变化的敏感程度的分析）</p>
+<p>7.模型的推广及优缺点（主要对模型的进一步研究分析和优缺点解释）</p>
+<p>参考文献</p>
+<p>附录</p>
 </blockquote>
-<h3 id="3-4-图像压缩"><a href="#3-4-图像压缩" class="headerlink" title="3.4 图像压缩"></a>3.4 图像压缩</h3><p><strong>问题描述</strong> 数字化图像是n×n的像素阵列。假定每个像素有一个0~255的灰度值，存储一个像素需8位。为了减少存储空间，采用变长模式，即不同像素用不同位数来存储。</p>
-<ol>
-<li>线性化：图片拉直，转换为$1×n^2$向量</li>
-<li>分段：分成连续的m段，每段像素存储位数相同，每段最多含256个像素点</li>
-<li>存放信息：第$i$段长度（8bit），第$i$段中像素存储位数（3bit）</li>
-</ol>
-<script type="math/tex; mode=display">
-\begin{matrix}
-s[i]=\min\limits_{1 \leq k \leq \min \{i,256\}}\{s[i-k]+k*bmax(i-k+1,i)  \}+11
-\\bmax(i,j)=\max\limits_{i\leq k \leq j}\{a[k]\}
-\end{matrix}</script><p><strong>解释</strong></p>
-<p>假设<code>s[i]</code>是序列$\{p_1,p_2,…,p_i\}$的最优解，<code>a[i]</code>是第$i$个像素点的位数。</p>
-<ol>
-<li>假设$p_i$自成一段，则<code>s[i]=s[i-1]+保存pi的代价</code></li>
-<li>取<code>s[i]</code>为min时对应的元素个数为k，<code>s[i]=s[i-k]+保存最后k个像素的代价</code></li>
-<li>保存最后k个像素的代价=<code>k*max{k个灰度值二进制位数}+11</code></li>
-</ol>
-<blockquote>
-<p><strong>例题</strong></p>
-<p>求像素序列4，6，5，7，129，138，1的最优分段。</p>
-</blockquote>
-<h3 id="3-5-电路布线"><a href="#3-5-电路布线" class="headerlink" title="3.5 电路布线"></a>3.5 电路布线</h3><p><strong>问题描述</strong> 确定将哪些连线安排在第一层上，使得该层上有尽可能多的连线且不相交</p>
-<script type="math/tex; mode=display">
-\begin{matrix}
-\scriptsize
- 当i=1时, \qquad Size(i,j) = \left\{\begin{matrix}
-0 && j<\pi(1)
-\\1 && j \geq \pi (1)
-\end{matrix}\right. \\
-\scriptsize
-当i>1时,\qquad
-Size(i,j) = \left\{\begin{matrix}
-Size(i-1,j) && j<\pi(i)
-\\\max \{ Size(i-1,j),Size(i-1,\pi(i)-1)+1\} && j \geq \pi (i)
-\end{matrix}\right.
-\end{matrix}</script><p><strong>解释</strong> <code>MNS(i,j)</code>表示上面序号小于$i$，连接到下面的序号都小于$j$的不相交的集合，最后要求<code>MNS(n,n)</code>。如果$j=\pi(i)$，如果$(i,\pi(i))$不在MNS中，将i点删除没有影响，就是<code>size(i,j)=size(i-1,j)</code>，如果$(i,\pi(i))$在MNS中，就是<code>size(i,j)=size(i-1,pi(i)-1)+1</code></p>
-<blockquote>
-<p><strong>例题</strong></p>
-<p>已知[(1 8)(2 7)(3 4)(4 2)(5 5)(6 1)(7 9)(8 3)(9 10)(10 6)]，求最大不相交情况</p>
-</blockquote>
-<h3 id="3-6-流水线调度"><a href="#3-6-流水线调度" class="headerlink" title="3.6 流水线调度"></a>3.6 流水线调度</h3><p><strong>问题描述</strong> n个作业要在两台机器M1和M2上进行加工。每个作业加工的顺序都是先在M1上加工，然后在M2加工。M1和M2加工作业$i$所需的时间分别为$a_i$ 和$b_i$。确定n个作业的最优加工顺序，使得加工完成所需的时间最少。</p>
-<p><strong>算法</strong></p>
-<ol>
-<li>分为$N_1,N_2$集合存放 <script type="math/tex">N_1 = \{a_i\leq b_i\} ,N_2 = \{a_i > b_i\}</script></li>
-<li>$N_1$中作业按照$a_i$升序排序，$N_2$中作业按照$b_i$降序排序</li>
-<li>$N_1$连接$N_2$，计算时间</li>
-</ol>
-<blockquote>
-<p><strong>例题</strong></p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">任务</th>
-<th style="text-align:center">J1</th>
-<th style="text-align:center">J2</th>
-<th style="text-align:center">J3</th>
-<th style="text-align:center">J4</th>
-<th style="text-align:center">J5</th>
-<th style="text-align:center">J6</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">工序1</td>
-<td style="text-align:center">30</td>
-<td style="text-align:center">120</td>
-<td style="text-align:center">50</td>
-<td style="text-align:center">20</td>
-<td style="text-align:center">90</td>
-<td style="text-align:center">110</td>
-</tr>
-<tr>
-<td style="text-align:center">工序2</td>
-<td style="text-align:center">80</td>
-<td style="text-align:center">100</td>
-<td style="text-align:center">90</td>
-<td style="text-align:center">60</td>
-<td style="text-align:center">30</td>
-<td style="text-align:center">10</td>
-</tr>
-</tbody>
-</table>
-</div>
-</blockquote>
-<h3 id="3-7-0-1背包与完全背包"><a href="#3-7-0-1背包与完全背包" class="headerlink" title="3.7 0-1背包与完全背包"></a>3.7 0-1背包与完全背包</h3><script type="math/tex; mode=display">
-\begin{matrix}
-m(i,j) = \left\{\begin{matrix}
-m(i-1,j) && 0 \leq j<w_i
-\\ \max \{ m(i-1,j),m(i-1,j-w_i)+v_i\} && j \geq w_i
-\end{matrix}\right.
-\\
-\\
-m(0,j) = \left\{\begin{matrix}
-0 && 0 \leq j<w_0
-\\ v_0 && j \geq w_0
-\end{matrix}\right.
-\end{matrix}</script><p><strong>解释</strong> <code>m[i][j]</code>表示可选择物品$i, i+1, …, n$时，背包容量为$j$装入的最大价值</p>
-<blockquote>
-<p><strong>例题</strong></p>
-<p>n=5,c=10,W={2,2,6,5,4},V={6,3,5,4,6}</p>
-</blockquote>
-<h2 id="4-贪心算法"><a href="#4-贪心算法" class="headerlink" title="4.贪心算法"></a>4.贪心算法</h2><blockquote>
-<p>听老师说是活题，那么建议参考：<a target="_blank" rel="noopener" href="https://www.programmercarl.com/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html">https://www.programmercarl.com/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html</a></p>
-<p>刷点力扣涨涨见识</p>
-</blockquote>
-<h3 id="4-1贪心原理"><a href="#4-1贪心原理" class="headerlink" title="4.1贪心原理"></a>4.1贪心原理</h3><p><strong>思想</strong> 在贪婪算法中采用逐步构造最优解的方法。在每个阶段，都作出一个看上去最优的决策。它并不一定对所有问题都成功，因为不从整体最优加以考虑，贪心解法可能不是全局最优解，但是对某些问题特别简单、有效。</p>
-<p><strong>基本要素</strong></p>
-<ol>
-<li><strong>最优子结构性质</strong> 问题的最优解包含其子问题的最优解</li>
-<li><strong>贪心选择性质</strong> 问题的整体最优解可以通过一系列局部最优的选择，即贪心选择来达到，当前的选择和子问题的解无关，只和以往做出的选择有关</li>
-</ol>
-<p><strong>贪心算法一般分为如下四步：</strong></p>
-<ul>
-<li>将问题分解为若干个子问题</li>
-<li>找出适合的贪心策略</li>
-<li>求解每一个子问题的最优解</li>
-<li>将局部最优解堆叠成全局最优解</li>
-</ul>
-<h3 id="4-2-活动安排"><a href="#4-2-活动安排" class="headerlink" title="4.2 活动安排"></a>4.2 活动安排</h3><p>思考如下具有11个活动安排的问题？</p>
-<p>在活动集合中选择最大的相容活动子集合</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>任务</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-<td>8</td>
-<td>9</td>
-<td>10</td>
-<td>11</td>
-</tr>
-<tr>
-<td>start</td>
-<td>0</td>
-<td>4</td>
-<td>4</td>
-<td>5</td>
-<td>3</td>
-<td>1</td>
-<td>8</td>
-<td>6</td>
-<td>8</td>
-<td>12</td>
-<td>2</td>
-</tr>
-<tr>
-<td>end</td>
-<td>3</td>
-<td>6</td>
-<td>5</td>
-<td>6</td>
-<td>8</td>
-<td>4</td>
-<td>11</td>
-<td>10</td>
-<td>12</td>
-<td>14</td>
-<td>13</td>
-</tr>
-</tbody>
-</table>
-</div>
-<pre class="line-numbers language-react" data-language="react"><code class="language-react">start开始时间，end结束时间，按
-任务按结束时间非减续排列
-优先选取结束时间早的，判断是否相容
-直到任务最后一个结束。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="4-3-哈夫曼编码"><a href="#4-3-哈夫曼编码" class="headerlink" title="4.3 哈夫曼编码"></a>4.3 哈夫曼编码</h3><p><strong>前缀码</strong> 对每一个字符规定一个0,1串作为其代码，并要求任一字符的代码都不是其它字符代码的前缀，这种编码称为前缀码。</p>
-<p><strong>问题描述</strong> 找到使平均码长达到最小的前缀码编码方案</p>
-<p><strong>策略</strong> 频率小的字符，深度大。队列Q以f(c)为键值存放二叉树各结点，通过贪心选择，将最小频率的两个二叉树合并，然后将新树（频率为上述两个二叉树频率之和）插入Q中。$ T(n)=O(nlogn)$</p>
-<p><strong>证明贪心选择性质</strong></p>
-<p>设x和y是字符集C中具有最小频率的两个字符，证明存在C的最优前缀码，使x和y具有最长、相同的码长且仅最后一位编码不同。设二叉树T表示C的任意一个最优前缀码方案。只要证明可以对T做适当修改后，得到一棵新的二叉树T’， 新树中，x和y是最深叶子且为兄弟。同时，新树也是C的最优前缀码方案。</p>
-<p><strong>证明最优子结构性质</strong></p>
-<p>设T表示C的一个最优前缀码方案。x和y是树T中的叶子节点且为兄弟。z是它们的父亲。若将z看做是具有频率$f(z)=f(x)+f(y)$的字符，则证明树$T’=T-\{x,y\}$表示字符集$C’=C-\{x,y\} \bigcup \{z\}$的一个最优前缀码即可。</p>
-<blockquote>
-<p>问题：</p>
-<p>设在1000个字母的文章中各字母出现的频率为a:83, b:14, c:28, d:38, e:131, f:29, g:20, h:53，求最优编码。</p>
-</blockquote>
-<h3 id="4-3-最短路径"><a href="#4-3-最短路径" class="headerlink" title="4.3 最短路径"></a>4.3 最短路径</h3><p>书上的吧，懒的写了，这个看这个就行了</p>
-<p><img src="https://gitee.com/lowlyLi/picgo/raw/master/img/202111182050411.png" alt="image-20211118194505196"></p>
-<h3 id="4-4-最小生成树"><a href="#4-4-最小生成树" class="headerlink" title="4.4 最小生成树"></a>4.4 最小生成树</h3><p>参考数据结构，这个太简单了</p>
-<h3 id="4-5-0-1背包（可分割）"><a href="#4-5-0-1背包（可分割）" class="headerlink" title="4.5 0-1背包（可分割）"></a>4.5 0-1背包（可分割）</h3><p><strong>贪心策略</strong></p>
-<ol>
-<li>计算每种物品的单价（性价比）$\frac{v_i}{w_i}$</li>
-<li>按物品单价从大到小排序</li>
-<li>优先选取物品单价高的，直到背包装满。</li>
-</ol>
-<blockquote>
-<p>$n=3,c=20,W=\{18,15,10\},V=\{25,24,15\}$</p>
-</blockquote>
-<p><strong>补充几种贪心策略</strong>（但是都不能保证得到最优解）</p>
-<ol>
-<li>选择可以装入背包的价值最大的物品</li>
-<li>选择可装入背包的重量最小的物品</li>
-<li>选择可装入背包的$\frac{v_i}{w_i}$最大的物品（一般用来做回溯法或者分支限界的限界函数）</li>
-</ol>
-<h3 id="3-6最优装载"><a href="#3-6最优装载" class="headerlink" title="3.6最优装载"></a>3.6最优装载</h3><p><strong>策略</strong> 重量最轻的先装$ T(n)=O(nlogn)$</p>
-<p>策略：</p>
-<ol>
-<li>见货物重量按从小到大排序</li>
-<li>优先选取重量下的物品，直到无法装下为主</li>
-</ol>
-<h2 id="5-回溯法"><a href="#5-回溯法" class="headerlink" title="5.回溯法"></a>5.回溯法</h2><h3 id="5-1-回溯原理"><a href="#5-1-回溯原理" class="headerlink" title="5.1 回溯原理"></a>5.1 回溯原理</h3><p>这里很矛盾，书上的回溯有一点点离谱，感觉是极端的剪枝，考试还得按课本来。</p>
-<p><strong>算法框架</strong></p>
-<ol>
-<li><p>子集树算法框架<br>当所给的问题是从 个元素的集合 中找出 满足性质的子集时，相应的解空间树称为子集树</p>
-</li>
-<li><p>排列树算法框架<br>当所给问题是确定 个元素满足某种性质的排列时，相应的解空间树称为排列树</p>
-</li>
-</ol>
-<p><strong>剪枝函数</strong></p>
-<ol>
-<li><p>用约束函数在扩展结点处剪去不满足约束的子树；</p>
-</li>
-<li><p>用限界函数剪去得不到最优解的子树</p>
-</li>
-</ol>
-<p><strong>回溯法解决的问题都可以抽象为树形结构</strong>，所有回溯法的问题都可以抽象为树形结构！</p>
-<p>因为回溯法解决的都是在集合中递归查找子集，<strong>集合的大小就构成了树的宽度，递归的深度，都构成的树的深度</strong>。</p>
-<p>递归就要有终止条件，所以必然是一颗高度有限的树（N叉树）。</p>
-<h4 id="回溯法的效率"><a href="#回溯法的效率" class="headerlink" title="回溯法的效率"></a>回溯法的效率</h4><p>回溯法的性能如何呢，这里要和大家说清楚了，<strong>虽然回溯法很难，很不好理解，但是回溯法并不是什么高效的算法</strong>。</p>
-<p><strong>因为回溯的本质是穷举，穷举所有可能，然后选出我们想要的答案</strong>，如果想让回溯法高效一些，可以加一些剪枝的操作，但也改不了回溯法就是穷举的本质。</p>
-<h4 id="代码模板"><a href="#代码模板" class="headerlink" title="代码模板"></a>代码模板</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">void</span> <span class="token function">backtracking</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>终止条件<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        存放结果<span class="token punctuation">;</span>
-        <span class="token keyword">return</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">for</span> <span class="token punctuation">(</span>选择：本层集合中元素（树中节点孩子的数量就是集合的大小）<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        处理节点<span class="token punctuation">;</span>
-        <span class="token function">backtracking</span><span class="token punctuation">(</span>路径，选择列表<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 递归</span>
-        回溯，撤销处理结果
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="5-2-装载问题"><a href="#5-2-装载问题" class="headerlink" title="5.2 装载问题"></a>5.2 装载问题</h3><p><strong>问题描述</strong> n个集装箱要装到2艘载重量分别为c1,c2的货轮，其中集装箱 $i$的重量为$w_i$。要求找到装载方案将这n个货箱装上这2艘轮船</p>
-<p><strong>解释</strong> 若装载问题有解, 采用如下策略可得一个最优装载方案：将第一艘轮船尽可能装满，将剩余的货箱装到第二艘轮船上。将第一艘船尽可能装满类似0-1背包问题</p>
-<blockquote>
-<p><strong>例题</strong></p>
-<p>n=4,c1=12,W={8,6,2,3}</p>
-</blockquote>
-<h3 id="5-3-0-1背包"><a href="#5-3-0-1背包" class="headerlink" title="5.3 0-1背包"></a>5.3 0-1背包</h3><p><strong>解释</strong> 子集树。只要左儿子节点是一个可行结点，搜索就进入左子树（不超过背包重量）（约束剪枝）。在右子树中有可能包含最优解是才进入右子树搜索，否则将右子树剪去（利用单价贪心求解价值上限）（限界剪枝）。$cw$是背包当前重量，$M-cw$是背包剩余的空间，$cp$是当前总收益，$rp$是贪心算法剩余的物品收益，$bestw$记录当前最优价值，也就是判断$bp=cp+cp&gt;bestw$是右节点的限界函数。（此外，回溯法解0/1背包的前置条件是物品已按$\frac{p_i}{w_i}$非增次序排序）</p>
-<blockquote>
-<p><strong>例题</strong></p>
-<p>M=110，w=(1,11,21,23,33,43,45,55)，v=(11,21,31,33,43,53,55,65)</p>
-</blockquote>
-<h2 id="6-分枝限定"><a href="#6-分枝限定" class="headerlink" title="6.分枝限定"></a>6.分枝限定</h2><p>和回溯无限接近，搞清楚优先队列的优先级就可以</p>
+<p>上面是大致的模板,当然具体情况可以自己修改,小白还是推荐参考,这里模型建立与求解,可以分开模型一的建模与求解,模型二的建模与求解等也可以合在一起,模型的建模,模型的求解.</p>
+<h3 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h3><h4 id="word"><a href="#word" class="headerlink" title="word"></a>word</h4><p>这里word应该是最简单，这里我也不多介绍,这个应该学一下,后面课程报告等都会用到.</p>
+<p>这里推荐b站的一些视频,这里就不推荐,毕竟word这部分一个合格的大学生都应该掌握.(感兴趣还可以顺便考个二级)</p>
+<h4 id="latex"><a href="#latex" class="headerlink" title="latex"></a>latex</h4><p>这里提一下latex,其实建议掌握,最起码会个latex的公式(这个真的是必学)</p>
+<p>然后论文排版,latex和word在比赛中差距不是很大,但latex学习成本高于word,一定要慎重,latex排版的写作手,最好用latex排几次,练练手,要不然在比赛很容易产生没时间,or意外的bug,导致结果不太理想.</p>
+<p>latex公式这里是强烈推荐的,尤其是</p>
+<p><a target="_blank" rel="noopener" href="https://www.latexlive.com/home">LaTeX公式编辑器</a> : <a target="_blank" rel="noopener" href="https://www.latexlive.com/home">https://www.latexlive.com/home</a></p>
+<p><img src="https://s2.loli.net/2022/01/15/n9tAwZzyfsBaPde.png" alt="image-20220115174319364"></p>
+<p>支持图像识别，latex公式代码提示。</p>
+<p>latex编辑器推荐<a target="_blank" rel="noopener" href="https://cn.overleaf.com/">overleaf</a>:<a target="_blank" rel="noopener" href="https://cn.overleaf.com/">https://cn.overleaf.com/</a></p>
+<p><img src="https://s2.loli.net/2022/01/15/tnQHGNZjPXm8Mqr.png" alt="image-20220115182813329"></p>
+<h3 id="翻译"><a href="#翻译" class="headerlink" title="翻译"></a>翻译</h3><p>这里其实更推荐机器翻译，人工审核，美赛量有点大，纯人工翻译挺难的，而且还可能不太准确，这里最好推荐人工核查，搭配机器翻译，这里推荐谷歌翻译和deepl</p>
+<p>deepl</p>
+<p><img src="https://s2.loli.net/2022/01/17/M4m36wPv7Jba5Y8.png" alt="image-20220117102134600"></p>
 
                 
             </div>
@@ -969,7 +677,7 @@ m(0,j) = \left\{\begin{matrix}
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://lcy5201314.top/2021/11/18/suan-fa-li-lun-fu-xi/">http://lcy5201314.top/2021/11/18/suan-fa-li-lun-fu-xi/</a>
+                    <a href="http://lcy5201314.top/2022/01/19/2022-1-19-shu-xue-jian-mo-ru-men/">http://lcy5201314.top/2022/01/19/2022-1-19-shu-xue-jian-mo-ru-men/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1007,8 +715,12 @@ m(0,j) = \left\{\begin{matrix}
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                    <span class="chip bg-color">算法</span>
+                                <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">
+                                    <span class="chip bg-color">数学建模</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">
+                                    <span class="chip bg-color">数据分析</span>
                                 </a>
                             
                         </div>
@@ -1441,62 +1153,48 @@ m(0,j) = \left\{\begin{matrix}
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/12/03/2021-12-3-paillier-suan-fa/">
+                <a href="/2022/01/19/2022-1-19-shu-xue-jian-mo-ru-men/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Paillier算法">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="数学建模总结">
                         
-                        <span class="card-title">Paillier算法</span>
+                        <span class="card-title">数学建模总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这部分是联邦学习里面的最基础的同态加密，机器学习其实也只是简单的线性运算，而同态加密实现加密后运算保存一致，造就了在敏感数据行业机器学习，云计算的发展，采用联邦学习的分布式计算可以有效运用在金融，医疗等敏感信息上，随着个人隐私的加强，无法得到明文数据时，同态加密或许会成为互联网企业进行用户画像分析的下一个突破点。
+                            小白入门指南吧，写的比较乱，算一个简单的文档吧
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-19
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86/" class="post-category">
-                                    同态加密
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            LowlyLi
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">算法</span>
+                    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">
+                        <span class="chip bg-color">数学建模</span>
                     </a>
                     
-                    <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
-                        <span class="chip bg-color">密码学</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86/">
-                        <span class="chip bg-color">同态加密</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">联邦学习</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/">
-                        <span class="chip bg-color">区块链</span>
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">
+                        <span class="chip bg-color">数据分析</span>
                     </a>
                     
                 </div>
@@ -1510,33 +1208,29 @@ m(0,j) = \left\{\begin{matrix}
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/17/suan-fa-shi-yan/">
+                <a href="/2021/12/08/2021-12-8-suan-fa-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="CUMT算法实验">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="CUMT算法考试总结">
                         
-                        <span class="card-title">CUMT算法实验</span>
+                        <span class="card-title">CUMT算法考试总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            cumt算法实验复习
+                            CUMT算法考试（信安专业），崩了，题量太大了，写不完，呜呜呜
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            LowlyLi
                             
                         </span>
                     </div>
@@ -1546,6 +1240,10 @@ m(0,j) = \left\{\begin{matrix}
                     
                     <a href="/tags/%E7%AE%97%E6%B3%95/">
                         <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%80%83%E8%AF%95/">
+                        <span class="chip bg-color">考试</span>
                     </a>
                     
                 </div>
