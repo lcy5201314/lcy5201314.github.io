@@ -1,0 +1,3138 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="数论复习, 秋月日常">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>数论复习 | 秋月日常</title>
+    <link rel="icon" type="image/png" href="/meizi.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="秋月日常" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/qiuyue.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">秋月日常</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/qiuyue.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">秋月日常</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/lcy5201314/lcy5201314.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/lcy5201314/lcy5201314.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">数论复习</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
+                                <span class="chip bg-color">密码学</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E8%AE%BA/">
+                                <span class="chip bg-color">数论</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E5%AD%A6/">
+                                <span class="chip bg-color">数学</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%95%B0%E5%AD%A6/" class="post-category">
+                                数学
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-04-01
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-04-25
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2k
+                </div>
+                
+
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="数论"><a href="#数论" class="headerlink" title="数论"></a>数论</h1><h2 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h2><h3 id="整除"><a href="#整除" class="headerlink" title="整除"></a>整除</h3><ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/d327fdf06568a895f3ea6d0f87752a44c64ddb9cae90f69f56e89944210fe87b.png" alt=""></li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><p>特性</p>
+<ul>
+<li>(1）当b遍历整数a的所有因数时，－b 也遍历整数a的所有因数</li>
+<li>（2）当b遍历整数 a的所有因数时，a/b 也遍历整数a的所有因数</li>
+<li>(3) 0是任何非零整数的倍数．</li>
+<li>(4) 1是任何整数的因数</li>
+<li>(5) 任何非零整数α 是其自身的倍数,也是其自身的因数</li>
+</ul>
+</li>
+<li><p>传递性</p>
+<ul>
+<li><img src="assets/c83aad3715b72885ddef80f87be340fd9c7eca91288435f9b3fac80f0f9138f3.png" alt=""></li>
+</ul>
+</li>
+<li><p>加减保持性</p>
+<ul>
+<li><img src="assets/b97963213e9631d0900d4ff5ba726af7412507d7207694abf1ee9bb6cbcfc9d7.png" alt=""></li>
+</ul>
+</li>
+<li><p>线性组合性</p>
+<ul>
+<li><img src="assets/3dcebf0447da1d300d90c812798d953312a9db154d439641a32ad7772403b127.png" alt=""></li>
+<li><img src="assets/71fa9759c1e20a7c56e219cf31a30f7586e0880dd214b74fc67b330dfe52bab9.png" alt=""></li>
+</ul>
+</li>
+<li><p>互逆</p>
+<ul>
+<li><img src="assets/60aa10b125e742c07c932dbff3b1c05a416beabbb1d452c354fb1efb39961f5d.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="素数"><a href="#素数" class="headerlink" title="素数"></a>素数</h3><ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/39d1c2a5404c3f4c4fb924232d25dc4ebd672af61c374c816e6e030f69a8f767.png" alt=""></li>
+</ul>
+</li>
+<li><p>筛选法</p>
+<ul>
+<li><p>Eratoshenes筛法引理</p>
+<ul>
+<li><img src="assets/e44f7f8a0a0db58838c7783804db768c841b35b8c41495cfc9be3d89a67e1f9f.png" alt=""></li>
+</ul>
+</li>
+<li><p>Eratoshenes筛法</p>
+<ul>
+<li><img src="assets/9c0bfe020e319e3d3c0eb256322aa880520a14e2b7372624a141fa57db2fdc5a.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><p>无穷性</p>
+<ul>
+<li>素数有无穷多个</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="欧几里得除法"><a href="#欧几里得除法" class="headerlink" title="欧几里得除法"></a>欧几里得除法</h3><ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/17cda42d44de030f24ffc7ab61b3479e6bb05bf2388b243374b083ae04de3b56.png" alt=""></li>
+<li><img src="assets/bc2dfbb55665ecc8154f44054264c6568637311e638019bbefcc536a4656347b.png" alt=""></li>
+<li><p>补充</p>
+<ul>
+<li><img src="assets/9f9e7c47249048e60bbeed09cc300a25922efcf1ea37579cd6a180b625bed771.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>素数平凡判别法</p>
+<ul>
+<li><img src="assets/46624170ece122f3dbb13d7971711ae661b01369c61edacb9dbc55f03343b369.png" alt=""></li>
+</ul>
+</li>
+<li><p>一般余数定义</p>
+<ul>
+<li><img src="assets/4f765d2d915e396ef388328066ffe732610265a28715e2572fe03c6c82bd0622.png" alt=""></li>
+<li><p>延拓余数形式</p>
+<ul>
+<li><img src="assets/8a51799c39c418665d288f0079e34ba1ae0b4da426973081e3d0776a20b5bc18.png" alt=""></li>
+<li><p>例题</p>
+<ul>
+<li><img src="assets/7076ff3ac44250151bded9f2b5597ccf01b48ed3dcd5c8d0086de0dddefc1743.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="整数的表示（多项式）"><a href="#整数的表示（多项式）" class="headerlink" title="整数的表示（多项式）"></a>整数的表示（多项式）</h3><ul>
+<li><p>b进制表示（多项式形式）</p>
+<ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/1dfa299563fab52a80225cfc5f1af30b34f981df8b3e7aa4d3fc0182c04737d6.png" alt=""></li>
+<li><p>详细</p>
+<ul>
+<li><img src="assets/539c9b5bae47e73f74afe9b54c28c11c7e70aa45c983addceae7dbd99a9f0ab6.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>转换</p>
+<ul>
+<li>这里不多介绍，除取余法</li>
+</ul>
+</li>
+<li><p>运算（多项式类似）</p>
+<ul>
+<li>加法</li>
+<li>减法</li>
+<li>乘法</li>
+<li>除法（欧式空间下除法）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>复杂度（极限下无穷量）</p>
+<ul>
+<li><p>大O符号</p>
+<ul>
+<li><img src="assets/8c07dbf201afee1a714f3cfddd5ee6c54d055be54bea5ec1b03138ed0a7ef194.png" alt=""></li>
+</ul>
+</li>
+<li><p>小o符号</p>
+<ul>
+<li><img src="assets/805bda0cd4b4dbe308e1c197058113b2ff341e877b6eae9a62c8846b3775b925.png" alt=""></li>
+</ul>
+</li>
+<li><p>运算</p>
+<ul>
+<li><p>加法</p>
+<ul>
+<li><img src="assets/b1acb20d80901181ea68a6d7136c02648049a12d14270b39dadb93fc204606a8.png" alt=""></li>
+</ul>
+</li>
+<li><p>减法</p>
+<ul>
+<li><img src="assets/302d4fbece046885fcecff701c8b7f8ad5f016043066409a9660b8b2ae9421e0.png" alt=""></li>
+</ul>
+</li>
+<li><p>乘法</p>
+<ul>
+<li><img src="assets/058ae17d274d56277682ef1498ad089a1cf468abefe5725deb956005b492b0e9.png" alt=""></li>
+</ul>
+</li>
+<li><p>除法</p>
+<ul>
+<li><img src="assets/b4f6aedbb7840c3fab3f49a193493b5d93c3163f20584731dc4f163c6f68f7f6.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="最大公因数"><a href="#最大公因数" class="headerlink" title="最大公因数"></a>最大公因数</h3><ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/ae6d3525f5a0efed0de8c98ee7e2e450d540a7e8fa9df4eb97d41fa3761da2e3.png" alt=""></li>
+<li><p>补充</p>
+<ul>
+<li><img src="assets/36df8578e8cc3445e37217b7be9923dc216373f1d02cddc035f62e8a0f73144e.png" alt=""></li>
+<li><img src="assets/0a742f8ed4b271d34933728126c1eba171ce37f696a0debba392d76f71567cee.png" alt=""></li>
+<li><img src="assets/578a75395511860825f8d61700831c99f4f7d1808e9d081082cbef823a9665d4.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><p>相等</p>
+<ul>
+<li><img src="assets/6d0bea78f0702fea591dcdd87d6b78a8a6fc1e7105493c7f22fcb60d322226c8.png" alt=""></li>
+</ul>
+</li>
+<li><p>0性</p>
+<ul>
+<li><img src="assets/1e5483a877880435c06ac21be61876400057fa2df0da6d165b6269654acfcc66.png" alt=""></li>
+</ul>
+</li>
+<li><p>欧几里得除法引理</p>
+<ul>
+<li><img src="assets/909a4569828a4cd2254febfc6d8f0f718b5e48cd3a778b385360852f43631b78.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="广义欧几里得除法"><a href="#广义欧几里得除法" class="headerlink" title="广义欧几里得除法"></a>广义欧几里得除法</h3><ul>
+<li><p>定义（辗转相除法）</p>
+<ul>
+<li><img src="assets/914bf315b949488cd58ab6480001a9fb051a1485c0b1bb935bdba5c853a99e36.png" alt=""></li>
+<li><p>例如</p>
+<ul>
+<li><p><img src="assets/d5d3ce1918f999b7aa96dab8db6ad160eff7abb49df6b7780d00690c68bd9ab6.png" alt=""></p>
+<ul>
+<li>绝对值最小余数可以快速下降化解</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><img src="assets/ad0ebd0d8aee0b4e0924b585d8d1a0a1007f94ea34d58acfe526f33f4dc63412.png" alt=""></li>
+<li><img src="assets/93416f7e95168c4e21f0bac85a699996b4bc3a1dd8d424f8b6e8857dcbfa1f0e.png" alt=""></li>
+</ul>
+</li>
+<li><p>贝祖等式</p>
+<ul>
+<li><img src="assets/a7ed0951dce180afdc5634d669d99a1bfe0a4b131067ff319489431531544202.png" alt=""></li>
+<li><p>例如</p>
+<ul>
+<li><img src="assets/3d9718ba28f49f49fba718e440be72889deac71276973213dae9be18e83ceb3d.png" alt=""></li>
+<li><img src="assets/6488feb75469d91eb28b01ba85cdb9cff8e617ce1ceb6830fbbdbe5840e6b33e.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>证明</p>
+<ul>
+<li><p><img src="assets/0539fdbcb90ff63498319773386032ac9b17ee5a4995c56365d156d9b0a221da.png" alt=""></p>
+<ul>
+<li><img src="assets/9eaa4ca90a4df70f452a532e05dc74294d8ff28f84cc1b85f45c6822a97a38cb.png" alt=""></li>
+</ul>
+</li>
+<li><p><img src="assets/ef81bd82986eca9d5ca54c1779850bd43fefbfbab4c0bc64fd499ec49cca18c6.png" alt=""></p>
+<ul>
+<li><img src="assets/6758ed91dbd6203178e2165273efcd54235be6becfe42f2a7d8661342124bb80.png" alt=""></li>
+</ul>
+</li>
+<li><p><img src="assets/d91bee7611335830e648ed637d49b64bd5bcabe8a5487fcdd2d9cfd798a19ce8.png" alt=""></p>
+<ul>
+<li><img src="assets/640fe111291a32c673183ab73d43cd7f4364a9d3ec5f688c3b7c898ed79b1802.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>应用</p>
+<ul>
+<li><img src="assets/4e618af5f76f6bfd4aa6a3f8dcbee3d7c34d638640992570cf2d69e58c76b03b.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h3 id="最大公因数-1"><a href="#最大公因数-1" class="headerlink" title="最大公因数"></a>最大公因数</h3><ul>
+<li><p>互素定义</p>
+<ul>
+<li><img src="assets/ac32022047ebb7c0884b6b3cb584e47d3460897026a6d443629d14a4ef5c2f81.png" alt=""></li>
+</ul>
+</li>
+<li><p>最大公因数定义</p>
+<ul>
+<li><img src="assets/70a6bb711c29c75cc2548eeebef30110f131cb67fdd52105f13ef9dad54b817f.png" alt=""></li>
+</ul>
+</li>
+<li><p>推论</p>
+<ul>
+<li><p>素数构造</p>
+<ul>
+<li><img src="assets/3ff157544e13583814f9278bd590479d2ff9be864acae06ce9154cc38e5873c9.png" alt=""></li>
+</ul>
+</li>
+<li><p><img src="assets/2b104e32bd9e44af157676fa542fb295b0bf32a837f8fdab9945923ea41ccedf.png" alt=""></p>
+</li>
+<li><img src="assets/6a147446eebfc9c42ef48549e161478b9f93463a2bcf1ab240887ed7f8f93c4a.png" alt=""></li>
+<li><p><img src="assets/3c76cad1f46461dcf786777557737ce47ff24d9d94066b29a4093782cd5ee9ff.png" alt=""></p>
+<ul>
+<li>可以写成行列式形式</li>
+</ul>
+</li>
+<li><p><img src="assets/6c90510b5365daaaa6d47f5e7e26026b6b1f7bb5d3a40204e8b29b4c744e933e.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p>计算定理</p>
+<ul>
+<li><p>线性递推</p>
+<ul>
+<li><img src="assets/f46f1fa3012c4b74fcf4383863e7e27dad1c806be96d2f5e196b82569054f937.png" alt=""></li>
+</ul>
+</li>
+<li><p>指数</p>
+<ul>
+<li><img src="assets/23b01a653e20dfe5de85ec93a29af7a98002848d8c68627276e7d858dbb75837.png" alt=""></li>
+<li><img src="assets/eeea62642abf92062b8493146c3743d629789915f91a01e3aff1f47a51168a8f.png" alt=""></li>
+<li><img src="assets/4c8d9645154af9b5ea958ffb6ab07d6296c09de4e2a4725515c3012ea35d4e87.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="最小公倍数"><a href="#最小公倍数" class="headerlink" title="最小公倍数"></a>最小公倍数</h3><ul>
+<li><p>前提引理推论（整数性质扩展）</p>
+<ul>
+<li><img src="assets/fbc57ed8b3b8b9339304e3715bfa3358919dd717e206e79f01afdd23ed4d19b7.png" alt=""></li>
+<li><img src="assets/1d8f9ec4ce88538c403fd098a4c398c7830b2d26d6706eda350a6cb39a839a1c.png" alt=""></li>
+<li><img src="assets/473398b9e64386e96d7528fbe0e573c9fdc6596b2086f4d4d345763b787b65ce.png" alt=""></li>
+</ul>
+</li>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/034a0641a285d4914638924b918c879270477773dc67bcfa14cc6be3a7fdc4d5.png" alt=""></li>
+<li><img src="assets/ebb37d98db32cc4ae46793f874c19b63e74196cad097b65d927a5d7a938b8ab1.png" alt=""></li>
+<li><img src="assets/dc5b8624a0cb4d9db21f11058e8754c5e8aef63545120d1a84018792c28ebff3.png" alt=""></li>
+</ul>
+</li>
+<li><p>最小公倍数与最大公因数的关系</p>
+<ul>
+<li><img src="assets/54200eaeaa276a106815bd47d18281244bff37557ed71f4452ffed16104fe212.png" alt=""></li>
+</ul>
+</li>
+<li><p>拓展多个</p>
+<ul>
+<li><img src="assets/d78772268e6193c6f5f6a0e9cc3038cf4b5fe865f82fe4fcdab8c081fa3a1f45.png" alt=""></li>
+<li><img src="assets/6cc4659322e87939a3e77f1c2f9cf4bc2d417a1ace9fad776eb00133a05a0004.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h3 id="整数分解"><a href="#整数分解" class="headerlink" title="整数分解"></a>整数分解</h3><ul>
+<li><p>整数分解定理</p>
+<ul>
+<li><img src="assets/cdd15d67efc334001cbe2a3d1b477074bf7f53b8373277bd6e0750ee4281bb9e.png" alt=""></li>
+</ul>
+</li>
+<li><p>例题</p>
+<ul>
+<li><img src="assets/db02097482c4962748b7d1f8e0233fcb87d73f0aa27fe27cd92eb939e15ae55e.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h3 id="素数算术基本定理-多项式形式重根"><a href="#素数算术基本定理-多项式形式重根" class="headerlink" title="素数算术基本定理(多项式形式重根)"></a>素数算术基本定理(多项式形式重根)</h3><ul>
+<li><p>算术基本定理</p>
+<ul>
+<li><img src="assets/15ef5549220bd5bd535866e057b0579665d9de8789083e1a2409b418d088babe.png" alt=""></li>
+<li>这里素数乘积，表示素数开始作为空间的基，了解素数就可以掌握这个空间映射</li>
+</ul>
+</li>
+<li><p>标准分解式（加入重根）</p>
+<ul>
+<li><img src="assets/302a7d76b21c9acb51ed8131b41e3a85ade626c099c294f8f90f9367a352284c.png" alt=""></li>
+</ul>
+</li>
+<li><p>因式分解</p>
+<ul>
+<li><img src="assets/0c0f7ff10520e6eb8eebb8e75b7c314ccd01318fc2718e36ec347d00d7544142.png" alt=""></li>
+<li>素数组合</li>
+</ul>
+</li>
+<li><p>最大公因数额最小公倍数的内涵</p>
+<ul>
+<li><img src="assets/988b25884b9514246d9a3229da7738c55d7db4521eea4882d0d043cc07613d80.png" alt=""></li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/1375fb0983112bf13910127dee8eeb6811d7d856c890815cf3533d045e31886e.png" alt=""></li>
+</ul>
+</li>
+<li><p>推论n个</p>
+<ul>
+<li><img src="assets/170b5387f6e407c7e1218737eebf28b9d1218136ac1e5af39c0f4dbd3ae926d5.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>特殊结论</p>
+<ul>
+<li><img src="assets/97da9c572814de6ae373a257fd1b73b4a58532487f361499da79b2769b6da989.png" alt=""></li>
+</ul>
+</li>
+<li><p>素数定理</p>
+<ul>
+<li><img src="assets/c53a53c97eefce64092939b9db4f69a434ef7d0ce8ee3a11c0b95136e41e81dc.png" alt=""></li>
+</ul>
+</li>
+<li><p>切比谢夫不等式</p>
+<ul>
+<li><p><img src="assets/297b9f5efa217a6c04779a75fde47f855a84552e6273f2881e8bd836b5a42671.png" alt=""></p>
+<ul>
+<li>素数位置估计</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="同余"><a href="#同余" class="headerlink" title="同余"></a>同余</h2><h3 id="同余-1"><a href="#同余-1" class="headerlink" title="同余"></a>同余</h3><ul>
+<li><p>概念</p>
+<ul>
+<li><img src="assets/36d22195696490c5f2d14d27af252b6ee8336218696b4d4dfdaf8a62ed8d2570.png" alt=""></li>
+</ul>
+</li>
+<li><p>判断原理</p>
+<ul>
+<li><img src="assets/13edf7c44b216e6412d957a7041c69fbf93bc4eaac27d1750136e942441000fa.png" alt=""></li>
+</ul>
+</li>
+<li><p>等价关系的性质</p>
+<ul>
+<li><p>自反</p>
+<ul>
+<li><img src="assets/83a3803345ed96b0bd09e7dcb6a3a30ea2490508977577e332da672497cca4f5.png" alt=""></li>
+</ul>
+</li>
+<li><p>对称</p>
+<ul>
+<li><img src="assets/6225c63793dc2827a45966c2328242bb0c1b6afb5c836e61916bb7ea2630fee5.png" alt=""></li>
+</ul>
+</li>
+<li><p>传递</p>
+<ul>
+<li><img src="assets/da4828dc967cb946c52e8d80f0ab95af91df4fa73102b67b94172ab8d479709b.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>推论</p>
+<ul>
+<li><p>余数相同判定</p>
+<ul>
+<li><img src="assets/4586abce717aa895d2a71d212123963ee55c21b7287305c84fd4a75884d14621.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>特性</p>
+<ul>
+<li><p>相加相乘（满足线性空间）</p>
+<ul>
+<li><img src="assets/7ce32ff8e28a066079bb235ad23960f2e9ceb1114cbb8151240b5520614ca7e4.png" alt=""></li>
+</ul>
+</li>
+<li><p>空间相等</p>
+<ul>
+<li><img src="assets/fb5583191734b316fcfc35f3a6f115707446c93f6ed5105459cb8a16917b60b8.png" alt=""></li>
+</ul>
+</li>
+<li><p>3，9特性</p>
+<ul>
+<li><p><img src="assets/18daea7fd0a316def9ca8a3d60d7ccdd776d3ac17d456d80b8bb5c557ab1fac7.png" alt=""></p>
+<ul>
+<li>小时候用的估算</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>7,11,13特性</p>
+<ul>
+<li><p><img src="assets/d3608138d4e7d6f356580660345d933ead096f6325437fd3700d3c05e054791c.png" alt=""></p>
+<ul>
+<li>差分估计</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><p><img src="assets/1b674ea08e18eb9a63273bd627dfdbad7a636fbbbbb7c0268d44442f39eb3e99.png" alt=""></p>
+<ul>
+<li>换成整除证明</li>
+</ul>
+</li>
+<li><p><img src="assets/d4728d02095455e62ca6ef8990fff0dc99a9255d9f60be854d5766c12018689b.png" alt=""></p>
+</li>
+<li><img src="assets/48c703a01bbb676a5e237e75ea674a9fb8cc9fa5135f8ee2eb4f5d7d1478f081.png" alt=""></li>
+<li><img src="assets/7a4c31ab05fc046bf8a040acf5960e4f54a3ba9ee97750256e9070ed3eabfc67.png" alt=""></li>
+<li><img src="assets/04e792440274ede5b33789397640819570fb3eda25a73c9d5efc41e0c73acfe9.png" alt=""></li>
+<li><img src="assets/4b605f3fb1c52c6d56502feafa4eb9f8138d32a540598296bb73ba3915ad5108.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h3 id="剩余类"><a href="#剩余类" class="headerlink" title="剩余类"></a>剩余类</h3><ul>
+<li><p>定义前提</p>
+<ul>
+<li><img src="assets/44ffb76b2fc18885e433ba7f5c247435fbfc83477d8e5a78eee774014b15b1b8.png" alt=""></li>
+<li><img src="assets/b3acb4456e2cecb380c73590ebd3d765d745f29255620a6441e51e49cbed469c.png" alt=""></li>
+</ul>
+</li>
+<li><p>完全剩余类</p>
+<ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/e3a81efdffb91585ab48d102140652780ee4a830f37ba414d684f85ea15b3dbf.png" alt=""></li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><img src="assets/0f2728f38749ce9b5ca965d228779695279b348d593854626f7016e2e4ab8dcd.png" alt=""></li>
+<li><img src="assets/90e6b78617b76716d25e5f3e661ca573572fd029138053687a124a3aba410425.png" alt=""></li>
+</ul>
+</li>
+<li><p>判定定理</p>
+<ul>
+<li><img src="assets/47a25055b0c4de36f6938af8f634fc20b2a3f2a24bdc2b1e7f1af1ff6e19b68c.png" alt=""></li>
+</ul>
+</li>
+<li><p>类型</p>
+<ul>
+<li><img src="assets/ed6bcb48875da067e8c6e80089bc4d8458e8b85c09a2c92af43d7ddff5daf5f9.png" alt=""></li>
+</ul>
+</li>
+<li><p>遍历</p>
+<ul>
+<li><img src="assets/fc4024c594d03d24ccf002f2e3d58b1cbb1d591226db516a226e4e2e75702ed1.png" alt=""></li>
+<li><img src="assets/d3cafaff0a5adbf3c53b1dd2f80c9e5f91d1e59794a9f2ff437503bcf4fdb403.png" alt=""></li>
+<li>同理推广n维</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>简化剩余类</p>
+<ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/3fd3f06042b87865f32338b2cd0a814f58ab3cecca04b41854adac2ae8f815cf.png" alt=""></li>
+<li><img src="assets/268a2b59dc635dd5528c1b71ba258faa88874699a1c3b7ebb462ee02bb0ba3ca.png" alt=""></li>
+</ul>
+</li>
+<li><p>互素</p>
+<ul>
+<li><img src="assets/6ed20dc373c8c86d7c626b1ed74ba5a90b9caf29089fd8dbf49f41537af0d674.png" alt=""></li>
+</ul>
+</li>
+<li><p>简化剩余系</p>
+<ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/357d45e950602adfdbd23899ee3d72f3d73133d5f3e19c88bd9b6b2deb112e63.png" alt=""></li>
+<li><img src="assets/b468a766f94879031690e2551d69af797dad99cf430d1276fa9bf59ede3d3ca3.png" alt=""></li>
+</ul>
+</li>
+<li><p>类型</p>
+<ul>
+<li><img src="assets/f2b233916c90271d8d8e22570da92b78972c48fe4c828483dd34da589312c47c.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>遍历</p>
+<ul>
+<li><img src="assets/f540b934a3abf5e5a2ebb9f2bc3a96223aa61866aa8e340d5cf2cbd74e397c3b.png" alt=""></li>
+<li><img src="assets/28efa24db62f94f43714fffde18859a67fd344461783d9fd8eb5ce39f8f4a98e.png" alt=""></li>
+<li><img src="assets/e2b6224cbff8211420e7a385d4cc746b37537f965ac74742e8ea6bbe09137912.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="欧拉函数"><a href="#欧拉函数" class="headerlink" title="欧拉函数"></a>欧拉函数</h3><ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/b2ba01190ccfcd26bbfe87de3ee6338f5a2f7df28f721220ca1828898ec9d7b5.png" alt=""></li>
+</ul>
+</li>
+<li><p>欧拉定理</p>
+<ul>
+<li><img src="assets/dad81ea675a7330d9002c4db45abc49645d0faa6913ec123b8a077110bae50a3.png" alt=""></li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><img src="assets/517fc3d5b51adbedee6b7a1650790b75f0be2f9bd14b2539655ec50fa0a7d2e1.png" alt=""></li>
+<li><p>计算方法</p>
+<ul>
+<li><img src="assets/43ed094c68993b189fb82bda8360eeeb04530f3980ba99132bea52975e88bb0f.png" alt=""></li>
+</ul>
+</li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/27f07381cba8918a23d5e725836ef732265514f5f6bfbe05de9e6476ee32b7ee.png" alt=""></li>
+</ul>
+</li>
+<li><p>原根的构建</p>
+<ul>
+<li><img src="assets/ed53e1b41a63ca81fcfeb412186c2ce8458ad41527c9b1661f49dc70f2734c5d.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="经典定理"><a href="#经典定理" class="headerlink" title="经典定理"></a>经典定理</h3><ul>
+<li><p>欧拉定理</p>
+<ul>
+<li><img src="assets/f3a4ac1d6fc847edcef4ccd26a08cb792686175aa56e1e4330e39f9222a043c7.png" alt=""></li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/f1643b00312ea94b7d9cd7679e5d864bb79f431c9ad16fe6ef8253a36d336d6e.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>费马小定理</p>
+<ul>
+<li><img src="assets/0babe538bf630b64324c456363b30df7d8fcba359b330fe29f66f74ef46d2958.png" alt=""></li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/2272859d178a236f2f025224d54d974f1d521f84336a076380726c2142a0da99.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Wilson定理</p>
+<ul>
+<li><img src="assets/e6705724436224fa955e2e72bbd3687f88728167f7ab1b821efc7d2f370a22b9.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h3 id="模重复"><a href="#模重复" class="headerlink" title="模重复"></a>模重复</h3><ul>
+<li><p>思想</p>
+<ul>
+<li><img src="assets/cafe20e67461341b538b9bd7410934eb772105213e7576db5ffc3cbb9aac2ee3.png" alt=""></li>
+</ul>
+</li>
+<li><p>方法</p>
+<ul>
+<li><img src="assets/a21869b709fb7fe84f443e873ef410e87fcad901b63181fb15d5fd00cfb529ce.png" alt=""></li>
+<li>例题见书</li>
+</ul>
+</li>
+</ul>
+<h2 id="同余式"><a href="#同余式" class="headerlink" title="同余式"></a>同余式</h2><h3 id="同余式-1"><a href="#同余式-1" class="headerlink" title="同余式"></a>同余式</h3><ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/ee0b909b24d46a2613d34ccbe1958b9ed530340b94c5e896575453bb288b0290.png" alt=""></li>
+<li><p>解空间（剩余类）</p>
+<ul>
+<li><img src="assets/009aac8d7e7e5759fa6f0c420401ff8993c2115dec8ae04c1141f97a89a5234a.png" alt=""></li>
+<li>类比高数中微分方程的解空间和代数空间下的解空间，同构罢了</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>基本思路</p>
+<ul>
+<li><p>(1）    求解归约 (J(x) (mod m）仨＝ f(x) (mod pa) &lt;== f(x) (mod p)).</p>
+<ul>
+<li><img src="assets/f5c5792a9ac14080003f0c5cfbaeeb835a9ffed81c60909b239d8b5bc3f7b051.png" alt=""></li>
+</ul>
+</li>
+<li><p>(2）    解的存在性（如定理3.1.1).</p>
+</li>
+<li>(3）    解的个数 （如定理3.1.3， 定理3.4.4， 定理3.4.5).</li>
+<li>(4）    具体求解 （如定理3.2.1， 定理3.4.1).</li>
+</ul>
+</li>
+<li><p>一次同余式求解过程</p>
+<ul>
+<li><p>思路</p>
+<ul>
+<li><img src="assets/f0d46fac7ead0a6d722ad204ad02753d7080f82d58c7e78235abdccbf08722c7.png" alt=""></li>
+</ul>
+</li>
+<li><p>相关定理</p>
+<ul>
+<li><p>存在性证明</p>
+<ul>
+<li><img src="assets/0f2c8cec44fa54890903b718c6b8335e91225ea0e11bc67949b0790e02a07af2.png" alt=""></li>
+</ul>
+</li>
+<li><p>解个数</p>
+<ul>
+<li><img src="assets/bee912b2310491326a1c9adeea88bec8344982a77383df2baed9191ef551efa3.png" alt=""></li>
+</ul>
+</li>
+<li><p>代数可逆补充</p>
+<ul>
+<li><p>可逆元（这个没必要吧，前面涉及到了）</p>
+<ul>
+<li><img src="assets/6cb3f957aed7eefa38f70c63a8d56749653e5d4b5a548a4aaf3da3cd1129c8e6.png" alt=""></li>
+</ul>
+</li>
+<li><p>简化剩余类可逆元遍历（这里就是想法上一个转化，转化为求可逆元，利用前面的同余以及辗转相除法）</p>
+<ul>
+<li><img src="assets/dde919bb988ddcf686e6b36cbfc8fef5d0dc525498159080fbfeaac53210b5bd.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>例题</p>
+<ul>
+<li><img src="assets/5b99abaaa816f829c90d468384899f6e2fa09d09b79df4f9580c28229269c16c.png" alt=""></li>
+<li>思路：和微分方程一样，先判断有解，然后求解特解，再求解空间</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="中国剩余定理"><a href="#中国剩余定理" class="headerlink" title="中国剩余定理"></a>中国剩余定理</h3><ul>
+<li><p>定理**</p>
+<ul>
+<li><p><img src="assets/3b550b2b2d9e3d96919be0b530b3aefde1f2c443f668fccea947c61ce521b106.png" alt=""></p>
+<ul>
+<li><img src="assets/fad7491555d86fc7fcd5e9749d711822e9cea5dad71da5183de9e8178d3271e0.png" alt=""></li>
+</ul>
+</li>
+<li><p>俩种表示形式，个人更偏向第一种好记忆，第二种偏递推得出的结论，适合证明</p>
+</li>
+</ul>
+</li>
+<li><p>2个方程版</p>
+<ul>
+<li>（其实和上面差不多只是加了辗转相除法简化了一下，其实我感觉一模一样）</li>
+<li><img src="assets/048bbba080bd3412afa00e1e74bd73c83c888a4f557eedce5fae30a74f38264d.png" alt=""></li>
+<li><img src="assets/149def11ea57d5e5ab96ec01aabe52a2f561e69107793306bf524089c46010b2.png" alt=""></li>
+</ul>
+</li>
+<li><p>推广</p>
+<ul>
+<li><p>遍历（这个我其实不太懂）</p>
+<ul>
+<li><img src="assets/01fadb88359e43395f8ccf675345a602e42d22382210598b1a817792c85b5c63.png" alt=""></li>
+</ul>
+</li>
+<li><p>类似上面吧</p>
+<ul>
+<li><img src="assets/3a31c2fe5acfca7919b9e05d5f8c525e53beba41d575fe84e83e5e9e820f8886.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>例题（详细看书吧）</p>
+</li>
+</ul>
+<h3 id="高次同余式"><a href="#高次同余式" class="headerlink" title="高次同余式"></a>高次同余式</h3><ul>
+<li><p>解法</p>
+<ul>
+<li><img src="assets/c1f1d6762858ade1286dc2c381e3188087f401589676a818dc965253359f3e0a.png" alt=""></li>
+<li><p>常见的转化，化为同余式组</p>
+<ul>
+<li>这里应该和代数空间上分解有关</li>
+</ul>
+</li>
+<li><p>例题</p>
+<ul>
+<li><p><img src="assets/e8bab73afd76bda32299bb03a7d85b42f5f378490c72137e81e9bb92edc9f431.png" alt=""></p>
+<ul>
+<li><img src="assets/7193de187e33984b5ec5f6bfe6662a1ed5f19aef05a66588f0cfa813787bc183.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>提升</p>
+<ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/fec64de7f81b1c5474b1f8f3ccddb6efd688363b58b15119968ff56cb933ab91.png" alt=""></li>
+<li>总感觉和不可约多项式那边有点像</li>
+</ul>
+</li>
+<li><p>解法</p>
+<ul>
+<li><img src="assets/63d5e0ee101540594b2d071ac418142178e8fa00aba845f59cfbecddce1a91fe.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="素数模的同余式（这个有用）"><a href="#素数模的同余式（这个有用）" class="headerlink" title="素数模的同余式（这个有用）"></a>素数模的同余式（这个有用）</h3><ul>
+<li><p>多项式除法（代数学过）</p>
+<ul>
+<li><img src="assets/8096563e39c3a12296d6adeb182fe47a813e4f6e24430865be3153bd6da6dd32.png" alt=""></li>
+</ul>
+</li>
+<li><p>简化</p>
+<ul>
+<li><img src="assets/9ce8381da2dc8a7322f848a23222a64721558b8d18f6a5b13504a89aaf8aebf9.png" alt=""></li>
+</ul>
+</li>
+<li><p>因式分解</p>
+<ul>
+<li><img src="assets/177040731af36d3e803c1d05f96d77d8f02306fa700ddd5de360d887775fade0.png" alt=""></li>
+</ul>
+</li>
+<li><p>解法</p>
+<ul>
+<li><p>判定定理</p>
+<ul>
+<li><img src="assets/379ed2e68310d8b8a312d312da56e313859494e5d7eb9021c0c991d3b0b388cd.png" alt=""></li>
+</ul>
+</li>
+<li><p>上界估计</p>
+<ul>
+<li><img src="assets/c4f2268fd064eadb571499e149bee4bd61dd811d5a92c8f2b0e185b78a4976e4.png" alt=""></li>
+</ul>
+</li>
+<li><p>解数判断</p>
+<ul>
+<li><img src="assets/07f1e6a12e0406b8aa2503cb574abeffe2297b307ebc55ec31c73e02f8205b3d.png" alt=""></li>
+</ul>
+</li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/2daafde2b950d45ca042468f42a9ca73fccaceb7dcbb6a6a87f832ac75a4d446.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="二次同余式与平方剩余"><a href="#二次同余式与平方剩余" class="headerlink" title="二次同余式与平方剩余"></a>二次同余式与平方剩余</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<li><p>二次同余式</p>
+<ul>
+<li><img src="assets/7b84de2892b543b5a588782511ace03aabdc56702399679e800604694cf80180.png" alt=" "></li>
+</ul>
+</li>
+<li><p>平方剩余</p>
+<ul>
+<li><img src="assets/f077aaa562c9368c7c3fc6ff07b4a3c90613662793b651e5b4d05f386dde2bad.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h3 id="模p为奇素数的判别法"><a href="#模p为奇素数的判别法" class="headerlink" title="模p为奇素数的判别法"></a>模p为奇素数的判别法</h3><ul>
+<li><p>欧拉判别法</p>
+<ul>
+<li><img src="assets/21ea9f52a5a6e28833bb34e3f8dbb60852a9d8753d7ae77b7fbaf6e830733836.png" alt=""></li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/ea08e3443a434db70c788104aca4e7025919d42a78efa50462e705bd21195b32.png" alt=""></li>
+</ul>
+</li>
+<li><p>二次平方剩余系</p>
+<ul>
+<li><img src="assets/c2c55dbfbdd7c6a7884aa5f7bc791c054c7f02e8c511d2bcc98ce44cc69f9cab.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>勒让得符号</p>
+<ul>
+<li><p>定理</p>
+<ul>
+<li><img src="assets/6a001bd1370d805804d7da36a8c2e7f127e91265422d4b31b064d7b46030c3b8.png" alt=""></li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><img src="assets/fd2c5bb400549d5dde41497d1760c6e97b686a63938af96079a6696192a65a99.png" alt=""></li>
+<li><img src="assets/85694bcfd5e7af59ebb14ac09ae9353ecd5441e7e074f14ea55b19bbac473458.png" alt=""></li>
+</ul>
+</li>
+<li><p>子主题 3</p>
+</li>
+</ul>
+</li>
+<li><p>相关定理</p>
+<ul>
+<li><img src="assets/64935512bbd7f880b1c28aa373dd9626e2f7c37a873cb3fde4d1ffa2d50ff5bd.png" alt=""></li>
+</ul>
+</li>
+<li><p>高斯引理</p>
+<ul>
+<li><img src="assets/8d240a29535054228915a17d97843c907d4fe9fe53083801978af9c7379040cf.png" alt=""></li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/da2aa8b0cd8ca221429bbeb8e07312471a91cc9a19e5d87a1e669f8fb161d29d.png" alt=""></li>
+</ul>
+</li>
+<li><p>求解定理</p>
+<ul>
+<li><img src="assets/91c3049b5b295773ff0a25301113f6b62e1059fc053d57832c0600fc964c34c9.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>二次互反律</p>
+<ul>
+<li><img src="assets/5087b8611b41a6c211f9aacbb1ea988e50efbadc104e5a7de4fd1c054b1efd32.png" alt=""></li>
+<li><p>辅助</p>
+<ul>
+<li><img src="assets/c00eb4f42cbdcffe1777168e693e8729b295796b3516c57763c152570b1a4a89.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>雅可比符号</p>
+<ul>
+<li><p>弱化条件</p>
+<ul>
+<li>在勒让得符号的计算中，要求模p为素数此外，在二次互反律的应用中，也要求α＝q为素数．这些都是很强的条件，因此，希望这些条件可以弱化，只要求模m为奇整数，α为任意整数．</li>
+</ul>
+</li>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/5e3d1bbe04ae8954e70052ac54330f405deac5b3c307d01834ea3cf620b19ecc.png" alt=""></li>
+</ul>
+</li>
+<li><p>定理</p>
+<ul>
+<li><img src="assets/08acc12f3903775a132420669176d363dbb141653c8f3af68907989f2a9a98a8.png" alt=""></li>
+</ul>
+</li>
+<li><p>引理</p>
+<ul>
+<li><img src="assets/2315d92d33b85a9138882f2f3cea678e5d80efaaf2ad69f712b9155aa0effaf2.png" alt=""></li>
+</ul>
+</li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/ec482191f33cf14e3b874bd7fdc725fffba102f9bb5d4a00152fab1682329914.png" alt=""></li>
+</ul>
+</li>
+<li><p>二次互反</p>
+<ul>
+<li><img src="assets/d9a77df9426c25bdc00be63dff86fdee56a8a4fc7a49ae32794c1bb4580b95e6.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="模平方根"><a href="#模平方根" class="headerlink" title="模平方根"></a>模平方根</h3><ul>
+<li>具体求解</li>
+<li><p>模 p 平方根</p>
+<ul>
+<li>设p是形为4k +3的素数．讨论此情形的模p平方根</li>
+<li><img src="assets/1fee359c5fbdc739e5a14cb2f209d3387a0c9c43a98b95d773fd9b347b994bb8.png" alt=""></li>
+<li><img src="assets/f885b1cc7724fa554732b5661b3db33b87a9388f29fdd7008d33bc8620f32247.png" alt=""></li>
+<li><p>证明</p>
+<ul>
+<li><img src="assets/875f562ec5ea6c448e0447234564f22f1ce6afd5474c1ca2b5cdc017b95fd4b8.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>模p平方根</p>
+<ul>
+<li>p为奇素数</li>
+<li><p>解定理</p>
+<ul>
+<li><img src="assets/f69c76c22b0657e68fe49e978558bd8b929b6d78dc28b6be1bc5cc597c4d86d4.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>模m平方根</p>
+<ul>
+<li><p>条件</p>
+<ul>
+<li><img src="assets/371a48405f1ce45bd81a7a96d989b5bbded91e6cb07a6b64cd201d7b813ae3fa.png" alt=""></li>
+</ul>
+</li>
+<li><p>解定理</p>
+<ul>
+<li><p>p^a</p>
+<ul>
+<li><img src="assets/880b6abcea84c68b4322b10124a6e6a4be1e0e661289b9a1e2fc586b526e2313.png" alt=""></li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/393391b2aa1065cb90b6b622767f02a91494d03ab2a33abba61f6b7be6fc51e5.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>a的分情况</p>
+<ul>
+<li><img src="assets/a898bf03b36f3fe5034b29eae3143c8b3378e0cec77a066b9d8cfa757b39e88b.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>x^2+y^2 = p</p>
+<ul>
+<li><p>定理</p>
+<ul>
+<li><img src="assets/cdedd43b1ea0b99178c19d7c859a65491bd18e50ce2961e82b0648f37b7b3155.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="原根与指标"><a href="#原根与指标" class="headerlink" title="原根与指标"></a>原根与指标</h2><h3 id="这一章应该算代数数论了，初等数论只涉及一点点"><a href="#这一章应该算代数数论了，初等数论只涉及一点点" class="headerlink" title="这一章应该算代数数论了，初等数论只涉及一点点"></a>这一章应该算代数数论了，初等数论只涉及一点点</h3><h3 id="指数（阶）"><a href="#指数（阶）" class="headerlink" title="指数（阶）"></a>指数（阶）</h3><ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/a97129623d8e4e8e67a08354c47c52aa7e4702fdb0fd6064be317eb063f92a63.png" alt=""></li>
+</ul>
+</li>
+<li><p>基本性质</p>
+<ul>
+<li><p>这里揭示了域的同构</p>
+<ul>
+<li><img src="assets/dfb7a8726b468bb7c1586cc3962cd70f983e4d76bdb9a52f69bce273ad035739.png" alt=""></li>
+</ul>
+</li>
+<li><p>推论欧拉定理可得</p>
+<ul>
+<li><img src="assets/8e2fc93a87ccd55ea854b3a86cd58083dc8155f1b082cdf7bae7ab3efd32ac1d.png" alt=""></li>
+</ul>
+</li>
+<li><p>还是欧拉变形</p>
+<ul>
+<li><img src="assets/5a62636c69cf5ea5d5bc88c51477c895d839d7a734227618f1613115fdd5e319.png" alt=""></li>
+</ul>
+</li>
+<li><p>同构下性质保持不变</p>
+<ul>
+<li><img src="assets/25c979e70ae646ed8dddb58f1a5a3d4da449d1c1e7b6913b948de302a5a611cc.png" alt=""></li>
+</ul>
+</li>
+<li><p>这个不清楚，应该是同构映射基类似吧</p>
+<ul>
+<li><img src="assets/c5d04ea2d1f4822cf617a798627170fee2478a32759dacd8217e65e89057f4ee.png" alt=""></li>
+</ul>
+</li>
+<li><p>计算与优化</p>
+<ul>
+<li><img src="assets/85b16e0455b65289384bd8aa6355d89062950545d2b995ab9cc9132ee4ee9885.png" alt=""></li>
+</ul>
+</li>
+<li><p>同构</p>
+<ul>
+<li><img src="assets/a4775f061ae430c4d89158d2dc27508eabba28f86b2a61101e608dabd9c2926c.png" alt=""></li>
+</ul>
+</li>
+<li><p>构造</p>
+<ul>
+<li><img src="assets/2fcb433263b1a48509ef2bb0db20b73801a6c1c03c22a9e80720a710182a7c3d.png" alt=""></li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/fcc44f9b9a36c56a1856f093ce7392ad4b1196c4eb7480083443b91056c4f646.png" alt=""></li>
+<li><img src="assets/b3751805f178db34c0923655a9220141004ffb13a079c814a3194a21fcd254e3.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>重要定理</p>
+<ul>
+<li><img src="assets/4f95ef79f93031260edf5eae87a54b1be4670332636491e62d35b7937bfd4571.png" alt=""></li>
+</ul>
+</li>
+<li><p>大指数构造（感觉就是同构后的性质和前面一样）</p>
+<ul>
+<li><p>互素相乘</p>
+<ul>
+<li><img src="assets/eef7e77b415643c3fe688e079e7a51af235e7b079501e2bed07a2678c2d2586d.png" alt=""></li>
+</ul>
+</li>
+<li><p>揭露了阶的含义，最大公倍数，这里就可以看成域的自乘了</p>
+<ul>
+<li><img src="assets/ea97759b69a6165fce141b188a3bc302d1b95c44e1ada66c6303801be5a2f39b.png" alt=""></li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/de06e716de364b09c3db6b06a35676f09bdc104e939a7b9a0c6876ef74d20973.png" alt=""></li>
+<li><img src="assets/c279f30b5d215397bdf69eb53d910b07bb5404e21b24301ad603f06039b3c707.png" alt=""></li>
+<li><img src="assets/efae0be08fa2e435753ecf01eaaa9a66051048e8e238d77d79f34b7006cc13a0.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>关系</p>
+<ul>
+<li><p>引理</p>
+<ul>
+<li><img src="assets/f345191c2408e368cf4edd82268c246b860e2cd68155564dd1bd84af93db660a.png" alt=""></li>
+</ul>
+</li>
+<li><p><img src="assets/2b49bbad9e6cc761bb5fba441ed918dd6c0f9853b1122ac6047ef8ebb266c7b7.png" alt=""></p>
+</li>
+<li><img src="assets/bab97f79859b8325d1468aec3617d274f8a96c617d1fdc24261a2ec7c87a7f65.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="原根"><a href="#原根" class="headerlink" title="原根"></a>原根</h3><ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/8f3c74b76e1c0e4c4792f85513d29d450f4fcb3e0a34a7247d91657f88996b24.png" alt=""></li>
+</ul>
+</li>
+<li><p>模p原根（这里p都是奇素数，也就是抛去2）</p>
+<ul>
+<li><p>存在性</p>
+<ul>
+<li><img src="assets/cac1ab6bea55ab7233309a039e16a7291eae360051a34382f3c08613e171761c.png" alt=""></li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/cde292deff43e2224a39dbbb7451f7b545da75b462eaaf3cac52ebf99331c03c.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>判断</p>
+<ul>
+<li><img src="assets/2fc8f0e3bca0c5f8e297bcb7a5aaa0b7b559b3cca8a783f7d3e214c121921cc9.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>模p^a原根</p>
+<ul>
+<li><p>引理</p>
+<ul>
+<li><p>p性质分析，二次同余</p>
+<ul>
+<li><img src="assets/854afa68ab6f4cb7a2d4d0d273d2db7797efa930a575b2e0ea2402af61a6e24b.png" alt=""></li>
+</ul>
+</li>
+<li><p>递推分析</p>
+<ul>
+<li><img src="assets/e3a3827cc06db97b71d2c20702b6fdda92c84e74bc205d9f3b660faf64683c26.png" alt=""></li>
+</ul>
+</li>
+<li><p>子主题 3</p>
+<ul>
+<li><img src="assets/1da078d2ba987f1da1123b4bbd97e5f26611cdf441e4325818de2a57ba3c697c.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>构造原根</p>
+<ul>
+<li><img src="assets/c70e405f87b9b17c953b3f220acbf765d12cd636bce0d366b33bf3cb55e9807b.png" alt=""></li>
+</ul>
+</li>
+<li><p>存在性</p>
+<ul>
+<li><img src="assets/a622dc22a450d68d4ece80293635f12d6c55c2e5eee36012b3d058de2b28707e.png" alt=""></li>
+<li><img src="assets/492c941d32cbbc1170fce88fcaa90046bf3b4616e55b0b8051246dff2a83637a.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>模2^a原根</p>
+<ul>
+<li><p>引理</p>
+<ul>
+<li><p>递推构造？？</p>
+<ul>
+<li><img src="assets/744340a8e975295d74cdad4d540c7c085bfd2d24a5f3de0986b277b810fa3672.png" alt=""></li>
+</ul>
+</li>
+<li><p>这些引理是人想出来的？</p>
+<ul>
+<li><img src="assets/4f7844cb8b5a703f78df8eef34a15a222e443627776185787a1d59f13af62442.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>上界控制</p>
+<ul>
+<li><img src="assets/c23f4e1a70052592bd2fc38b5b3a02570f43fd50395498a5f46c4ad4a9b75bed.png" alt=""></li>
+</ul>
+</li>
+<li><p>大于等于3，2好像是特殊情况有公式</p>
+<ul>
+<li><img src="assets/40fc4a727d94fbac60ffdc6e25dfab0ec248188c56ba749a5ec44d409a26dbaf.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>模m原根</p>
+<ul>
+<li><p>原根的存在性，充分必要条件</p>
+<ul>
+<li>前面都是为这个做铺垫，其实只有这个最关键</li>
+<li><img src="assets/5cd1b0d0c8703c13a579004154789ecba0a2ea977a1e42e92fd6a91772d04c8c.png" alt=""></li>
+<li><p>证明</p>
+<ul>
+<li><p><img src="assets/4990f47e06be4d2e7bb8b530d922b364d730c59f22420a17b6d8d1567c314396.png" alt=""></p>
+<ul>
+<li><img src="assets/25a737f4da18b42fd2bd0e717787c1246541b1ffebc13039d12e6bcf7b2b4928.png" alt=""></li>
+</ul>
+</li>
+<li><p><img src="assets/fed0b73f4472b614935327df83972e501b822b4d730c62dd2b888cd1f4103eea.png" alt=""></p>
+<ul>
+<li><img src="assets/ba6a3fd583866f96c8ec3cf8a534e3bc516032ef5e7941b02eb0e5125b4f5a67.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="指标"><a href="#指标" class="headerlink" title="指标"></a>指标</h3><ul>
+<li><p>意义</p>
+<ul>
+<li><img src="assets/2fa394e6ea5bea119e9538f4f2299a30f36c0c8cf55803a51f2d8be1b2d9c2b7.png" alt=""></li>
+</ul>
+</li>
+<li><p>揭露同构</p>
+<ul>
+<li><img src="assets/a5008047863e8b6787e60ec38bac63b5c19b1f95b877b8bdd62c7cd9724ce18f.png" alt=""></li>
+</ul>
+</li>
+<li><p>定义（类似指数和对数）</p>
+<ul>
+<li><img src="assets/327b94b4efc7c9194ec2da97858c70b2e15593cf6764deb5f3800af9f41584a4.png" alt=""></li>
+</ul>
+</li>
+<li><p>定理</p>
+<ul>
+<li><img src="assets/f9fea1ad0195dc805f09bd0c9b75b751a534dc959c4cb548f374be8e46699835.png" alt=""></li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><img src="assets/1f1830897a665cb346f27c58e3a3212131255dee7d38f10d62440eb4587989a5.png" alt=""></li>
+<li><img src="assets/c2e8b8699acc1a3e834a712d92a902e6e90c246185504a79aa2ee011f02a1aea.png" alt=""></li>
+<li><img src="assets/5f86d06856c1e09158142e22064e6d04bdd56409eae54c00e78435aabdba079f.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h3 id="n次同余式"><a href="#n次同余式" class="headerlink" title="n次同余式"></a>n次同余式</h3><ul>
+<li><p>离散对数问题</p>
+<ul>
+<li><img src="assets/3d37a08255d6681679d1789c7fa723ecf39a537c812969f7e44a15da3dae62f2.png" alt=""></li>
+</ul>
+</li>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/b1bf5ce1c3a790a016581197549704e0dddc1684ecc1c99ea51bc98459c779cc.png" alt=""></li>
+</ul>
+</li>
+<li><p>判读是否有解</p>
+<ul>
+<li><img src="assets/ce5c663eeadc1e134d7c0f2e9314bce49892e135f23f9e0cce56f36bd1c1af05.png" alt=""></li>
+<li><p>推论</p>
+<ul>
+<li><img src="assets/3928814c8431280d356a9f7d584b6b864655d9971de614ecd2900f76444ad626.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>求指数</p>
+<ul>
+<li><img src="assets/c0074473a67914e45c991c0fba6e3beb75af4cbd14f07bf1a113b5bf8ac837d6.png" alt=""></li>
+</ul>
+</li>
+<li><p>这是同构</p>
+<ul>
+<li><img src="assets/6c5806127a457d3254ab8758742ca88f27e5402dba20430df0957d138eab0831.png" alt=""></li>
+<li><p>证明</p>
+<ul>
+<li><img src="assets/5847a564822802bd2d9da4236fccc6ef43bb915e01f616c5fd024fe54f26d97e.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="素性检验"><a href="#素性检验" class="headerlink" title="素性检验"></a>素性检验</h2><h3 id=""><a href="#" class="headerlink" title=""></a><img src="assets/64fec8c2438d2064a9e706a48b1f5bfc6f9059fadfa9d69cfd7aea72d84a7eaa.png" alt=""></h3><h3 id="其实就是利用定理的逆否成立，判断不是，然后用算法多次迭代判断求出一个伪素数"><a href="#其实就是利用定理的逆否成立，判断不是，然后用算法多次迭代判断求出一个伪素数" class="headerlink" title="其实就是利用定理的逆否成立，判断不是，然后用算法多次迭代判断求出一个伪素数"></a>其实就是利用定理的逆否成立，判断不是，然后用算法多次迭代判断求出一个伪素数</h3><h3 id="伪素数"><a href="#伪素数" class="headerlink" title="伪素数"></a>伪素数</h3><ul>
+<li><p>费马小定理</p>
+<ul>
+<li><img src="assets/715a25a78384af327948d898be0efd65ecb495c1d3eabd2abd7a33f6904795e4.png" alt=""></li>
+</ul>
+</li>
+<li><p>伪素数定义</p>
+<ul>
+<li><img src="assets/fdb37536ed726788406b306dc0aa0c9b02e1059b902841617a5ac7c96f5bcd7c.png" alt=""></li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><img src="assets/494e90fa49042f46ec96cd17a9fea6fc6db1f456692c67a2a0db91cb08b7ac6c.png" alt=""></li>
+</ul>
+</li>
+<li><p>Fermat 素性检验</p>
+<ul>
+<li><img src="assets/7ccf4bd5332593a70ea5b6206260fa084baa8916a51b78fa69474c43ce9199a0.png" alt=""></li>
+</ul>
+</li>
+<li><p>无穷多伪素数</p>
+<ul>
+<li><p>引理</p>
+<ul>
+<li><img src="assets/1ae6cd54ac15f1479b0e0055b00f344579d439d29e607f971457ac385b338f15.png" alt=""></li>
+</ul>
+</li>
+<li><p>定理</p>
+<ul>
+<li><img src="assets/e080484779e273dd531653bc305ca38f153a7de01f5270dd1a83b6ee7430db34.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>平方因子判断</p>
+<ul>
+<li><img src="assets/859a46f3a88c9f4068af080b4150fe1cb0f2e26ecf5a83a2ddd48d93558ede3f.png" alt=""></li>
+</ul>
+</li>
+<li><p>Carmichael 数</p>
+<ul>
+<li><img src="assets/de768c6fa7c1dbc1247153ea6ccbe71f248f8be929396eef9714ea58412c1d4e.png" alt=""></li>
+<li><p>判断</p>
+<ul>
+<li><img src="assets/d2886b63c60c0c3b310251461ff8de24059f622249b544305f01af385133ba6b.png" alt=""></li>
+</ul>
+</li>
+<li><p>性质</p>
+<ul>
+<li><img src="assets/e2097ff4a98ad3677d49bc08d7903868e2cecc7683db0832225b454402f2b24e.png" alt=""></li>
+<li><img src="assets/b406a4e6fb86a6c1d372ba17685548b9eff7909f3ea2f0222a8fdf4f4b166b8d.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Euler-伪素数"><a href="#Euler-伪素数" class="headerlink" title="Euler 伪素数"></a>Euler 伪素数</h3><ul>
+<li><p>欧拉判别</p>
+<ul>
+<li><img src="assets/423a4b0c97e007858f97c5d24d81e34ea80d0765fa34b46506e4634f01d00a1c.png" alt=""></li>
+</ul>
+</li>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/ee421250d752cabe6d3138cc29022d8abbcd96398dbf0e31d51b2189a80050c4.png" alt=""></li>
+</ul>
+</li>
+<li><p>Solovay-Stassen 素性检验</p>
+<ul>
+<li><img src="assets/62bcb0a363d96d0e5f557dd0b8baa5cb328839b60ad2a5c01b122e58aefb8a88.png" alt=""></li>
+</ul>
+</li>
+<li><p>无穷多</p>
+<ul>
+<li><img src="assets/bdc35a0e986327602935521c56073fab580a65ef5b53dd4ef18a1f9540a40f1b.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h3 id="强伪素数"><a href="#强伪素数" class="headerlink" title="强伪素数"></a>强伪素数</h3><ul>
+<li><p>验证定理</p>
+<ul>
+<li><img src="assets/7255c788141d262fe0a66c54182e187ceba96d2ebf4a517612aacca856727756.png" alt=""></li>
+</ul>
+</li>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/8a2cf69eb81375a787febef1a027d5c4d3077ecb0398bc596f039498874b0a12.png" alt=""></li>
+</ul>
+</li>
+<li><p>Miller-Rabin 素性检验</p>
+<ul>
+<li><img src="assets/a19f582ae7688aab5588d106cf45e3e7dbf451e826f1f64d0e5c2949f1f29176.png" alt=""></li>
+</ul>
+</li>
+<li><p>无穷多</p>
+<ul>
+<li><img src="assets/f48688461e9adb2da823e13b29e5728c9c1ee4a15b7a80c4383351126ec521dc.png" alt=""></li>
+<li><img src="assets/05e849d3f1911fa1c38da18713d042051d150c1278587f78113ab38bcb9f217a.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h2 id="连分数"><a href="#连分数" class="headerlink" title="连分数"></a>连分数</h2><h3 id="简单连分数"><a href="#简单连分数" class="headerlink" title="简单连分数"></a>简单连分数</h3><ul>
+<li><p>简单连分数构造</p>
+<ul>
+<li><img src="assets/3385e3d85b9e40cf20d65751161e579e2de7c8db02065c364c8d548843e65e9e.png" alt=""></li>
+<li><p>第二种</p>
+<ul>
+<li><img src="assets/dc7abc00939076fc11a023ee72a35c8cb1d13c3888382a05b04a40b457c39b1d.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>定理</p>
+<ul>
+<li><p>等价定理</p>
+<ul>
+<li><img src="assets/861a6782ece1d8ed62e892f9f0d62ae3c0837a9454a925ff5ffdcd7d3d67f4d3.png" alt=""></li>
+</ul>
+</li>
+<li><p>表示法</p>
+<ul>
+<li><img src="assets/462c5ff74edd8673649a94fdadacc6ad13d2d804e89b327a3e90ad18dd0a2bf1.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>渐近分数</p>
+<ul>
+<li><p>研究目标</p>
+<ul>
+<li><img src="assets/b2b20e4405e062c700074c678bf8cd645b9c518bd810b1097fb0f72b1df09456.png" alt=""></li>
+</ul>
+</li>
+<li><p>求解方法</p>
+<ul>
+<li><img src="assets/84d54fb37816a91df10815c91d8509058976661bbd6a6c576d3330b4b4f0aa4b.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="assets/92a9af4ff177fc80d72c977ad1f05ab59b000cd29fccc8377375608d615f2949.png" alt=""></h3><ul>
+<li><p>圆周率</p>
+<ul>
+<li><img src="assets/098b8ad871ebe73d43ec91f6b56fb1ad63d1da90e8257c4aa4eb4865259c5154.png" alt=""></li>
+<li><img src="assets/0a7639db1323b35128a10dde0d389065952196e09d200b69f60ac0a8afd479dc.png" alt=""></li>
+</ul>
+</li>
+<li><p>自然对数</p>
+<ul>
+<li><img src="assets/2d96ada357bd1483817e44aae9270afc0899d6e02d0a33d2dc80a3d3507f8bf3.png" alt=""></li>
+<li><img src="assets/b318f84335e03a646f803685c77e29ecc64eea39779390d5d17b9e868f0e059d.png" alt=""></li>
+</ul>
+</li>
+<li><p>欧拉常数</p>
+<ul>
+<li><img src="assets/7f8f7f0033d58907bf913687a71fd744aa60dfe62334863d1ff18e85b320ef83.png" alt=""></li>
+<li><img src="assets/85eddbfa8af8b414f8de04747c30ef41478b43fd6f9fedb28e4c275d00dc1f61.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h3 id="连分数-1"><a href="#连分数-1" class="headerlink" title="连分数"></a>连分数</h3><ul>
+<li><p>定义</p>
+<ul>
+<li><p>有限</p>
+<ul>
+<li><img src="assets/b6945096c02520f356877726257eb5bbb8c828e75ee8a796109ef3ad924d0be1.png" alt=""></li>
+</ul>
+</li>
+<li><p>无限</p>
+<ul>
+<li><img src="assets/1fb00914d2eecc1d6cd7814f61b5a861eeeea6f7d16d84fb13b81045129f9d9c.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>引理</p>
+<ul>
+<li><img src="assets/19fd932620df20f67df63c36037c30f2f6eba90b9dece93119fd4377589040f5.png" alt=""></li>
+</ul>
+</li>
+<li><p>定理</p>
+<ul>
+<li><p>好像就是分数</p>
+<ul>
+<li><img src="assets/e005bc00d639f3b6d05d4545e364d360adb61d6c74deb77e7c0fc3f89fd1c457.png" alt=""></li>
+<li><img src="assets/6358a31b6bf2b373703bd9a728dd2ad8efb508ba4598c34fc4c7846a9440414f.png" alt=""></li>
+<li><img src="assets/e698c63cd230e64ed1700b0a0e8c754f151835e08a591b16d7fafc7c2cf623b9.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>渐近分数</p>
+<ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/436ea30c2fc44c4c469cb9cf12410635b49ce78f53f461632ae124d4911200fb.png" alt=""></li>
+</ul>
+</li>
+<li><p>相关定理</p>
+<ul>
+<li><img src="assets/49add7f9ef7b9e5ea2a0d30975916262b899b11732576246521ff6d63efd4bc3.png" alt=""></li>
+<li><img src="assets/05edb2f8e89fff0d497675303598dbd1db37b119c2ab29b7065d1a9e3774e931.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="性质讨论"><a href="#性质讨论" class="headerlink" title="性质讨论"></a>性质讨论</h3><ul>
+<li><p>概念</p>
+<ul>
+<li><img src="assets/b6945096c02520f356877726257eb5bbb8c828e75ee8a796109ef3ad924d0be1.png" alt=""></li>
+</ul>
+</li>
+<li><p>极限</p>
+<ul>
+<li><img src="assets/024b399f497260ded74a38efa9cfe0910fe632c96cf99cdeb825517cc9467e30.png" alt=""></li>
+</ul>
+</li>
+<li><p>距离逼近（如果看过实变很好理解）</p>
+<ul>
+<li><img src="assets/17d2e3ee5dba2b4fc7178da068b5f4a5395b569efb717611e82b0d6370b32136.png" alt=""></li>
+</ul>
+</li>
+<li><p>最佳逼近</p>
+<ul>
+<li><p>也就是距离定义</p>
+<ul>
+<li><img src="assets/a2e6e30697a37103202100f06dd9d70afeea557cc2787baff8fc315740403f54.png" alt=""></li>
+</ul>
+</li>
+<li><p>定理</p>
+<ul>
+<li><img src="assets/daf4ac44be62f749537fd9d7de96bb8fb359d7017ce5ea0360d9ebb43e63ae1b.png" alt=""></li>
+<li><img src="assets/2ce1f90f93d6a55fe9c4ee1b41b99652b6158a46c903d603efed2cbedde558c5.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>循环连分数</p>
+<ul>
+<li><p>定义</p>
+<ul>
+<li><img src="assets/b6447e6b99215eeede962d75708b8ebdf8e7d39cb86a61a8b95342ba51e781e5.png" alt=""></li>
+</ul>
+</li>
+<li><p>定理</p>
+<ul>
+<li><img src="assets/f3f926dccc63f4620f06c86b8f732c4f2fd6166ee7afd3ef34929ec157353665.png" alt=""></li>
+<li><img src="assets/6b607d6fb3ce2a18fd78c50793d6d676e973535d31bbb4f0f121f22a621cb87e.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><img src="assets/5fd4393f8911b11089d6b7e126a27ca93ad6570c36dfcbc69310fc0a9993b5bb.png" alt=""></p>
+<ul>
+<li>目前不清楚是什么玩意</li>
+<li><img src="assets/2ed41de7152a6f0dbad37dc5be5b46899ad236aeda8f61b64609facbd8450989.png" alt=""></li>
+</ul>
+</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">LowlyLi</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://lcy5201314.top/2022/04/01/2022-4-1-shu-lun/">http://lcy5201314.top/2022/04/01/2022-4-1-shu-lun/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">LowlyLi</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
+                                    <span class="chip bg-color">密码学</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%95%B0%E8%AE%BA/">
+                                    <span class="chip bg-color">数论</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%95%B0%E5%AD%A6/">
+                                    <span class="chip bg-color">数学</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'KrP8LCvOkNLeKYOzomaIagbA-gzGzoHsz',
+        appKey: 'tOTYSpmIAEnlWHbIzwFx73iX',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2022/04/02/2022-4-2-gong-ye-hu-lian-wang/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="工业互联网">
+                        
+                        <span class="card-title">工业互联网</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            工业互联网调查学习
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91/" class="post-category">
+                                    工业互联网
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
+                        <span class="chip bg-color">信息安全</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91/">
+                        <span class="chip bg-color">工业互联网</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/25/2022-3-27-mian-shi-shua-ti/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="面试刷题">
+                        
+                        <span class="card-title">面试刷题</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            算法复习，准备机试
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 秋月日常<br />'
+            + '文章作者: LowlyLi<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2022</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">LowlyLi</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "11";
+                    var startDate = "15";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/lcy5201314" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:543797538@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=543797538" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 543797538" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+        <script src="//code.tidio.co/wczxzppxuvj3litzyyta1w2asmyg4dus.js"></script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);
+                function change_Tidio() {
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
+    
+
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+    <!-- 樱花 -->
+    <script type="text/javascript">
+        // 只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script>
+        
+
+
+</body>
+
+</html>
