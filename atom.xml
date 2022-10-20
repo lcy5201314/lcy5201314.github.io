@@ -6,7 +6,7 @@
   <link href="http://lcy5201314.top/atom.xml" rel="self"/>
   
   <link href="http://lcy5201314.top/"/>
-  <updated>2022-05-28T03:07:57.546Z</updated>
+  <updated>2022-10-20T08:17:12.327Z</updated>
   <id>http://lcy5201314.top/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>操作系统安全复习笔记</title>
+    <link href="http://lcy5201314.top/2022/09/10/2022-9-10-cao-zuo-xi-tong-an-quan/"/>
+    <id>http://lcy5201314.top/2022/09/10/2022-9-10-cao-zuo-xi-tong-an-quan/</id>
+    <published>2022-09-10T12:47:38.000Z</published>
+    <updated>2022-10-20T08:17:12.327Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;操作系统安全复习笔记&quot;&gt;&lt;a href=&quot;#操作系统安全复习笔记&quot; class=&quot;headerlink&quot; title=&quot;操作系统安全复习笔记&quot;&gt;&lt;/a&gt;操作系统安全复习笔记&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;系统安全概述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="网络安全" scheme="http://lcy5201314.top/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+    <category term="密码学" scheme="http://lcy5201314.top/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+    <category term="网络安全" scheme="http://lcy5201314.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>网络攻防复习</title>
-    <link href="http://lcy5201314.top/2022/05/25/2020-5-25-gong-fang-fu-xi/"/>
-    <id>http://lcy5201314.top/2022/05/25/2020-5-25-gong-fang-fu-xi/</id>
+    <link href="http://lcy5201314.top/2022/05/25/2022-5-25-gong-fang-fu-xi/"/>
+    <id>http://lcy5201314.top/2022/05/25/2022-5-25-gong-fang-fu-xi/</id>
     <published>2022-05-25T12:47:38.000Z</published>
-    <updated>2022-05-28T03:07:57.546Z</updated>
+    <updated>2022-10-20T08:17:33.548Z</updated>
     
     
       
