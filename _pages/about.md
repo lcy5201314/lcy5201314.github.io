@@ -16,12 +16,11 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+Hi! My name is Chunyang Li (李春阳).
 
 I am currently a Ph.D. student at the School of Cyber Engineering, Xidian University, supervised by [Prof. Junwei Zhang](https://web.xidian.edu.cn/jwzhang/index.html). I received my B.S. degree in Information Security from the School of Computer Science and Technology, China University of Mining and Technology, in 2023. My current research interests focus on AI security, including jailbreak attacks, and the security analysis of retrieval-augmented generation (RAG) systems and agents. Previously, I was also deeply interested in privacy-preserving computation, involving techniques such as secure multi-party computation (MPC) and privacy-preserving machine learning (PPML).
 
-**🌟 <font color="red">I am currently focused on content generation and security mechanisms in large language models. I am also open to academic collaboration and project cooperation—feel free to reach out if you’re interested!</font>
+**🌟 <font color="red">I am currently focused on content generation and security mechanisms in large language models. If you are seeking any form of academic cooperation, please feel free to email me at li.cy@stu.xidian.edu.cn. </font>
 
 <!-- For a detailed overview of my academic background and project experience, please refer to my resumes:
 📄 [Chinese Resume Link (replace with actual)] | [English Resume Link (replace with actual)] -->
@@ -31,17 +30,12 @@ I am currently a Ph.D. student at the School of Cyber Engineering, Xidian Univer
 - *2023.09 - 2028.12 (now)*, Ph.D. Candidate in Cyberspace Security, Xidian University
 - *2019.09 - 2023.06*, B.S. in Information Security, China University of Mining and Technology (CUMT) 
 
-
 # 🔥 News
 - *2025.06*: I was invited to give a talk with Ant Group at Xidian University during the Open Source Summer Campus Tour.
 - *2024.12*: I was invited to speak at SecretFlow Live#26 with Ant Group.
 - *2024.05*: I have been participating in the Cybersecurity Academy Student Innovation Grant Program, supported by Ant Group, under the corporate mentorship of Cheng Anda.
 - *2023.09*: I started my PhD studying at Xidian University (XDU) under the supervision of Prof. Junwei Zhang.
 - *2023.07*: I ended my undergraduate life at China University of Mining and Technology (CUMT), thanks to all teachers and friends around me, especially my parents.
-
-
-
-
 
 # 📝 Publications 
 
