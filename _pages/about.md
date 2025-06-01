@@ -18,6 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 <!-- Hi! My name is Chunyang Li (李春阳). -->
 
+# 👑 About Me
 I am currently a Ph.D. student at the School of Cyber Engineering, Xidian University, supervised by [Prof. Junwei Zhang](https://web.xidian.edu.cn/jwzhang/index.html). I received my B.S. degree in Information Security from the School of Computer Science and Technology, China University of Mining and Technology, in 2023. 
 
 My current research interests focus on AI security, including jailbreak attacks, and the security analysis of retrieval-augmented generation (RAG) systems and agents. Previously, I was also deeply interested in privacy-preserving computation, involving techniques such as secure multi-party computation (MPC) and privacy-preserving machine learning (PPML).
@@ -68,4 +69,3 @@ My current research interests focus on AI security, including jailbreak attacks,
 
 # 💻 Internships
 - *2024.05 - 2025.03*, Ant Group ([Cybersecurity Academy Student Innovation Grant Program](https://zzjh.org.cn/#/)), supervised by Dr. Anda Cheng.
-
