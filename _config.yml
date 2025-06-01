@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Chunyang Li"
+title                    : "Chunyang Li(李春阳)"
 description              : "Cyberspace Security@XDU"
 repository               : "lcy5201314/lcy5201314.github.io"
 google_scholar_stats_use_cdn : true
@@ -21,7 +21,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Chunyang Li"
+  name             : "Chunyang Li(李春阳)"
   avatar           : "images/self.jpg"
   bio              : ""
   location         : "Xi'an, China"
