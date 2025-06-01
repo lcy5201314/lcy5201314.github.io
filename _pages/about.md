@@ -16,11 +16,13 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-Hi! My name is Chunyang Li (李春阳).
+<!-- Hi! My name is Chunyang Li (李春阳). -->
 
-I am currently a Ph.D. student at the School of Cyber Engineering, Xidian University, supervised by [Prof. Junwei Zhang](https://web.xidian.edu.cn/jwzhang/index.html). I received my B.S. degree in Information Security from the School of Computer Science and Technology, China University of Mining and Technology, in 2023. My current research interests focus on AI security, including jailbreak attacks, and the security analysis of retrieval-augmented generation (RAG) systems and agents. Previously, I was also deeply interested in privacy-preserving computation, involving techniques such as secure multi-party computation (MPC) and privacy-preserving machine learning (PPML).
+I am currently a Ph.D. student at the School of Cyber Engineering, Xidian University, supervised by [Prof. Junwei Zhang](https://web.xidian.edu.cn/jwzhang/index.html). I received my B.S. degree in Information Security from the School of Computer Science and Technology, China University of Mining and Technology, in 2023. 
 
-**🌟 <font color="red">I am currently focused on content generation and security mechanisms in large language models. If you are seeking any form of academic cooperation, please feel free to email me at li.cy@stu.xidian.edu.cn. </font>
+My current research interests focus on AI security, including jailbreak attacks, and the security analysis of retrieval-augmented generation (RAG) systems and agents. Previously, I was also deeply interested in privacy-preserving computation, involving techniques such as secure multi-party computation (MPC) and privacy-preserving machine learning (PPML).
+
+<font color="red">I am currently focused on content generation and security mechanisms in large language models. If you are seeking any form of academic cooperation, please feel free to email me at li.cy@stu.xidian.edu.cn. </font>
 
 <!-- For a detailed overview of my academic background and project experience, please refer to my resumes:
 📄 [Chinese Resume Link (replace with actual)] | [English Resume Link (replace with actual)] -->
@@ -65,9 +67,5 @@ I am currently a Ph.D. student at the School of Cyber Engineering, Xidian Univer
 
 
 # 💻 Internships
-- *2024.05 - 2025.03*, Ant Group ([Cybersecurity Academy Student Innovation Grant Program](https://zzjh.org.cn/#/), supervised by Dr. Anda Cheng)
+- *2024.05 - 2025.03*, Ant Group ([Cybersecurity Academy Student Innovation Grant Program](https://zzjh.org.cn/#/)), supervised by Dr. Anda Cheng.
 
-<!-- # 📚 Academic Services
-- Serving as a reviewer of NeurIPS 2025
-
-# 💡 Lifestyle
