@@ -21,7 +21,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Chunyang Li(李春阳)"
+  name             : "Chunyang Li"
   avatar           : "images/self.jpg"
   bio              : ""
   location         : "Xi'an, China"
