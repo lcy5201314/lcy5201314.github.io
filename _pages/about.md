@@ -51,9 +51,9 @@ My current research interests focus on AI security, including jailbreak attacks,
   Under Review 
 
 # 🏅 Honors and Awards
-- *2024*, First Prize Scholarship at Xidian University. 
-- *2021*, First Prize Scholarship at China University of Mining and Technology.
-- *2020*, First Prize Scholarship at China University of Mining and Technology. 
+- *2024*, First Prize Scholarship at Xidian University. **(2%)**
+- *2021*, First Prize Scholarship at China University of Mining and Technology. **(5%)**
+- *2020*, First Prize Scholarship at China University of Mining and Technology. **(5%)**
 
 # 🏆 Competition Awards
 - *2022*,11th "China Software Cup" Competition, **The Third Prize**.
