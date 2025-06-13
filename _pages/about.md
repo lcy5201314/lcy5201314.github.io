@@ -63,7 +63,7 @@ My current research interests focus on AI security, including jailbreak attacks,
 - *2020*, China Engineering Robot Competition and International Open Contest, **The Third Prize**.
 
 # 💬 Invited Talks
-- *2025.06.04*, Invited to report with Ant Group at the Open Source Summer Campus Tour at Xidian University on "My Open Source Journey: From Secure Multi-party Computation to Large Model Security Research".  
+- *2025.06.04*, Invited to report with Ant Group at the Open Source Summer Campus Tour at Xidian University on "My Open Source Journey: From Secure Multi-party Computation to Large Model Security Research".  [[Video Link](https://www.bilibili.com/video/BV1m8TezLEmn/?spm_id_from=333.1387.homepage.video_card.click)] 
 - *2024.12.19*, Invited to report with Ant Group at SecretFlow Live#26 on "Analysis of Attack Threats and Defense Strategies for Large Models in Retrieval-augmented Generation Framework". [[Video Link](https://www.bilibili.com/video/BV1dSk9Y4Eua/?spm_id_from=333.1387.upload.video_card.click&vd_source=66e40431ac8dded67e9689e834f540eb)]
 
 
