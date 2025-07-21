@@ -23,7 +23,7 @@ I am currently a Ph.D. student at the School of Cyber Engineering, Xidian Univer
 
 My current research interests focus on AI security, including jailbreak attacks, and the security analysis of retrieval-augmented generation (RAG) systems and agents. Previously, I was also deeply interested in privacy-preserving computation, involving techniques such as secure multi-party computation (MPC) and privacy-preserving machine learning (PPML).
 
-<font color="red">I am currently focused on content generation and security mechanisms in large language models. If you are seeking any form of academic cooperation, please feel free to email me at li.cy@stu.xidian.edu.cn. </font>
+<font color="red">I am currently focused on content generation and security mechanisms in large language models. If you are seeking any form of academic cooperation, please feel free to email me at li.cy[at]stu.xidian.edu.cn. </font>
 
 <!-- For a detailed overview of my academic background and project experience, please refer to my resumes:
 📄 [Chinese Resume Link (replace with actual)] | [English Resume Link (replace with actual)] -->
