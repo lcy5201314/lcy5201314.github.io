@@ -44,13 +44,19 @@ My current research interests focus on AI security, including jailbreak attacks,
 
 - CPA-RAG:Covert Poisoning Attacks on Retrieval-Augmented Generation in Large Language Models \
   **Chunyang Li**, Junwei Zhang, Anda Cheng, Zhuo Ma, Xinghua Li, Jianfeng Ma \
+  Under Review, [[Paper](https://arxiv.org/abs/2511.16347)] [[Demo](https://shawshankiej.github.io/)]
+
+- CPA-RAG:Covert Poisoning Attacks on Retrieval-Augmented Generation in Large Language Models \
+  **Chunyang Li**, Junwei Zhang, Anda Cheng, Zhuo Ma, Xinghua Li, Jianfeng Ma \
   Under Review, [[Paper](https://arxiv.org/abs/2505.19864)]
 
-- Privacy and Efficient Spiking Neural Networks \
+- CryptSNN: Efficient and Near-Lossless Privacy-Preserving Inference for Spiking Neural Networks \
   **Chunyang Li**, Junwei Zhang, Zhuo Ma, Jianfeng Ma \
   Under Review 
 
 # 🏅 Honors and Awards
+- *2026*, Second Prize Scholarship at Xidian University.
+- *2025*, Second Prize Scholarship at Xidian University. 
 - *2024*, First Prize Scholarship at Xidian University. **(2%)**
 - *2021*, First Prize Scholarship at China University of Mining and Technology. **(5%)**
 - *2020*, First Prize Scholarship at China University of Mining and Technology. **(5%)**
@@ -68,4 +74,4 @@ My current research interests focus on AI security, including jailbreak attacks,
 
 
 # 💻 Internships
-- *2024.05 - 2025.03*, Ant Group ([Cybersecurity Academy Student Innovation Grant Program](https://zzjh.org.cn/#/)), supervised by Dr. Anda Cheng.
+- *2024.05 - 2026.05*, Ant Group ([Cybersecurity Academy Student Innovation Grant Program](https://zzjh.org.cn/#/)), supervised by Dr. Anda Cheng.
