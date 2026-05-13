@@ -42,7 +42,7 @@ My current research interests focus on AI security, including jailbreak attacks,
 
 # 📝 Publications 
 
-- CPA-RAG:Covert Poisoning Attacks on Retrieval-Augmented Generation in Large Language Models \
+- The Shawshank Redemption of Embodied AI: Understanding and Benchmarking Indirect Environmental Jailbreaks \
   **Chunyang Li**, Zifeng Kang, Junwei Zhang, Zhuo Ma, Anda Cheng, Xinghua Li, Jianfeng Ma \
   Under Review, [[Paper](https://arxiv.org/abs/2511.16347)] [[Demo](https://shawshankiej.github.io/)]
 
